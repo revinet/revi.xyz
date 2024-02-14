@@ -1,2 +1,12 @@
 User-agent: *
-Disallow: /keybase.txt
+Disallow: /.well-known
+
+# Google Ads are not welcome
+User-agent: Mediapartners-Google*
+Disallow: /
+
+# ChatGPT Crawlers are also not welcome
+User-agent: ChatGPT-User
+Disallow: /
+User-agent: GPTBot
+Disallow: /
