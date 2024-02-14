@@ -1,0 +1,56 @@
+==================================================================
+https://keybase.io/revi
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of https://kumul.pe.kr
+  * I am revi (https://keybase.io/revi) on keybase.
+  * I have a public key ASA4DEMr7M38ObgxWrdpBYtvfgIuJFOx0hgQTclJ-88SOQo
+
+To do so, I am signing this object:
+
+{
+  "body": {
+    "key": {
+      "eldest_kid": "0120380c432beccdfc39b8315ab769058b6f7e022e2453b1d218104dc949fbcf12390a",
+      "host": "keybase.io",
+      "kid": "0120380c432beccdfc39b8315ab769058b6f7e022e2453b1d218104dc949fbcf12390a",
+      "uid": "457e48d1090c09259596fae1e125b300",
+      "username": "revi"
+    },
+    "merkle_root": {
+      "ctime": 1568819183,
+      "hash": "4f06403261f2e8209a3dabcc6cbfbe973e24e951263553f4d63f4136d62301f62da3d685eca7c5de4479a91a18461625e9c9fa3312750993f9284f345cc087c1",
+      "hash_meta": "24f79f4b923f49b7fcc87118688f88604250ff6e918a833be2104ed7d3e5dda8",
+      "seqno": 7565038
+    },
+    "service": {
+      "entropy": "WdjE6zn13686WNaEUFGWYexI",
+      "hostname": "kumul.pe.kr",
+      "protocol": "https:"
+    },
+    "type": "web_service_binding",
+    "version": 2
+  },
+  "client": {
+    "name": "keybase.io go client",
+    "version": "4.4.2"
+  },
+  "ctime": 1568819194,
+  "expire_in": 504576000,
+  "prev": "42ec481d0dfafed84f801103fe973fa8699296a315fe775c265b58c95be81ecb",
+  "seqno": 87,
+  "tag": "signature"
+}
+
+which yields the signature:
+
+hKRib2R5hqhkZXRhY2hlZMOpaGFzaF90eXBlCqNrZXnEIwEgOAxDK+zN/Dm4MVq3aQWLb34CLiRTsdIYEE3JSfvPEjkKp3BheWxvYWTESpcCV8QgQuxIHQ36/thPgBED/pc/qGmSlqMV/ndcJltYyVvoHsvEIA8/sm50z5mpnD7Zt+EOO3eScZBSa2n/ZylnewU2rzsOAgHCo3NpZ8RAHQqqbArmx4Nh0U49kO7HSMEaNt62VUmQSKvST1eIWRV93jESWoaw8Om6G2SqVgo/P4j1QcB36C4tHtmQpU3ZB6hzaWdfdHlwZSCkaGFzaIKkdHlwZQildmFsdWXEIE4LgSAvi7U2H2GtTdw6MKwtZhViq/lbZEqwJKSs/XPJo3RhZ80CAqd2ZXJzaW9uAQ==
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/revi
+
+==================================================================
