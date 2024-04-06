@@ -1,0 +1,20 @@
+baseURL: https://revi.xyz
+theme: risotto
+languageCode: en-us
+hasCJKLanguage: true
+enableGitInfo: true
+# favicon: static/favicon.ico
+copyright: "&copy 2016~2024 revi"
+
+permalinks:
+  category: "/category/:slug/"
+  tags: "tags/:slug/"
+
+# Taxonomies
+taxonomies:
+  category: "category"
+  tag: "tags"
+
+# Modified date
+frontmatter:
+  lastmod: ["lastmod", ":git", ":fileModTime", ":default"]
