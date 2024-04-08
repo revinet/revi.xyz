@@ -1,5 +1,5 @@
 User-agent: *
-Disallow: /.well-known
+Disallow: /.well-known/
 
 # Google Ads are not welcome
 User-agent: Mediapartners-Google*
@@ -10,3 +10,59 @@ User-agent: ChatGPT-User
 Disallow: /
 User-agent: GPTBot
 Disallow: /
+
+# This is Cloudflare endpoint
+# https://developers.cloudflare.com/fundamentals/reference/cdn-cgi-endpoint/
+Disallow: /cdn-cgi/
+
+# Block SemrushBot
+User-Agent: SemrushBot
+Disallow: /
+
+# Block AhrefsBot
+User-agent: AhrefsBot
+Disallow: /
+
+# Block Bytespider
+User-agent: Bytespider
+Disallow: /
+
+# Block PetalBot
+User-agent: PetalBot
+Disallow: /
+
+# Block DotBot
+User-agent: DotBot
+Disallow: /
+
+# Block MegaIndex
+User-agent: MegaIndex
+Disallow: /
+
+# Block serpstatbot
+User-agent: serpstatbot
+Disallow: /
+
+# Block Barkrowler
+User-agent: Barkrowler
+Disallow: /
+
+# Block SeekportBot
+User-agent: SeekportBot
+Disallow: /
+
+# Keep Crawl-Delay rules at the bottom
+# Bots that don't understand Crawl-Delay might break when encountering it
+# See https://github.com/otwcode/otwarchive/pull/4411#discussion_r1044351129
+
+# Throttle MJ12Bot
+User-agent: MJ12bot
+Crawl-Delay: 10
+
+# Throttle YandexBot
+User-Agent: YandexBot
+Crawl-Delay: 5
+
+# Throttle BingBot
+User-agent: bingbot
+Crawl-delay: 5
