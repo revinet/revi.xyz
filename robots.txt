@@ -1,19 +1,28 @@
 User-agent: *
 Disallow: /.well-known/
+# This is Cloudflare endpoint
+# https://developers.cloudflare.com/fundamentals/reference/cdn-cgi-endpoint/
+Disallow: /cdn-cgi/
 
 # Google Ads are not welcome
-User-agent: Mediapartners-Google*
+User-agent: Mediapartners-Google
+Disallow: /
+User-agent: AdsBot-Google
+Disallow: /
+User-agent: AdsBot-Google-Mobile
 Disallow: /
 
 # ChatGPT Crawlers are also not welcome
+# Ref: https://platform.openai.com/docs/plugins/bot
 User-agent: ChatGPT-User
 Disallow: /
 User-agent: GPTBot
 Disallow: /
 
-# This is Cloudflare endpoint
-# https://developers.cloudflare.com/fundamentals/reference/cdn-cgi-endpoint/
-Disallow: /cdn-cgi/
+# Google Gemini AI Crawlers are also not welcome
+# Ref: https://developers.google.com/search/docs/crawling-indexing/overview-google-crawlers?hl=en#google-extended
+User-agent: Google-Extended
+Disallow: /
 
 # Block SemrushBot
 User-Agent: SemrushBot
