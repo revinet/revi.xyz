@@ -1,4 +1,5 @@
 https://:project.pages.dev/*
+  Link: <https://revi.xyz/:splat>; rel="canonical"
   X-Robots-Tag: noindex
 
 /.well-known/*
