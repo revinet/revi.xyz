@@ -1,0 +1,7 @@
+# revi.xyz
+
+Source code for revi.xyz.
+
+This deploys to Cloudflare Pages, unlike most of the repos in this org.
+
+## Credits
