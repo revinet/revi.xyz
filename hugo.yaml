@@ -1,10 +1,37 @@
 baseURL: https://revi.xyz
 theme: risotto
-languageCode: en-us
+title: "revi"
+languageCode: "en"
+DefaultContentLanguage: "en"
 hasCJKLanguage: true
 enableGitInfo: true
 # favicon: static/favicon.ico
-copyright: "&copy 2016~2024 revi"
+copyright: "© 2016~2024 revi"
+
+menu:
+  main:
+    - identifier: "home"
+      name: "Home"
+      url: "/"
+      weight: 1
+    - identifier: "wiki"
+      name: "Wiki"
+      url: "https://revi.wiki/"
+      weight: 2
+    - identifier: "issuetracker"
+      name: "Issue Tracker"
+      url: "https://issuetracker.revi.xyz/"
+      weight: 3
+    - identifier: "blog"
+      name: "Blog"
+      url: "/blog/"
+      weight: 4
+
+params:
+  about:
+    title: "revi"
+    description: "revi's homepage."
+    logo_image: "profile.png"
 
 permalinks:
   category: "/category/:slug/"
@@ -18,3 +45,7 @@ taxonomies:
 # Modified date
 frontmatter:
   lastmod: ["lastmod", ":git", ":fileModTime", ":default"]
+
+# Static files
+staticDir:
+  - "static"
