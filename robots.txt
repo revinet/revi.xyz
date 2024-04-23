@@ -24,6 +24,30 @@ Disallow: /
 User-agent: Google-Extended
 Disallow: /
 
+# AI Data Scraper
+# https://darkvisitors.com/agents/bytespider
+
+User-agent: Bytespider
+Disallow: /
+
+# AI Data Scraper
+# https://darkvisitors.com/agents/ccbot
+
+User-agent: CCBot
+Disallow: /
+
+# AI Data Scraper
+# https://darkvisitors.com/agents/diffbot
+
+User-agent: Diffbot
+Disallow: /
+
+# AI Data Scraper
+# https://darkvisitors.com/agents/facebookbot
+
+User-agent: FacebookBot
+Disallow: /
+
 # Block SemrushBot
 User-Agent: SemrushBot
 Disallow: /

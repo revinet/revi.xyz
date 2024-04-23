@@ -4,3 +4,7 @@ https://:project.pages.dev/*
 
 /.well-known/*
   X-Robots-Tag: noindex
+
+/.well-known/openpgpkeys/*
+  Access-Control-Allow-Origin: *
+  Content-type: application/octet-stream
