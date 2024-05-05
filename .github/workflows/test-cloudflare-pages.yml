@@ -12,6 +12,9 @@ jobs:
   build:
     name: Build Docusaurus
     runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: docusaurus
     steps:
       - uses: actions/checkout@v4
         with:
@@ -26,6 +29,7 @@ jobs:
         run: npm run build
 
   deploy:
+    needs: build
     runs-on: ubuntu-latest
     name: Deploy to Cloudflare Pages
     steps:
