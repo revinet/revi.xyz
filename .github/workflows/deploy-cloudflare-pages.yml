@@ -44,4 +44,4 @@ jobs:
         with:
           apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
           accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
-          command: pages deploy docusaurus/build --project-name=revi-xyz
+          command: pages deploy build --project-name=revi-xyz
