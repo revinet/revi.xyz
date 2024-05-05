@@ -23,23 +23,11 @@ jobs:
         with:
           node-version: 20
           cache: npm
-
       - name: Install dependencies
         run: npm ci
       - name: Build website
         run: npm run build
-
-      - name: Upload Build Artifact
-        uses: actions/upload-pages-artifact@v3
-        with:
-          path: build
-
-  deploy:
-    needs: build
-    runs-on: ubuntu-latest
-    name: Deploy to Cloudflare Pages
-    steps:
-      - name: Deploy
+      - name: Deploy to Cloudflare Pages
         uses: cloudflare/wrangler-action@v3
         with:
           apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
