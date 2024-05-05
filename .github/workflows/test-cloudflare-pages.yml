@@ -28,7 +28,7 @@ jobs:
       - name: Build website
         run: npm run build
       - name: Check current directory
-        run: ls -la
+        run: ls -la && echo 'build directory' && ls -la build
       - name: Deploy to Cloudflare Pages
         uses: cloudflare/wrangler-action@v3
         with:
