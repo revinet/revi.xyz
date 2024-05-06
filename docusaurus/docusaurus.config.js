@@ -68,7 +68,7 @@ const config = {
         },
         items: [
           {to: 'https://revi.wiki/', label: 'Wiki', position: 'left'},
-          {to: '/blog', label: 'Blog', position: 'left'},
+          {to: '/blog', label: 'Notes', position: 'left'},
           {to: 'https://b.revi.dev/', label: 'Issue Tracker', position: 'left'},
           {
             href: 'https://github.com/revinet/revi.xyz',
@@ -101,7 +101,7 @@ const config = {
             title: 'More',
             items: [
               {
-                label: 'Blog',
+                label: 'Notes',
                 to: '/blog',
               },
               {
