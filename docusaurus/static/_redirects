@@ -1,4 +1,3 @@
-/blog https://revi.blog 302
 /discord https://discord.com/invite/SzRtagZ3y5 302
 /git https://git.silicon.moe 302
 /github https://github.com/revi 302
@@ -13,4 +12,5 @@
 /steam https://steamcommunity.com/id/enhawiki/ 302
 /tailscale https://login.tailscale.com/ 302
 /wiki https://revi.wiki/wiki/ 302
-/p/* https://issuetracker.revi.xyz/T:splat 302
+/t/* https://issuetracker.revi.xyz/T:splat 302
+/b/* https://issuetracker.revi.xyz/:splat 302

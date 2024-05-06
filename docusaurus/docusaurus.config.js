@@ -44,6 +44,8 @@ const config = {
           showReadingTime: true,
           blogSidebarTitle: 'All posts',
           blogSidebarCount: 'ALL',
+          blogTitle: 'Cooking Pancakes',
+          blogDescription: 'Cannot cook one, though.',
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           // editUrl: 'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
@@ -70,6 +72,7 @@ const config = {
           {to: 'https://revi.wiki/', label: 'Wiki', position: 'left'},
           {to: '/blog', label: 'Notes', position: 'left'},
           {to: 'https://b.revi.dev/', label: 'Issue Tracker', position: 'left'},
+          {type: 'localeDropdown', position: 'right'},
           {
             href: 'https://github.com/revinet/revi.xyz',
             label: 'GitHub',
