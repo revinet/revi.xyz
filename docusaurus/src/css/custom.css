@@ -6,7 +6,7 @@
 
 /* You can override the default Infima variables here. */
 
-@font-face {
+/* @font-face {
   font-family: 'IBM Plex Sans KR';
   src: url('/fonts/IBM Plex Sans KR/IBMPlexSansKR-Regular.woff2') format('woff2');
 }
@@ -19,7 +19,7 @@
 @font-face {
   font-family: 'Pretendard';
   src: url('/fonts/Pretendard/Pretendard-Regular.otf') format('otf');
-}
+}*/
 
 @font-face {
   font-family: '0xProto';
@@ -36,7 +36,7 @@
   --ifm-color-primary-lightest: #3cad6e;
   --ifm-code-font-size: 100%;
   --ifm-font-family-base: 'IBM Plex Sans KR', Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
-  --ifm-heading-font-family: 'Noto Serif KR', serif;
+  --ifm-heading-font-family: 'Noto Serif KR', 'NanumMyeongjo', serif;
   --ifm-font-family-monospace: '0xProto', 'Courier New', monospace;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
   word-break: keep-all;

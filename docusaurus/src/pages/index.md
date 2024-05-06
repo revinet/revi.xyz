@@ -12,7 +12,7 @@ hide_table_of_contents: true
 # revi
 
 - [he/him unless otherwise noted](https://issuetracker.revi.xyz/u/VP4zPTqzw4qfU5m7).
-- Time: [What time is it in my timezone](https://k.revi.xyz/time.php)?
+- [What time is it in my timezone](https://k.revi.xyz/time.php)?
 
 ## About
 
@@ -36,14 +36,14 @@ I'm an admin at [Korean Wikipedia](https://ko.wikipedia.org/), [Wikimedia Common
 - You might want to read [this guide](https://listed.to/p/3MXbHWDF5S) on best way to contact me.
 - [GitHub](https://github.com/revi)
 - [Email](mailto:revi@omglol.email)
-- [0xBEFF197A](https://k.revi.xyz/0xBEFF197A.asc)
+- [0xBEFF197A](https://revi.xyz/0xBEFF197A.asc)
+- [0xEA100E94](https://revi.xyz/0xEA100E94.asc)
 - [Matrix](https://matrix.to/#/@revi:omg.lol)
 - [pinboard.in](https://pinboard.in/u:revi)
 - [Wikimedia](https://meta.wikimedia.org/wiki/User:-revi)
 - [Last.fm](https://www.last.fm/user/revinim)
 - [Stack Overflow](https://stackoverflow.com/users/5089628/revi)
 - [Keybase](https://keybase.io/revi)
-- [Privacy Policy (for some oAuth setups)](https://revi.wiki/wiki/ReviNet_%EA%B0%9C%EC%9D%B8%EC%A0%95%EB%B3%B4_%EC%B2%98%EB%A6%AC%EB%B0%A9%EC%B9%A8)
 
 ### Credit
 
