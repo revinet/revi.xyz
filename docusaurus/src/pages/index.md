@@ -13,7 +13,7 @@ hide_table_of_contents: true
 
 # revi
 
-- [he/him unless otherwise noted](https://issuetracker.revi.xyz/u/VP4zPTqzw4qfU5m7).
+- [he/him unless otherwise noted](/gender-pronounciation).
 - [What time is it in my timezone](https://k.revi.xyz/time.php)?
 
 ## About
@@ -31,7 +31,7 @@ I'm an admin at [Korean Wikipedia](https://ko.wikipedia.org/), [Wikimedia Common
 
 - [Wiki](https://revi.wiki/)
 - [Issue Tracker](https://issuetracker.revi.xyz)
-- [Blog](https://revi.blog)
+- [Blog](/blog)
 
 ### Contacts
 
