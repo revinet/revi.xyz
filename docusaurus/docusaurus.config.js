@@ -10,7 +10,7 @@ import {themes as prismThemes} from 'prism-react-renderer';
 const config = {
   title: 'revi',
   tagline: 'Self-appointed Chief Laziness Officer',
-  favicon: 'img/logo.png',
+  favicon: 'https://r2.revicdn.net/pfp2.png',
 
   // Set the production url of your site here
   url: 'https://revi.xyz',
@@ -46,6 +46,8 @@ const config = {
           blogSidebarCount: 'ALL',
           blogTitle: 'Cooking Pancakes',
           blogDescription: 'Cannot cook one, though.',
+          showLastUpdateAuthor: true,
+          showLastUpdateTime: true,
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           // editUrl: 'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
@@ -93,7 +95,7 @@ const config = {
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
       // Replace with your project's social card
-      // image: 'img/docusaurus-social-card.jpg',
+      image: 'http://r2.revicdn.net/bbip-bg.png',
       navbar: {
         title: 'revi',
         logo: {
