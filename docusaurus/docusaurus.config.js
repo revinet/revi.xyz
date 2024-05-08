@@ -161,7 +161,7 @@ const config = {
             ],
           }
         ],
-        copyright: `Copyright © ${new Date().getFullYear()} revi. Licensed under CC BY ND 2.0 KR. Built with Docusaurus.`,
+        copyright: `Copyright © 2016 ~ ${new Date().getFullYear()} revi. Licensed under CC BY ND 2.0 KR. Built with Docusaurus.`,
       },
       prism: {
         theme: prismThemes.github,
