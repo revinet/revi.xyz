@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="380" height="29">
+  <style>
+    svg{
+      font-family: '0xProto';
+      src: url('https://github.com/0xType/0xProto/raw/1.603/fonts/0xProto-Regular.otf');
+    }
+  </style>
+  <text x="10" y="25" font-family="0xProto" font-size="100%" fill="black">legal § revi.dev</text>
+</svg>

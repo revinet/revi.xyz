@@ -152,7 +152,7 @@ const config = {
             items: [
               {
                 label: 'Privacy Policy',
-                to: 'https://issuetracker.revi.xyz/u/privacypolicy2024',
+                to: '/privacy-policy',
               },
               {
                 label: 'License CC BY ND 2.0 KR',
