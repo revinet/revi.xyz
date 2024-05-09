@@ -95,7 +95,7 @@ const config = {
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
       // Replace with your project's social card
-      image: 'http://r2.revicdn.net/bbip-bg.png',
+      image: 'https://r2.revicdn.net/bbip-bg.png',
       navbar: {
         title: 'revi',
         logo: {
