@@ -33,7 +33,7 @@ I'm an admin at [Korean Wikipedia](https://ko.wikipedia.org/), [Wikimedia Common
 
 - [Wiki](https://revi.wiki/)
 - [Issue Tracker](https://issuetracker.revi.xyz)
-- [Blog](/blog)
+- [Notes (with full of ranting)](/blog)
 
 ### Contacts
 
