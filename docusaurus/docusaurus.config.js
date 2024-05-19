@@ -129,15 +129,15 @@ const config = {
             items: [
               {
                 label: 'Wiki',
-                href: '/wiki',
+                href: 'https://revi.xyz/wiki',
               },
               {
                 label: 'Discord',
-                href: '/discord',
+                href: 'https://revi.xyz/discord',
               },
               {
                 label: 'Issue Tracker',
-                href: '/phab',
+                href: 'https://revi.xyz/phab',
               },
             ],
           },

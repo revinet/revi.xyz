@@ -1,6 +1,9 @@
 {
   "exclude": [
-    "(^package-lock.json$)"
+    "(^package-lock.json$)",
+    "(^docusaurus/package-lock.json$)",
+    "(^node_modules/)",
+    "(^.gitignore$)"
   ],
   "linters": {
     "chmod": {
