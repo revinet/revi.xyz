@@ -64,7 +64,7 @@ const config = {
       tagName: 'link',
       attributes: {
         rel: 'stylesheet',
-        href: 'https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+KR&family=Nanum+Myeongjo&family=Noto+Serif+KR&display=swap',
+        href: 'https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+KR&family=IBM+Plex+Sans&family=Montserrat&family=Nanum+Myeongjo&family=Noto+Serif+KR&display=swap',
       },
     },
     {

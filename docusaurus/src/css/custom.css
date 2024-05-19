@@ -35,8 +35,8 @@
   --ifm-color-primary-lighter: #359962;
   --ifm-color-primary-lightest: #3cad6e;
   --ifm-code-font-size: 100%;
-  --ifm-font-family-base: 'IBM Plex Sans KR', Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
-  --ifm-heading-font-family: 'Noto Serif KR', 'NanumMyeongjo', serif;
+  --ifm-font-family-base: 'IBM Plex Sans KR', 'IBM Plex Sans', Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+  --ifm-heading-font-family: 'Noto Serif KR', 'Montserrat', 'NanumMyeongjo', serif;
   --ifm-font-family-monospace: '0xProto', 'Courier New', monospace;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
   word-break: keep-all;
