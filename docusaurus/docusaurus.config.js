@@ -141,7 +141,7 @@ const config = {
           {to: 'https://revi.wiki/', label: 'Wiki', position: 'left'},
           {to: '/blog', label: 'Notes', position: 'left'},
           {to: 'https://b.revi.dev/', label: 'Issue Tracker', position: 'left'},
-          {type: 'localeDropdown', position: 'right'},
+          // {type: 'localeDropdown', position: 'right'},
           {
             href: 'https://github.com/revinet/revi.xyz',
             label: 'GitHub',
