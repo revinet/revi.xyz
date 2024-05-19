@@ -88,6 +88,13 @@ const config = {
         rel: 'preconnect',
         href: 'https://fonts.googleapis.com',
       },
+    },
+    {
+      tagName: 'link',
+      attributes: {
+        rel: 'preconnect',
+        href: 'https://cdnjs.cloudflare.com',
+      }
     }
   ],
 
@@ -122,15 +129,15 @@ const config = {
             items: [
               {
                 label: 'Wiki',
-                href: 'https://revi.wiki',
+                href: '/wiki',
               },
               {
                 label: 'Discord',
-                href: 'https://issuetracker.revi.xyz/u/discord',
+                href: '/discord',
               },
               {
                 label: 'Issue Tracker',
-                href: 'https://b.revi.dev/',
+                href: '/phab',
               },
             ],
           },
