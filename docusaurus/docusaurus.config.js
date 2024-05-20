@@ -201,8 +201,9 @@ const config = {
       prism: {
         theme: prismThemes.github,
         darkTheme: prismThemes.dracula,
-      },
+      }
     }),
+  // clientModules: ['./src/components/timer/index.js'],
 };
 
 export default config;
