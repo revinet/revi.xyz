@@ -138,9 +138,26 @@ const config = {
           src: 'img/logo.png',
         },
         items: [
-          {to: 'https://revi.wiki/', label: 'Wiki', position: 'left'},
-          {to: '/blog', label: 'Notes', position: 'left'},
-          {to: 'https://b.revi.dev/', label: 'Issue Tracker', position: 'left'},
+          {
+            to: '/time',
+            label: 'revi\'s time',
+            position: 'left'
+          },
+          {
+            to: '/blog',
+            label: 'Notes',
+            position: 'left'
+          },
+          {
+            to: 'https://revi.xyz/wiki',
+            label: 'Wiki',
+            position: 'left'
+          },
+          {
+            to: 'https://revi.xyz/phab',
+            label: 'Issue Tracker',
+            position: 'left'
+          },
           // {type: 'localeDropdown', position: 'right'},
           {
             href: 'https://github.com/revinet/revi.xyz',
@@ -175,6 +192,10 @@ const config = {
               {
                 label: 'Notes',
                 to: '/blog',
+              },
+              {
+                label: 'revi\'s time',
+                to: '/time',
               },
               {
                 label: 'GitHub',

@@ -9,7 +9,8 @@ updates:
     assignees:
       - "revi"
     # Workflow files stored in the default location of `.github/workflows`.
-    # You don't need to specify `/.github/workflows` for `directory`. You can use `directory: "/"`.
+    # You don't need to specify `/.github/workflows` for `directory`.
+    # You can use `directory: "/"`.
     directory: "/"
     schedule:
       interval: "weekly"
@@ -22,7 +23,7 @@ updates:
   - package-ecosystem: "npm"
     assignees:
       - "revi"
-    # npm package dependencies in the location of `go-revi-xyz/package.json`.
+    # npm package dependencies in the location of `/package.json`.
     directory: "/"
     schedule:
       interval: "weekly"
@@ -35,7 +36,7 @@ updates:
   - package-ecosystem: "npm"
     assignees:
       - "revi"
-    # npm package dependencies in the location of `go-revi-xyz/package.json`.
+    # npm package dependencies in the location of `docusaurus/package.json`.
     directory: "docusaurus/"
     schedule:
       interval: "weekly"
