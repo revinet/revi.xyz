@@ -16,7 +16,7 @@ hide_table_of_contents: true
 # revi
 
 - [he/him unless otherwise noted](/gender-pronounciation).
-- [What time is it in my timezone](https://k.revi.xyz/time.php)?
+- [What time is it in my timezone](/time)?
 
 ## About
 
