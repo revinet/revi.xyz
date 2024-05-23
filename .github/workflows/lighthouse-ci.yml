@@ -3,6 +3,7 @@ on:
   push:
     branches:
       - master
+      - arcpatch-D**
     paths:
       - 'docusaurus/**'
   workflow_dispatch:
