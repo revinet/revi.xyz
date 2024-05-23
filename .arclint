@@ -15,6 +15,7 @@
         "(^\\.arcconfig$)",
         "(^\\.arclint$)",
         "(^\\.arcunit$)",
+        "(^\\.eslintrc$)",
         "(^\\.json$)"
       ]
     },

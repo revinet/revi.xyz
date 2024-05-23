@@ -1,0 +1,31 @@
+{
+  "ci": {
+    "collect": {
+      "numberOfRuns": 5,
+      "staticDistDir": "./build",
+      "url": [
+        "http://localhost/index.html",
+        "http://localhost/contact-method/index.html",
+        "http://localhost/gender-pronounciation/index.html",
+        "http://localhost/blog/index.html",
+        "http://localhost/blog/archive/index.html",
+        "http://localhost/blog/tags/index.html",
+        "http://localhost/blog/2024/02/16/uplus-tv-uhd3-dns-over-tls/index.html",
+        "http://localhost/time/index.html",
+        "http://localhost/privacy-policy/index.html",
+        "http://localhost/ko/index.html",
+        "http://localhost/ko/contact-method/index.html",
+        "http://localhost/ko/gender-pronounciation/index.html",
+        "http://localhost/ko/blog/index.html",
+        "http://localhost/ko/blog/archive/index.html",
+        "http://localhost/ko/blog/tags/index.html",
+        "http://localhost/ko/blog/2024/02/16/uplus-tv-uhd3-dns-over-tls/index.html",
+        "http://localhost/ko/time/index.html",
+        "http://localhost/ko/privacy-policy/index.html"
+      ]
+    },
+    "upload": {
+      "target": "temporary-public-storage"
+    }
+  }
+}
