@@ -1,5 +1,13 @@
 /*
   Proven: proven.lol/335c2d
+  Accept-CH: Sec-CH-UA, Sec-CH-UA-Mobile, Sec-CH-UA-Platform, Sec-CH-UA-Full-Version-List
+
+/*.asc
+  X-Robots-Tag: noindex
+  Content-type: text/plain; charset=UTF-8
+
+/ko/*
+  X-Robots-Tag: noindex
 
 https://:project.pages.dev/*
   Link: <https://revi.xyz/:splat>; rel="canonical"
