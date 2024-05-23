@@ -3,7 +3,7 @@ date: 2021-10-20 04:35:42
 language: en
 authors:
     - revi
-tags: [Wikimedia, English]
+tags: [English, Enterprise, Wikimedia]
 ---
 
 # Feeling about Wikimedia Enterprise API
