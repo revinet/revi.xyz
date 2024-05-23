@@ -1,0 +1,14 @@
+{
+  "title": {
+    "message": "Cooking Pancakes",
+    "description": "The title for the blog used in SEO"
+  },
+  "description": {
+    "message": "Cannot cook one, though.",
+    "description": "The description for the blog used in SEO"
+  },
+  "sidebar.title": {
+    "message": "모든 글",
+    "description": "The label for the left sidebar"
+  }
+}

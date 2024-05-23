@@ -1,0 +1,50 @@
+{
+  "link.title.Sitemap": {
+    "message": "사이트맵",
+    "description": "The title of the footer links column with title=Sitemap in the footer"
+  },
+  "link.title.More": {
+    "message": "더 보기",
+    "description": "The title of the footer links column with title=More in the footer"
+  },
+  "link.title.Legal": {
+    "message": "법률",
+    "description": "The title of the footer links column with title=Legal in the footer"
+  },
+  "link.item.label.Wiki": {
+    "message": "위키",
+    "description": "The label of footer link with label=Wiki linking to https://revi.xyz/wiki"
+  },
+  "link.item.label.Discord": {
+    "message": "디스코드",
+    "description": "The label of footer link with label=Discord linking to https://revi.xyz/discord"
+  },
+  "link.item.label.Issue Tracker": {
+    "message": "이슈 트래커",
+    "description": "The label of footer link with label=Issue Tracker linking to https://revi.xyz/phab"
+  },
+  "link.item.label.Notes": {
+    "message": "노트",
+    "description": "The label of footer link with label=Notes linking to /blog"
+  },
+  "link.item.label.revi's time": {
+    "message": "레비의 시간대",
+    "description": "The label of footer link with label=revi's time linking to /time"
+  },
+  "link.item.label.GitHub": {
+    "message": "GitHub",
+    "description": "The label of footer link with label=GitHub linking to https://github.com/revinet/revi.xyz"
+  },
+  "link.item.label.Privacy Policy": {
+    "message": "개인정보 처리방침",
+    "description": "The label of footer link with label=Privacy Policy linking to /privacy-policy"
+  },
+  "link.item.label.License CC BY ND 2.0 KR": {
+    "message": "라이선스 CC BY ND 2.0 KR",
+    "description": "The label of footer link with label=License CC BY ND 2.0 KR linking to https://creativecommons.org/licenses/by-nd/2.0/kr/"
+  },
+  "copyright": {
+    "message": "Copyright © 2016 ~ 2024 revi. Licensed under CC BY ND 2.0 KR. Built with Docusaurus.",
+    "description": "The footer copyright"
+  }
+}

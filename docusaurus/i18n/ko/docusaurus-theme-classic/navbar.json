@@ -1,0 +1,30 @@
+{
+  "title": {
+    "message": "레비",
+    "description": "The title in the navbar"
+  },
+  "logo.alt": {
+    "message": "레비",
+    "description": "The alt text of navbar logo"
+  },
+  "item.label.revi's time": {
+    "message": "레비의 시간대",
+    "description": "Navbar item with label revi's time"
+  },
+  "item.label.Notes": {
+    "message": "노트",
+    "description": "Navbar item with label Notes"
+  },
+  "item.label.Wiki": {
+    "message": "위키",
+    "description": "Navbar item with label Wiki"
+  },
+  "item.label.Issue Tracker": {
+    "message": "이슈 트래커",
+    "description": "Navbar item with label Issue Tracker"
+  },
+  "item.label.GitHub": {
+    "message": "GitHub",
+    "description": "Navbar item with label GitHub"
+  }
+}
