@@ -99,3 +99,7 @@ Crawl-Delay: 5
 # Throttle BingBot
 User-agent: bingbot
 Crawl-delay: 5
+
+## Sitemap
+
+Sitemap: https://revi.xyz/sitemap.xml
