@@ -37,7 +37,7 @@ I'm an admin at [Korean Wikipedia](https://ko.wikipedia.org/), [Wikimedia Common
 
 ### Contacts
 
-- You might want to read [this guide](https://listed.to/p/3MXbHWDF5S) on best way to contact me.
+- You might want to read [this guide](/contact-methods) on best way to contact me.
 - [GitHub](https://github.com/revi)
 - [Email](mailto:revi@omglol.email)
 - [0xBEFF197A](https://revi.xyz/0xBEFF197A.asc)
