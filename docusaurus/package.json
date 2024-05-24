@@ -35,13 +35,26 @@
   },
   "browserslist": {
     "production": [
-      ">0.5%",
+      ">5%",
+      ">0.5% in KR",
+      "last 1 versions",
+      "last 3 firefox version",
+      "Firefox ESR",
+      "last 2 iOS major versions",
       "not dead",
       "not op_mini all"
     ],
     "development": [
-      "last 3 firefox version",
-      "last 5 safari version"
+      "last 3 chrome version",
+      "unreleased chrome versions",
+      "last 5 firefox version",
+      "unreleased firefox versions",
+      "Firefox ESR",
+      "last 1 iOS major versions",
+      "unreleased iOS versions",
+      "last 3 safari version",
+      "unreleased safari versions",
+      "not dead"
     ]
   },
   "engines": {
