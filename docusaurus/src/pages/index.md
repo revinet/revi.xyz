@@ -11,6 +11,25 @@ hide_table_of_contents: true
 <link rel="me" href="https://www.last.fm/user/revinim" />
 <link rel="me" href="https://stackoverflow.com/users/5089628/revi" />
 <link rel="me" href="https://meta.wikimedia.org/wiki/User:-revi" />
+<script type="application/ld+json">
+{JSON.stringify({
+  "@context": "https://schema.org",
+  "@type": "ProfilePage",
+  "mainEntity": {
+    "@type": "Person",
+    "name": "revi",
+    "alternateName": "Yongmin Hong",
+    "description": "Chief Laziness Officer appointed by myself.",
+    "image": "https://example.com/avatars/ahuff23.jpg",
+    "sameAs": [
+      "https://github.com/revi",
+      "https://meta.wikimedia.org/wiki/User:-revi",
+      "https://stackoverflow.com/users/5089628/revi",
+      "https://www.last.fm/user/revinim"
+      ]
+    }
+  })}
+</script>
 </head>
 
 # revi
