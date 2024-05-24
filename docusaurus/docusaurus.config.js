@@ -130,7 +130,14 @@ const config = {
       attributes: {
         rel: 'preconnect',
         href: 'https://cdnjs.cloudflare.com',
-      }
+      },
+    },
+    {
+      tagName: 'meta',
+      attributes: {
+        name: 'googlebot',
+        content: 'notranslate',
+      },
     }
   ],
 
