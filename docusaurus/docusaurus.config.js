@@ -164,12 +164,12 @@ const config = {
             position: 'left'
           },
           {
-            to: 'https://revi.xyz/wiki',
+            href: 'https://revi.xyz/wiki',
             label: 'Wiki',
             position: 'left'
           },
           {
-            to: 'https://revi.xyz/phab',
+            href: 'https://revi.xyz/phab',
             label: 'Issue Tracker',
             position: 'left'
           },
@@ -227,7 +227,7 @@ const config = {
               },
               {
                 label: 'License CC BY ND 2.0 KR',
-                to: 'https://creativecommons.org/licenses/by-nd/2.0/kr/',
+                href: 'https://creativecommons.org/licenses/by-nd/2.0/kr/',
               }
             ],
           }
