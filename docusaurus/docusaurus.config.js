@@ -54,7 +54,7 @@ const config = {
         },
         sitemap: {
           lastmod: 'datetime',
-          ignorepatterns: [
+          ignorePatterns: [
             '/blog/tags/**',
             '/ko/**',
           ],
