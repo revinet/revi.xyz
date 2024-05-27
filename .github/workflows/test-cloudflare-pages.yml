@@ -13,8 +13,8 @@ jobs:
     name: Build Docusaurus
     runs-on: ubuntu-latest
     # defaults:
-      # run:
-        # working-directory: docusaurus
+    #   run:
+    #     working-directory: docusaurus
     steps:
       - uses: actions/checkout@v4
         with:
@@ -28,7 +28,7 @@ jobs:
       - name: Build website
         run: npm run build --workspace=docusaurus
       - name: Deploy to Cloudflare Pages
-        run: npx wrangler pages deploy {{ $github.workspace }}/docusaurus/build --project-name=revi-xyz --branch master --commit-dirty=true
+        run: npx wrangler pages deploy ${{ github.workspace }}/docusaurus/build --project-name=revi-xyz --branch master --commit-dirty=true
         env:
           CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
           CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
