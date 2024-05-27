@@ -140,6 +140,6 @@ dist
 
 ### LighthouseCI ###
 # Lighthouse reports
-docusaurus/.lighthouseci/
+.lighthouseci/
 
 # End of https://www.toptal.com/developers/gitignore/api/docusaurus,lighthouseci

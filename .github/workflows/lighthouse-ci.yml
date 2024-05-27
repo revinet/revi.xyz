@@ -12,16 +12,16 @@ jobs:
   lighthouseci:
     name: 'Lighthouse CI'
     runs-on: ubuntu-latest
-    defaults:
-      run:
-        working-directory: docusaurus
+    #defaults:
+    #  run:
+    #    working-directory: docusaurus
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
         with:
           node-version: 20
       - run: npm ci
-      - run: npm run build
+      - run: npm run build --workspace=docusaurus
       - run: npx lhci autorun
         env:
           LHCI_GITHUB_APP_TOKEN: ${{ secrets.LHCI_GITHUB_APP_TOKEN }}

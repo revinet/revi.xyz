@@ -2,7 +2,7 @@
   "ci": {
     "collect": {
       "numberOfRuns": 5,
-      "staticDistDir": "./build",
+      "staticDistDir": "docusaurus/build",
       "url": [
         "http://localhost/index.html",
         "http://localhost/contact-method/index.html",
