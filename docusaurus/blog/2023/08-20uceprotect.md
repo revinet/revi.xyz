@@ -2,7 +2,7 @@
 date: 2023-08-20 03:04
 language: en
 authors:
-    - revi
+  - revi
 tags: [English, UCEProtect]
 ---
 
@@ -15,7 +15,9 @@ I see their business strategy… not morally right. (Compilation and observation
 - [Blog post by Sucuri](https://blog.sucuri.net/2021/02/uceprotect-when-rbls-go-bad.html)
 - [Linode forum: uceprotect.net has us blacklisted?](https://www.linode.com/community/questions/2324/uceprotectnet-has-us-blacklisted)
 - [Socking at English Wikipedia](https://en.wikipedia.org/wiki/Category:Wikipedia_sockpuppets_of_UrsMair) [^2]
+
 <!-- truncate -->
+
 Well, there's even [dedicated hall of shame](https://uceprotect.wtf) but I thought this page was a bit… aggressive, so I created this page just to my own reference.
 
 And if you ask,

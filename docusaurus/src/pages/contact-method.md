@@ -9,10 +9,7 @@ These are the best way to contact me.
 
 ## Email
 
-For a longer-form message (more than 5-10 chat messages in a batch),
-email me at `revi@omglol.email`. However, try other medium below
-if your message is questions or other messages, as it takes a bit of
-time to read your email.
+For a longer-form message (more than 5-10 chat messages in a batch), email me at `revi@omglol.email`. However, try other medium below if your message is questions or other messages, as it takes a bit of time to read your email.
 
 If your topic is about wiki (wikimedia, mediawiki, or other non-Wikimedia wikis), you may want to email `revi@revi.wiki` instead of the general mailbox.
 
@@ -42,8 +39,7 @@ You can message me via Matrix at [@revi:omg.lol](https://matrix.to/#/@revi:omg.l
 
 ## Telegram/Signal
 
-If you already have this contact method, you are free to contact me via
-these messengers but they are deprecated and should not be relied on.
+If you already have this contact method, you are free to contact me via these messengers but they are deprecated and should not be relied on.
 
 ## Phone numbers
 

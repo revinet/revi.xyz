@@ -31,7 +31,7 @@ const config = {
   // may want to replace "en" with "zh-Hans".
   i18n: {
     defaultLocale: 'en',
-    locales: ['en','ko'],
+    locales: ['en', 'ko'],
   },
 
   presets: [
@@ -54,10 +54,7 @@ const config = {
         },
         sitemap: {
           lastmod: 'datetime',
-          ignorePatterns: [
-            '/blog/tags/**',
-            '/ko/**',
-          ],
+          ignorePatterns: ['/blog/tags/**', '/ko/**'],
           filename: 'sitemap.xml',
         },
         theme: {
@@ -106,9 +103,9 @@ const config = {
     {
       tagName: 'link',
       attributes: {
-        rel: "stylesheet",
-        as: "style",
-        href: "https://cdnjs.cloudflare.com/ajax/libs/pretendard/1.3.9/static/pretendard.min.css",
+        rel: 'stylesheet',
+        as: 'style',
+        href: 'https://cdnjs.cloudflare.com/ajax/libs/pretendard/1.3.9/static/pretendard.min.css',
       },
     },
     {
@@ -138,7 +135,7 @@ const config = {
         name: 'googlebot',
         content: 'notranslate',
       },
-    }
+    },
   ],
 
   themeConfig:
@@ -155,23 +152,23 @@ const config = {
         items: [
           {
             to: '/time',
-            label: 'revi\'s time',
-            position: 'left'
+            label: "revi's time",
+            position: 'left',
           },
           {
             to: '/blog',
             label: 'Notes',
-            position: 'left'
+            position: 'left',
           },
           {
             href: 'https://revi.xyz/wiki',
             label: 'Wiki',
-            position: 'left'
+            position: 'left',
           },
           {
             href: 'https://revi.xyz/phab',
             label: 'Issue Tracker',
-            position: 'left'
+            position: 'left',
           },
           // {type: 'localeDropdown', position: 'right'},
           {
@@ -209,7 +206,7 @@ const config = {
                 to: '/blog',
               },
               {
-                label: 'revi\'s time',
+                label: "revi's time",
                 to: '/time',
               },
               {
@@ -228,16 +225,16 @@ const config = {
               {
                 label: 'License CC BY ND 2.0 KR',
                 href: 'https://creativecommons.org/licenses/by-nd/2.0/kr/',
-              }
+              },
             ],
-          }
+          },
         ],
         copyright: `Copyright © 2016 ~ ${new Date().getFullYear()} revi. Licensed under CC BY ND 2.0 KR. Image license might differ. Built with Docusaurus.`,
       },
       prism: {
         theme: prismThemes.github,
         darkTheme: prismThemes.dracula,
-      }
+      },
     }),
   // clientModules: ['./src/components/timer/index.js'],
 };

@@ -3,44 +3,43 @@
 
 version: 2
 updates:
-
   # Maintain dependencies for GitHub Actions
-  - package-ecosystem: "github-actions"
+  - package-ecosystem: 'github-actions'
     assignees:
-      - "revi"
+      - 'revi'
     # Workflow files stored in the default location of `.github/workflows`.
     # You don't need to specify `/.github/workflows` for `directory`.
     # You can use `directory: "/"`.
-    directory: "/"
+    directory: '/'
     schedule:
-      interval: "weekly"
-      day: "monday"
-      time: "10:00"
-      timezone: "Asia/Seoul"
-    target-branch: "master"
+      interval: 'weekly'
+      day: 'monday'
+      time: '10:00'
+      timezone: 'Asia/Seoul'
+    target-branch: 'master'
 
   # Maintain dependencies for `npm` @ rootdir
-  - package-ecosystem: "npm"
+  - package-ecosystem: 'npm'
     assignees:
-      - "revi"
+      - 'revi'
     # npm package dependencies in the location of `/package.json`.
-    directory: "/"
+    directory: '/'
     schedule:
-      interval: "weekly"
-      day: "monday"
-      time: "10:00"
-      timezone: "Asia/Seoul"
-    target-branch: "master"
+      interval: 'weekly'
+      day: 'monday'
+      time: '10:00'
+      timezone: 'Asia/Seoul'
+    target-branch: 'master'
 
   # Maintain dependencies for `npm` @ Docusaurus
-  - package-ecosystem: "npm"
+  - package-ecosystem: 'npm'
     assignees:
-      - "revi"
+      - 'revi'
     # npm package dependencies in the location of `docusaurus/package.json`.
-    directory: "docusaurus/"
+    directory: 'docusaurus/'
     schedule:
-      interval: "weekly"
-      day: "monday"
-      time: "10:00"
-      timezone: "Asia/Seoul"
-    target-branch: "master"
+      interval: 'weekly'
+      day: 'monday'
+      time: '10:00'
+      timezone: 'Asia/Seoul'
+    target-branch: 'master'

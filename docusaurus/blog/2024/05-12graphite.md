@@ -1,7 +1,7 @@
 ---
 date: 2024-05-12T10:05
 authors:
-    - revi
+  - revi
 title: Graphite and lol
 tags: [English, Phabricator]
 draft: true

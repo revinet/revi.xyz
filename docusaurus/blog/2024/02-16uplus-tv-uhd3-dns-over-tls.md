@@ -3,12 +3,14 @@ date: 2024-02-16T20:58
 title: U+TV UHD3 DNS Over TLS
 language: ko
 authors:
-    - revi
+  - revi
 tags: [android, android TV, dns, dns over TLS, LGU+, tv]
 ---
 
 원래 3번 안 하고 4번만 해서 적용 안 돼서 왜 적용 안 되는지 찾아보던 글.
+
 <!-- truncate -->
+
 ## 원격 접속
 
 (개발자 모드, ADB 승인까지는 완료했다고 가정)

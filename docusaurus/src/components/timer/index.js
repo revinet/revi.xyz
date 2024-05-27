@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, {useState, useEffect} from 'react';
 import Link from '@docusaurus/Link';
 
 function Clock() {
@@ -23,8 +23,8 @@ function Clock() {
 
   return (
     <p>
-      It is {nowTime} in <code>Asia/Seoul</code> where{' '}
-      <Link to="/">revi</Link> lives.
+      It is {nowTime} in <code>Asia/Seoul</code> where <Link to="/">revi</Link>{' '}
+      lives.
     </p>
   );
 }

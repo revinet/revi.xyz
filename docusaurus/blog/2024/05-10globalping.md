@@ -13,11 +13,12 @@ It looked pretty nice, except after about a week of sporadic tests, most of the 
 
 They do have an API that [responds with a list of all available nodes](https://www.jsdelivr.com/docs/api.globalping.io#get-/v1/probes), so let's do some calculation from this. (The full result made at <code>2024-05-10T09:19:46Z</code>, and is recorded at [P100](https://issuetracker.revi.xyz/P100).)
 
-* datacenter-network: 832
-* eyeball-network[^1]: 183
-* total nodes: 1015
+- datacenter-network: 832
+- eyeball-network[^1]: 183
+- total nodes: 1015
 
 So, it looks like datacenter network is about 81.97% of the whole nodes, while the eyeball network is 18.03%. I wouldn't really consider 18% of nodes in regular residential/business network to be enough for measuring ordinary users' traffic.
+
 <!-- truncate -->
 
 In comparison, [RIPE Atlas](https://atlas.ripe.net) has 12905[^2] probes, and [their API](https://atlas.ripe.net/docs/apis/rest-api-reference/#probes)[^3] suggests there are approximately 8055 nodes[^4]. You get the size difference.

@@ -39,10 +39,9 @@ hide_table_of_contents: true
 
 ## About
 
-*In this [Korean name](https://en.wikipedia.org/wiki/Korean_name), the family name is [Hong](https://en.wikipedia.org/wiki/Hong_(Korean_surname)).*
+_In this [Korean name](https://en.wikipedia.org/wiki/Korean_name), the family name is [Hong](<https://en.wikipedia.org/wiki/Hong_(Korean_surname)>)._
 
-Hey, I'm Hong Yongmin, more commonly known as `revi` around the net.
-A random internet nerd editing Wikipedia and dealing with spammers. Outside that, I play games and comment on almost every weird things.
+Hey, I'm Hong Yongmin, more commonly known as `revi` around the net. A random internet nerd editing Wikipedia and dealing with spammers. Outside that, I play games and comment on almost every weird things.
 
 I'm an admin at [Korean Wikipedia](https://ko.wikipedia.org/), [Wikimedia Commons](https://commons.wikimedia.org/), and former [Wikidata admin](https://wikidata.org) and [Steward](https://meta.wikimedia.org/wiki/S).
 
