@@ -1,6 +1,9 @@
 {
   "devDependencies": {
+    "prettier": "3.2.5",
     "wrangler": "^3.57.1"
   },
-  "workspaces": ["./docusaurus"]
+  "workspaces": [
+    "./docusaurus"
+  ]
 }
