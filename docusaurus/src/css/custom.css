@@ -14,12 +14,12 @@
 @font-face {
   font-family: 'Noto Serif KR';
   src: url('/fonts/Noto Serif KR/NotoSerifKR-Regular.otf') format('otf');
-}
+}*/
 
 @font-face {
   font-family: 'Pretendard';
-  src: url('/fonts/Pretendard/Pretendard-Regular.otf') format('otf');
-}*/
+  src: url('/fonts/Pretendard/Pretendard-Regular.woff2') format('woff2');
+}
 
 @font-face {
   font-family: '0xProto';
