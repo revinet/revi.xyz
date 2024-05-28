@@ -20,7 +20,7 @@ hide_table_of_contents: true
     "name": "revi",
     "alternateName": "Yongmin Hong",
     "description": "Chief Laziness Officer appointed by myself.",
-    "image": "https://example.com/avatars/ahuff23.jpg",
+    "image": "https://revi.xyz/img/logo.png",
     "sameAs": [
       "https://github.com/revi",
       "https://meta.wikimedia.org/wiki/User:-revi",
