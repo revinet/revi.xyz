@@ -1,6 +1,6 @@
 name: 'Deploy Cloudflare Pages'
 
-on:
+on:  # yamllint disable-line rule:truthy
   push:
     branches:
       - prod
@@ -12,9 +12,6 @@ jobs:
   build:
     name: Build Docusaurus
     runs-on: ubuntu-latest
-    #defaults:
-    #  run:
-    #    working-directory: docusaurus
     steps:
       - uses: actions/checkout@v4
         with:
@@ -28,6 +25,7 @@ jobs:
       - name: Build website
         run: npm run build --workspace=docusaurus
       - name: Deploy to Cloudflare Pages
+        # yamllint disable-line rule:line-length
         run: npx wrangler pages deploy ${{ github.workspace }}/docusaurus/build --project-name=revi-xyz --commit-dirty=true
         env:
           CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}

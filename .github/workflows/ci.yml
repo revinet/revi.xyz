@@ -1,5 +1,6 @@
 name: 'CI test'
-on:
+
+on:  # yamllint disable-line rule:truthy
   push:
     branches:
       - master
@@ -28,9 +29,6 @@ jobs:
   lighthouse-ci:
     name: 'Lighthouse CI'
     runs-on: ubuntu-latest
-    #defaults:
-    #  run:
-    #    working-directory: docusaurus
     steps:
       - uses: actions/checkout@v4
         name: 'Checkout'
