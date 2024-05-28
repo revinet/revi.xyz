@@ -103,14 +103,6 @@ const config = {
     {
       tagName: 'link',
       attributes: {
-        rel: 'stylesheet',
-        as: 'style',
-        href: 'https://cdnjs.cloudflare.com/ajax/libs/pretendard/1.3.9/static/pretendard.min.css',
-      },
-    },
-    {
-      tagName: 'link',
-      attributes: {
         rel: 'preconnect',
         href: 'https://fonts.gstatic.com',
       },
@@ -120,13 +112,6 @@ const config = {
       attributes: {
         rel: 'preconnect',
         href: 'https://fonts.googleapis.com',
-      },
-    },
-    {
-      tagName: 'link',
-      attributes: {
-        rel: 'preconnect',
-        href: 'https://cdnjs.cloudflare.com',
       },
     },
     {
