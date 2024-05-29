@@ -1,6 +1,13 @@
+/**
+ * @file Displays current date&time info for the place where revi currently is.
+ * @copyright Hong Yongmin 2024
+ * @license Apache-2.0
+ */
+
 import React, {useState, useEffect} from 'react';
 import Link from '@docusaurus/Link';
 
+/** Define the current date&time for revi. */
 function Clock() {
   const [date, setDate] = useState(new Date());
 
@@ -10,6 +17,7 @@ function Clock() {
     return () => clearInterval(timerID); // Cleanup function for timer
   }, []); // Empty dependency array to run only once
 
+  /** Tick the clock to update the clock timer every second. */
   function tick() {
     setDate(new Date());
   }
