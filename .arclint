@@ -1,10 +1,10 @@
 {
   "exclude": [
-    "(^package-lock.json$)",
+    "(^.gitignore$)",
+    "(^docusaurus/build/)",
     "(^docusaurus/package-lock.json$)",
     "(^node_modules/)",
-    "(^.gitignore$)",
-    "(^docusaurus/build/)"
+    "(^package-lock.json$)"
   ],
   "linters": {
     "chmod": {
@@ -16,15 +16,18 @@
         "(\\.css$)"
       ]
     },
+    "Generated": {
+      "type": "generated"
+    },
     "json": {
       "type": "json",
       "include": [
-        "(^\\.arcconfig$)",
-        "(^\\.arclint$)",
-        "(^\\.arcunit$)",
-        "(^\\.eslintrc$)",
-        "(^\\.imgbotconfig$)",
-        "(\\.json$)"
+        "(\\.arclint$)",
+        "(\\.arcunit$)",
+        "(\\.eslintrc$)",
+        "(\\.imgbotconfig$)",
+        "(\\.json$)",
+        "(^\\.arcconfig$)"
       ]
     },
     "merge-conflict": {

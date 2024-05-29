@@ -31,7 +31,10 @@ const config = {
   // may want to replace "en" with "zh-Hans".
   i18n: {
     defaultLocale: 'en',
-    locales: ['en', 'ko'],
+    locales: [
+      'en',
+      'ko'
+    ],
   },
 
   presets: [
@@ -54,7 +57,10 @@ const config = {
         },
         sitemap: {
           lastmod: 'datetime',
-          ignorePatterns: ['/blog/tags/**', '/ko/**'],
+          ignorePatterns: [
+            '/blog/tags/**',
+            '/ko/**'
+          ],
           filename: 'sitemap.xml',
         },
         theme: {
@@ -221,7 +227,6 @@ const config = {
         darkTheme: prismThemes.dracula,
       },
     }),
-  // clientModules: ['./src/components/timer/index.js'],
 };
 
 export default config;
