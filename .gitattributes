@@ -1,0 +1,14 @@
+*        text=auto
+*.sh     text=auto  eol=lf
+
+*.asc    binary
+*.gif    binary
+*.jpg    binary
+*.jpeg   binary
+*.png    binary
+*.woff2  binary
+
+*.css    diff=css
+*.html   diff=html
+*.md     diff=markdown
+*.sh     diff=bash
