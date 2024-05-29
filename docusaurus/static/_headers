@@ -6,8 +6,16 @@
   X-Robots-Tag: noindex
   Content-type: text/plain; charset=UTF-8
 
+/assets/
+  CDN-Cache-Control: public
+  CDN-Cache-Control: max-age: 32000000
+
 /ko/*
   X-Robots-Tag: noindex
+
+/ko/assets/
+  CDN-Cache-Control: public
+  CDN-Cache-Control: max-age: 32000000
 
 https://:project.pages.dev/*
   Link: <https://revi.xyz/:splat>; rel="canonical"
