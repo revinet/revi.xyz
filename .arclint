@@ -3,11 +3,18 @@
     "(^package-lock.json$)",
     "(^docusaurus/package-lock.json$)",
     "(^node_modules/)",
-    "(^.gitignore$)"
+    "(^.gitignore$)",
+    "(^docusaurus/build/)"
   ],
   "linters": {
     "chmod": {
       "type": "chmod"
+    },
+    "css": {
+      "type": "csslint",
+      "include": [
+        "(\\.css$)"
+      ]
     },
     "json": {
       "type": "json",
@@ -16,7 +23,8 @@
         "(^\\.arclint$)",
         "(^\\.arcunit$)",
         "(^\\.eslintrc$)",
-        "(^\\.json$)"
+        "(^\\.imgbotconfig$)",
+        "(\\.json$)"
       ]
     },
     "merge-conflict": {
