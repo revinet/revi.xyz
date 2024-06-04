@@ -35,6 +35,19 @@ const config = {
       'en',
       'ko'
     ],
+    localeConfigs: {
+      en: {
+        label: 'English',
+        direction: 'ltr',
+        htmlLang: 'en-US',
+        calendar: 'iso8601',
+      },
+      ko: {
+        label: 'Korean',
+        direction: 'ltr',
+        htmlLang: 'ko-KR',
+      },
+    },
   },
 
   presets: [
@@ -116,10 +129,17 @@ const config = {
     {
       tagName: 'link',
       attributes: {
-        rel: 'preconnect',
-        href: 'https://fonts.googleapis.com',
+        rel: 'dns-prefetch',
+        href: 'https://r2.revicdn.net',
       },
     },
+    // {
+    //  tagName: 'link',
+    //  attributes: {
+    //    rel: 'prefetch',
+    //    href: 'https://revi.xyz/assets/styles.css',
+    //  },
+    //},
     {
       tagName: 'meta',
       attributes: {
