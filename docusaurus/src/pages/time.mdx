@@ -1,11 +1,19 @@
 # What time is it in revi's timezone?
 
 import Clock from '@site/src/components/timer'; // Import the Clock component
+import Link from '@docusaurus/Link';
 
 :::info
 
-This clock works via the client-side JavaScript, and if you've disabled it, it might not work correctly.
+This clock works via the client-side JavaScript.
+If you disabled it, it might not work correctly.
+(I haven't tested no-JavaScript env, so I don't know for sure.)
 
 :::
 
 <Clock />
+
+<!-- When you update timezone here...
+update ../src/components/timer/index.js as well. -->
+To check the timezone differences with your timezone, check
+<Link to="https://www.timeanddate.com/time/zones/kst">timeanddate.com</Link>.

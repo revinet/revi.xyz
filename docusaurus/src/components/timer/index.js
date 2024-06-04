@@ -4,6 +4,9 @@
  * @license Apache-2.0
  */
 
+// When you update timezone here...
+// update ../src/components/timer/index.js as well.
+
 import React, {useState, useEffect} from 'react';
 import Link from '@docusaurus/Link';
 
