@@ -24,6 +24,9 @@ So, it looks like datacenter network is about 81.97% of the whole nodes, while t
 In comparison, [RIPE Atlas](https://atlas.ripe.net) has 12905[^2] probes, and [their API](https://atlas.ripe.net/docs/apis/rest-api-reference/#probes)[^3] suggests there are approximately 8055 nodes[^4]. You get the size difference.
 
 [^1]: It looks like their own description of non-datacenter'?
+
 [^2]: [RIPE Atlas Coverage and Statistics](https://atlas.ripe.net/coverage/) has 12905 probes, HW nodes and SW nodes combined. ([Link to screenshot](atlas-screenshot.png).)
+
 [^3]: I used `GET /api/v2/probes` with `tags=Home` param. [response](https://issuetracker.revi.xyz/P101).
+
 [^4]: However it should be noted that, in RIPE Atlas, probe owners can freely set this tag as they wish.

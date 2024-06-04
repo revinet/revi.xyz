@@ -31,6 +31,7 @@ const config = {
   // may want to replace "en" with "zh-Hans".
   i18n: {
     defaultLocale: 'en',
+    // prettier-ignore
     locales: [
       'en',
       'ko'
@@ -43,7 +44,7 @@ const config = {
         calendar: 'iso8601',
       },
       ko: {
-        label: 'Korean',
+        label: '한국어',
         direction: 'ltr',
         htmlLang: 'ko-KR',
       },
@@ -70,6 +71,7 @@ const config = {
         },
         sitemap: {
           lastmod: 'datetime',
+          // prettier-ignore
           ignorePatterns: [
             '/blog/tags/**',
             '/ko/**'
