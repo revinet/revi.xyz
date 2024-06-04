@@ -85,6 +85,10 @@ const config = {
     ],
   ],
 
+  markdown: {
+    format: 'detect',
+  },
+
   headTags: [
     {
       tagName: 'link',
@@ -131,8 +135,15 @@ const config = {
     {
       tagName: 'link',
       attributes: {
-        rel: 'dns-prefetch',
-        href: 'https://r2.revicdn.net',
+        rel: 'prefetch',
+        href: 'https://r2.revicdn.net/bbip-bg.png',
+      },
+    },
+    {
+      tagName: 'link',
+      attributes: {
+        rel: 'prefetch',
+        href: 'https://r2.revicdn.net/pfp2.png',
       },
     },
     // {
