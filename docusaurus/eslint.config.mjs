@@ -10,15 +10,16 @@ export default [
       'build/',
       'node_modules/',
       '*.config.js',
-      'sidebars.js'
+      'sidebars.js',
     ],
   },
   pluginJs.configs.recommended,
-  pluginReactConfig, {
-    plugins: { '@docusaurus': docusaurus },
+  pluginReactConfig,
+  {
+    plugins: {'@docusaurus': docusaurus},
     //extends: ['plugin:@docusaurus/recommended'],
     rules: {
-      "no-unused-vars": "warn",
+      'no-unused-vars': 'warn',
       //'@docusaurus/no-untranslated-text': [
       //  'warn',
       //  {ignoredStrings: ['·', '—', 'x']},
