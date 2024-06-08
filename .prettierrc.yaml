@@ -3,6 +3,6 @@
 # Prettier configuration
 bracketSpacing: false
 bracketSameLine: true
-proseWrap: never
+proseWrap: preserve
 singleQuote: true
 trailingComma: all

@@ -11,7 +11,7 @@ JsDelivr's [2024-05-02 outage](https://www.jsdelivr.com/blog/jsdelivr-may-outage
 
 It looked pretty nice, except after about a week of sporadic tests, most of the probes there seems to be AWS, Google Cloud, Oracle, Vultr, and other datacenter network.
 
-They do have an API that [responds with a list of all available nodes](https://www.jsdelivr.com/docs/api.globalping.io#get-/v1/probes), so let's do some calculation from this. (The full result made at <code>2024-05-10T09:19:46Z</code>, and is recorded at [P100](https://issuetracker.revi.xyz/P100).)
+They do have an API that [responds with a list of all available nodes](https://www.jsdelivr.com/docs/api.globalping.io#get-/v1/probes), so let's do some calculation from this. (The full result made at `2024-05-10T09:19:46Z`, and is recorded at [P100](https://issuetracker.revi.xyz/P100).)
 
 - datacenter-network: 832
 - eyeball-network[^1]: 183
