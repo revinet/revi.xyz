@@ -6,6 +6,9 @@
   X-Robots-Tag: noindex
   Content-type: text/plain; charset=UTF-8
 
+/webfinger.json
+  Content-type: application/jrd+json; charset=UTF-8
+
 /assets/
   CDN-Cache-Control: public
   CDN-Cache-Control: max-age: 32000000

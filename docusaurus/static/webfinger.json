@@ -1,0 +1,145 @@
+{
+  "subject": "acct:revi@revi.xyz",
+  "aliases": [
+    "mailto:revi@omglol.email",
+    "https://revi.xyz/",
+    "https://revi.wiki/",
+    "matrix:u/revi:omg.lol",
+    "irc://irc.libera.chat/revi,isuser",
+    "irc://irc.oftc.net/revi,isuser",
+    "irc://irc.snoonet.org/revi,isuser",
+    "irc://irc.tilde.chat/revi,isuser",
+    "https://old.sharlayan.city/@revi",
+    "https://old.sharlayan.city/users/revi"
+  ],
+  "links": [
+    {
+      "rel": "http://webfinger.net/rel/avatar",
+      "href": "https://revi.xyz/img/logo.png",
+      "type": "image/png"
+    },
+    {
+      "rel": "canonical_uri",
+      "href": "https://revi.xyz/",
+      "type": "text/html"
+    },
+    {
+      "rel": "http://webfinger.net/rel/profile-page",
+      "href": "https://revi.xyz/",
+      "type": "text/html"
+    },
+    {
+      "rel": "http://microformats.org/profile/hcard",
+      "href": "https://revi.xyz/",
+      "type": "text/html"
+    },
+    {
+      "rel": "self",
+      "type": "application/activity+json",
+      "href": "https://old.sharlayan.city/users/revi"
+    },
+    {
+      "rel": "http://webfinger.net/rel/profile-page",
+      "href": "https://meta.wikimedia.org/wiki/User:-revi",
+      "type": "text/html"
+    },
+    {
+      "rel": "http://webfinger.net/rel/profile-page",
+      "href": "https://stackoverflow.com/users/5089628/revi",
+      "type": "text/html"
+    },
+    {
+      "rel": "http://webfinger.net/rel/profile-page",
+      "href": "https://www.last.fm/user/revinim",
+      "type": "text/html"
+    },
+    {
+      "rel": "http://webfinger.net/rel/profile-page",
+      "href": "https://codeberg.org/revi",
+      "type": "text/html"
+    },
+    {
+      "rel": "http://webfinger.net/rel/profile-page",
+      "href": "https://github.com/revi",
+      "type": "text/html"
+    },
+    {
+      "rel": "http://webfinger.net/rel/profile-page",
+      "href": "https://sr.ht/~revi",
+      "type": "text/html"
+    },
+    {
+      "rel": "http://webfinger.net/rel/profile-page",
+      "href": "https://gitlab.com/revi",
+      "type": "text/html"
+    },
+    {
+      "rel": "http://webfinger.net/rel/profile-page",
+      "href": "https://gitlab.wikimedia.org/revi",
+      "type": "text/html"
+    },
+    {
+      "rel": "http://webfinger.net/rel/profile-page",
+      "href": "https://salsa.debian.org/revi",
+      "type": "text/html"
+    },
+    {
+      "rel": "http://webfinger.net/rel/profile-page",
+      "href": "https://launchpad.net/~revi",
+      "type": "text/html"
+    },
+    {
+      "rel": "http://webfinger.net/rel/profile-page",
+      "href": "https://bugzilla.mozilla.org/user_profile?user_id=509779",
+      "type": "text/html"
+    },
+    {
+      "rel": "http://webfinger.net/rel/profile-page",
+      "href": "https://pinboard.in/u:revi",
+      "type": "text/html"
+    },
+    {
+      "rel": "http://webfinger.net/rel/profile-page",
+      "href": "https://archive.org/details/@reviwm",
+      "type": "text/html"
+    },
+    {
+      "rel": "http://webfinger.net/rel/profile-page",
+      "href": "https://liberapay.com/revi/",
+      "type": "text/html"
+    },
+    {
+      "rel": "http://webfinger.net/rel/profile-page",
+      "href": "https://lobste.rs/u/revi",
+      "type": "text/html"
+    },
+    {
+      "rel": "http://webfinger.net/rel/profile-page",
+      "href": "https://news.ycombinator.com/user?id=revi",
+      "type": "text/html"
+    },
+    {
+      "rel": "http://webfinger.net/rel/profile-page",
+      "href": "https://keybase.io/revi",
+      "type": "text/html"
+    },
+    {
+      "rel": "pgpkey",
+      "type": "application/pgp-keys",
+      "href": "https://revi.xyz/0xEA100E94.asc",
+      "properties": {
+        "fingerprint": "12DD5306418C8E0A8F55761D1EB4F6CEEA100E94",
+        "algorithm": "rsa4096"
+      }
+    },
+    {
+      "rel": "pgpkey",
+      "type": "application/pgp-keys",
+      "href": "https://revi.xyz/0xBEFF197A.asc",
+      "properties": {
+        "fingerprint": "947F156F16250DE39788C3C35B625DA5BEFF197A",
+        "algorithm": "rsa4096"
+      }
+    }
+  ]
+}
