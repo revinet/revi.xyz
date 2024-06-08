@@ -15,6 +15,20 @@ User-agent: AdsBot-Google-Mobile
 Allow: /ads.txt
 Disallow: /
 
+# Block Peer39, for same reason as Google Ads are not welcome:
+# > Enabling our crawler to access your site offers several significant benefits
+# > to you as a publisher. By allowing us access, you enable the maximum number
+# > of advertisers to confidently purchase advertising space on your pages. Our
+# > comprehensive data insights help advertisers understand the suitability and
+# > context of your content, ensuring that their ads align with your audience's
+# > interests and needs. This alignment leads to improved user experiences,
+# > increased engagement, and ultimately, higher revenue potential for
+# > your publication.
+# https://www.peer39.com/crawler-notice
+User-agent: peer39_crawler
+User-Agent: peer39_crawler/1.0
+Disallow: /
+
 # ChatGPT Crawlers are also not welcome
 # Ref: https://platform.openai.com/docs/plugins/bot
 User-agent: ChatGPT-User
@@ -36,6 +50,12 @@ Disallow: /
 # AI Data Scraper
 # https://darkvisitors.com/agents/ccbot
 
+# AI Data Scraper
+# https://darkvisitors.com/agents/claudebot
+
+User-agent: ClaudeBot
+Disallow: /
+
 User-agent: CCBot
 Disallow: /
 
@@ -51,6 +71,30 @@ Disallow: /
 User-agent: FacebookBot
 Disallow: /
 
+# AI Data Scraper
+# https://darkvisitors.com/agents/omgili
+
+User-agent: omgili
+Disallow: /
+
+# Undocumented AI Agent
+# https://darkvisitors.com/agents/anthropic-ai
+
+User-agent: anthropic-ai
+Disallow: /
+
+# Undocumented AI Agent
+# https://darkvisitors.com/agents/claude-web
+
+User-agent: Claude-Web
+Disallow: /
+
+# Undocumented AI Agent
+# https://darkvisitors.com/agents/cohere-ai
+
+User-agent: cohere-ai
+Disallow: /
+
 # Block SemrushBot
 User-Agent: SemrushBot
 Disallow: /
@@ -59,8 +103,52 @@ Disallow: /
 User-agent: AhrefsBot
 Disallow: /
 
-# Block Bytespider
-User-agent: Bytespider
+# Borrowing from https://www.videolan.org/robots.txt begins.
+
+# > This robot collects content from the Internet for the sole purpose of
+# > helping educational institutions prevent plagiarism. [...] we compare
+# > student papers against the content we find on the Internet to see if we
+# > can find similarities.
+# http://www.turnitin.com/robot/crawlerinfo.html
+
+User-Agent: TurnitinBot
+Disallow: /
+
+# > NameProtect engages in crawling activity in search of a wide range of
+# > brand and other intellectual property violations that may be of interest
+# > to our clients.
+# http://www.nameprotect.com/botinfo.html
+User-Agent: NPBot
+Disallow: /
+
+# > iThenticateÂ® is a new service we have developed to combat the piracy
+# > of intellectual property and ensure the originality of written work for#
+# > publishers, non-profit agencies, corporations, and newspapers.
+# (http://www.slysearch.com/)
+User-Agent: SlySearch
+Disallow: /
+# Borrowing from https://www.videolan.org/robots.txt ends.
+
+# > BLEXBot assists internet marketers to get information on the link structure
+# > of sites and their interlinking on the web, to avoid any technical and
+# > possible legal issues and improve overall online experience.
+# http://webmeup-crawler.com/
+User-Agent: BLEXBot
+Disallow: /
+
+# > Providing Intellectual Property professionals with superior brand protection
+# > services by artfully merging the latest technology with expert analysis.
+# https://www.checkmarknetwork.com/spider.html/
+User-agent: CheckMarkNetwork/1.0 (+https://www.checkmarknetwork.com/spider.html)
+Disallow: /
+
+# > Stop trademark violations and affiliate non-compliance in paid search.
+# > Automatically monitor your partner and affiliates’ online marketing to
+# > protect yourself from harmful brand violations and regulatory risks. We
+# > regularly crawl websites on behalf of our clients to ensure content
+# > compliance with brand and regulatory guidelines.
+# https://www.brandverity.com/why-is-brandverity-visiting-me
+User-agent: BrandVerity/1.0
 Disallow: /
 
 # Block PetalBot
@@ -103,6 +191,6 @@ Crawl-Delay: 5
 User-agent: bingbot
 Crawl-delay: 5
 
-## Sitemap
+# Sitemap
 
 Sitemap: https://revi.xyz/sitemap.xml
