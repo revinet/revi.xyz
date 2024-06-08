@@ -25,7 +25,7 @@ jobs:
       - name: 'Install dependencies'
         run: npm ci
       - name: 'Build website'
-        run: npm run build --workspace=docusaurus
+        run: npm run dbuild
       - name: 'Deploy to Cloudflare Pages'
         # yamllint disable-line rule:line-length
         run: npx wrangler pages deploy ${{ github.workspace }}/docusaurus/build --project-name=revi-xyz --commit-dirty=true

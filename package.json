@@ -11,6 +11,16 @@
     "esversion": 6,
     "node": true
   },
+  "scripts": {
+    "alint": "arc lint",
+    "dbuild": "cd docusaurus && docusaurus build",
+    "dserve": "cd docusaurus && docusaurus serve",
+    "lighthouse": "lhci autorun",
+    "lint:eslint": "cd docusaurus && eslint .",
+    "lint:test": "arc lint && prettier --check .",
+    "pcheck": "prettier --check .",
+    "pwrite": "prettier --write ."
+  },
   "workspaces": [
     "./docusaurus"
   ]
