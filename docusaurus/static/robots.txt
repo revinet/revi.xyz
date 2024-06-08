@@ -6,10 +6,13 @@ Disallow: /cdn-cgi/
 
 # Google Ads are not welcome
 User-agent: Mediapartners-Google
+Allow: /ads.txt
 Disallow: /
 User-agent: AdsBot-Google
+Allow: /ads.txt
 Disallow: /
 User-agent: AdsBot-Google-Mobile
+Allow: /ads.txt
 Disallow: /
 
 # ChatGPT Crawlers are also not welcome
