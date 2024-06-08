@@ -1,8 +1,15 @@
 {
   "devDependencies": {
+    "csslint": "^1.0.5",
+    "jshint": "^2.13.6",
+    "jsonlint": "^1.6.3",
     "prettier": "^3.3.0",
     "turbo": "^1.13.3",
     "wrangler": "^3.58.0"
+  },
+  "jshintConfig": {
+    "esversion": 6,
+    "node": true
   },
   "workspaces": [
     "./docusaurus"

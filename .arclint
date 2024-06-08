@@ -1,8 +1,6 @@
 {
   "exclude": [
-    "(^.gitignore$)",
     "(^docusaurus/build/)",
-    "(^docusaurus/package-lock.json$)",
     "(^node_modules/)",
     "(^package-lock.json$)"
   ],
@@ -19,15 +17,22 @@
     "Generated": {
       "type": "generated"
     },
+    "jshint": {
+      "type": "jshint",
+      "include": [
+        "(\\.cjs$)",
+        "(\\.js$)",
+        "(\\.mjs$)"
+      ]
+    },
     "json": {
       "type": "json",
       "include": [
-        "(\\.arclint$)",
-        "(\\.arcunit$)",
-        "(\\.eslintrc$)",
+        "(^.arcconfig$)",
+        "(^.arclint$)",
+        "(^.arcunit$)",
         "(\\.imgbotconfig$)",
-        "(\\.json$)",
-        "(^\\.arcconfig$)"
+        "(\\.json$)"
       ]
     },
     "merge-conflict": {
@@ -42,11 +47,13 @@
     "text": {
       "type": "text",
       "exclude": [
-        "(\\.md$)"
+        "(^.gitignore$)",
+        "(\\.md$)",
+        "(\\.mdx$)"
       ],
       "text.max-line-length": 80,
       "severity": {
-        "1": "advice",
+        "1": "autofix",
         "2": "advice",
         "3": "advice",
         "5": "disabled"
@@ -55,10 +62,12 @@
     "text-no-linelength": {
       "type": "text",
       "include": [
-        "(\\.md$)"
+        "(^.gitignore$)",
+        "(\\.md$)",
+        "(\\.mdx$)"
       ],
       "severity": {
-        "1": "advice",
+        "1": "autofix",
         "2": "advice",
         "3": "disabled",
         "5": "disabled"
