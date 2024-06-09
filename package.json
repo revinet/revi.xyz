@@ -17,8 +17,8 @@
     "lighthouse": "lhci autorun",
     "lint:eslint": "cd docusaurus && eslint .",
     "lint:test": "arc lint && prettier --check .",
-    "pcheck": "prettier --check .",
-    "pwrite": "prettier --write ."
+    "p:c": "prettier --check",
+    "p:w": "prettier --write"
   },
   "workspaces": [
     "./docusaurus"
