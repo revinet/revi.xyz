@@ -1,10 +1,11 @@
 /*
-  Proven: proven.lol/335c2d
   Accept-CH: Sec-CH-UA, Sec-CH-UA-Mobile, Sec-CH-UA-Platform, Sec-CH-UA-Full-Version-List
+  Proven: proven.lol/335c2d
+  Referrer-Policy: same-origin
 
 /*.asc
-  X-Robots-Tag: noindex
   Content-type: text/plain; charset=UTF-8
+  X-Robots-Tag: noindex
 
 /webfinger.json
   Content-type: application/jrd+json; charset=UTF-8
