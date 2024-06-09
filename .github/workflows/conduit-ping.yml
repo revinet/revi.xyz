@@ -1,0 +1,14 @@
+---
+name: 'Tell phorge to update repo'
+on: # yamllint disable-line rule:truthy
+  push:
+  workflows_dispatch:
+
+jobs:
+  conduit-api:
+    runs-on: ubuntu-latest
+    steps:
+      - name: send conduit ping to update this repo
+        run: curl https://issuetracker.revi.xyz/api/diffusion.looksoon -d api.token=$CONDUIT -d repositories[0]=revidotxyz
+        env:
+          CONDUIT: ${{ secrets.conduit_token }}
