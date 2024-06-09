@@ -5,11 +5,16 @@
 *.gif    binary
 *.jpg    binary
 *.jpeg   binary
+*.mp3    binary
+*.mp4    binary
 *.png    binary
+*.webm   binary
+*.webp   binary
 *.woff2  binary
 docusaurus/static/.well-known/openpgpkey/hu/* binary
 
 *.css    diff=css
 *.html   diff=html
 *.md     diff=markdown
+*.mdx    diff=markdown
 *.sh     diff=bash
