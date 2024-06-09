@@ -4,7 +4,7 @@ title: GlobalPing
 description: Talking about jsdelivr's globalping
 authors:
   - revi
-tags: [English, jsdelivr, network, probe]
+tags: [English, jsdelivr, network, probe, tech]
 ---
 
 JsDelivr's [2024-05-02 outage](https://www.jsdelivr.com/blog/jsdelivr-may-outage-postmortem/) mentioned [GlobalPing](https://jsdelivr.com/globalping), and I took a quick look at it.

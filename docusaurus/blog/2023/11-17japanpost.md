@@ -3,7 +3,7 @@ date: 2023-11-17T15:50
 language: ko
 authors:
   - revi
-tags: [한국어, JPPost]
+tags: [한국어, Japan Post]
 ---
 
 # 일본우정

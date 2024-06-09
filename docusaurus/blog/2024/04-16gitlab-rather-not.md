@@ -4,7 +4,7 @@ title: GitLab? Rather Not.
 language: en
 authors:
   - revi
-tags: [English, Enterprise, Forgejo, GitLab, Open Source]
+tags: [English, Enterprise, Forgejo, GitLab, Open Source, tech]
 ---
 
 I'd rather use Forgejo rather than GitLab. Like, the feature [GitLab charges for US$348 per year per person](https://docs.gitlab.com/ee/user/project/labels.html#scoped-labels)[^1] is... [whopping free in forgejo](https://forgejo.org/docs/latest/user/labels/#scoped-labels).

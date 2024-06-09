@@ -3,7 +3,7 @@ date: 2022-06-30 02:38:04
 language: en
 authors:
   - revi
-tags: [English, Kakao, Naver]
+tags: [English, Kakao, Naver, tech]
 ---
 
 # Daum and Naver

@@ -4,7 +4,7 @@ title: U+TV UHD3 DNS Over TLS
 language: ko
 authors:
   - revi
-tags: [android, android TV, dns, dns over TLS, LGU+, tv]
+tags: [한국어, android, android TV, dns, dns over TLS, LGU+, tech, tv]
 ---
 
 원래 3번 안 하고 4번만 해서 적용 안 돼서 왜 적용 안 되는지 찾아보던 글.

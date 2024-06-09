@@ -2,7 +2,7 @@
 date: 2023-07-21 20:52
 authors:
   - revi
-tags: [twyne, blog, English]
+tags: [English, blog, tech, twyne]
 language: en
 ---
 

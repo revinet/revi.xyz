@@ -3,7 +3,7 @@ date: 2023-08-20 03:04
 language: en
 authors:
   - revi
-tags: [English, UCEProtect]
+tags: [English, tech, UCEProtect]
 ---
 
 # UCEProtect
