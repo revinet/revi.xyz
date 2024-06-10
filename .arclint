@@ -24,7 +24,8 @@
         "(\\.js$)",
         "(\\.jsx$)",
         "(\\.mjs$)"
-      ]
+      ],
+      "jshint.jshintrc": ".jshintrc.json"
     },
     "json": {
       "type": "json",

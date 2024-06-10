@@ -6,10 +6,6 @@
     "turbo": "^1.13.3",
     "wrangler": "^3.60.0"
   },
-  "jshintConfig": {
-    "esversion": 6,
-    "node": true
-  },
   "scripts": {
     "alint": "arc lint",
     "dbuild": "cd docusaurus && docusaurus build",
@@ -19,7 +15,8 @@
     "lint:eslint": "cd docusaurus && eslint .",
     "lint:test": "arc lint && prettier --check .",
     "p:c": "prettier --check",
-    "p:w": "prettier --write"
+    "p:w": "prettier --write",
+    "test": "cd docusaurus && docusaurus build && docusaurus serve"
   },
   "workspaces": [
     "./docusaurus"
