@@ -10,7 +10,7 @@ import {themes as prismThemes} from 'prism-react-renderer';
 const config = {
   title: 'revi',
   tagline: 'Self-appointed Chief Laziness Officer',
-  favicon: 'https://r2.revicdn.net/pfp2.png',
+  favicon: 'img/logo.png',
 
   // Set the production url of your site here
   url: 'https://revi.xyz',
@@ -132,20 +132,6 @@ const config = {
         href: 'https://fonts.googleapis.com/css2?family=Nanum+Gothic+Coding&display=swap',
       },
     },
-    {
-      tagName: 'link',
-      attributes: {
-        rel: 'prefetch',
-        href: 'https://r2.revicdn.net/bbip-bg.png',
-      },
-    },
-    {
-      tagName: 'link',
-      attributes: {
-        rel: 'prefetch',
-        href: 'https://r2.revicdn.net/pfp2.png',
-      },
-    },
     // {
     //  tagName: 'link',
     //  attributes: {
@@ -166,7 +152,7 @@ const config = {
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
       // Replace with your project's social card
-      image: 'https://r2.revicdn.net/bbip-bg.png',
+      image: 'img/bbip-bg.png',
       navbar: {
         title: 'revi',
         logo: {
