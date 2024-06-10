@@ -43,55 +43,45 @@ Disallow: /
 
 # AI Data Scraper
 # https://darkvisitors.com/agents/bytespider
-
 User-agent: Bytespider
 Disallow: /
 
 # AI Data Scraper
 # https://darkvisitors.com/agents/ccbot
-
 # AI Data Scraper
 # https://darkvisitors.com/agents/claudebot
-
 User-agent: ClaudeBot
 Disallow: /
-
 User-agent: CCBot
 Disallow: /
 
 # AI Data Scraper
 # https://darkvisitors.com/agents/diffbot
-
 User-agent: Diffbot
 Disallow: /
 
 # AI Data Scraper
 # https://darkvisitors.com/agents/facebookbot
-
 User-agent: FacebookBot
 Disallow: /
 
 # AI Data Scraper
 # https://darkvisitors.com/agents/omgili
-
 User-agent: omgili
 Disallow: /
 
 # Undocumented AI Agent
 # https://darkvisitors.com/agents/anthropic-ai
-
 User-agent: anthropic-ai
 Disallow: /
 
 # Undocumented AI Agent
 # https://darkvisitors.com/agents/claude-web
-
 User-agent: Claude-Web
 Disallow: /
 
 # Undocumented AI Agent
 # https://darkvisitors.com/agents/cohere-ai
-
 User-agent: cohere-ai
 Disallow: /
 
@@ -110,7 +100,6 @@ Disallow: /
 # > student papers against the content we find on the Internet to see if we
 # > can find similarities.
 # http://www.turnitin.com/robot/crawlerinfo.html
-
 User-Agent: TurnitinBot
 Disallow: /
 
@@ -124,7 +113,7 @@ Disallow: /
 # > iThenticateÂ® is a new service we have developed to combat the piracy
 # > of intellectual property and ensure the originality of written work for#
 # > publishers, non-profit agencies, corporations, and newspapers.
-# (http://www.slysearch.com/)
+# http://www.slysearch.com/
 User-Agent: SlySearch
 Disallow: /
 # Borrowing from https://www.videolan.org/robots.txt ends.
