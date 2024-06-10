@@ -3,7 +3,7 @@
     "csslint": "^1.0.5",
     "jshint": "^2.13.6",
     "prettier": "^3.3.1",
-    "turbo": "^1.13.3",
+    "turbo": "^2.0.3",
     "wrangler": "^3.60.0"
   },
   "scripts": {
