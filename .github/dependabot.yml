@@ -17,6 +17,9 @@ updates:
       time: '10:00'
       timezone: 'Asia/Seoul'
     target-branch: 'master'
+    commit-message:
+      prefix: 'CI(GitHub Actions)'
+      include: 'scope'
 
   # Maintain dependencies for `npm` @ rootdir
   - package-ecosystem: 'npm'
@@ -30,6 +33,10 @@ updates:
       time: '10:00'
       timezone: 'Asia/Seoul'
     target-branch: 'master'
+    commit-message:
+      prefix: 'npm'
+      prefix-development: 'npm(dev)'
+      include: 'scope'
 
   # Maintain dependencies for `npm` @ Docusaurus
   - package-ecosystem: 'npm'
@@ -43,3 +50,15 @@ updates:
       time: '10:00'
       timezone: 'Asia/Seoul'
     target-branch: 'master'
+    groups:
+      docusaurus:
+        patterns: ['@docusaurus/*']
+      eslint:
+        patterns: ['@eslint/*', 'eslint', 'eslint-*']
+      react:
+        patterns:
+          ['@mdx-js/react', 'prism-react-renderer', 'react', 'react-dom']
+    commit-message:
+      prefix: 'docusaurus(npm)'
+      prefix-development: 'docusaurus(npm-dev)'
+      include: 'scope'
