@@ -29,13 +29,25 @@ Join [my personal discord server](https://revi.xyz/discord) and DM the one with 
 
 ## IRC
 
+::info[Deprecated]
+
+As of 2024, I am not really active on IRC. Do not rely on IRC to contact me.
+
+:::
+
 I am `revi` on Libera.chat and [LizardIRC](https://lizardirc.org).
 
 ## Matrix
 
-NOTE: Due to iOS notification issue, message notification on iOS is a hit and miss. Don't rely on Matrix when sending critical message.
+:::info[Notifications may not arrive]
+
+Due to iOS notification issue, message notification on iOS is a hit and miss. Don't rely on Matrix when sending critical message.
+
+:::
 
 You can message me via Matrix at [@revi:omg.lol](https://matrix.to/#/@revi:omg.lol).
+
+I used to have some other identities like `revi@revi.chat` or `revi@revi.xyz`. They no longer work.
 
 ## Telegram/Signal
 
