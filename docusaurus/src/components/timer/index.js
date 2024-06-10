@@ -33,7 +33,7 @@ function Clock() {
   }).format(date);
 
   return (
-    <p>
+    <p suppressHydrationWarning={true}>
       It is {nowTime} in <code>Asia/Seoul</code> where <Link to="/">revi</Link>{' '}
       lives.
     </p>
