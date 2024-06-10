@@ -11,7 +11,7 @@ hide_table_of_contents: true
 [my pronouns.page profile](https://en.pronouns.page/@revi) interpretation:
 
 - By default, use `he/him`.
-- If we are close enough (as determined by ME), I believe pronouns stop meaning that much to me (see [[#Remarks|remarks below]]), and therefore you have my blessing to use either one of `he/him`, `she/her`, or `they/them` as you feel like.
+- If we are close enough (as determined by ME), I believe pronouns stop meaning that much to me (see [remarks below](#Remarks)), and therefore you have my blessing to use either one of `he/him`, `she/her`, or `they/them` as you feel like.
   - I still find it hard to get used to the new-ish pronouns like `ze` which is confusing to me (at best), so I ask you NOT to use it.
   - Basic rule of thumb is, if you have to ask yourself or me if we are close enough, you are not.
   - If you think we are 'close enough' but not completely sure, you can just ask and I'll make the determination for you.
