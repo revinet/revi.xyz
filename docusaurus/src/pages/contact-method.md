@@ -29,7 +29,7 @@ Join [my personal discord server](https://revi.xyz/discord) and DM the one with 
 
 ## IRC
 
-::info[Deprecated]
+:::info[Deprecated]
 
 As of 2024, I am not really active on IRC. Do not rely on IRC to contact me.
 
