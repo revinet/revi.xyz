@@ -1,5 +1,6 @@
 /*
   Accept-CH: Sec-CH-UA, Sec-CH-UA-Mobile, Sec-CH-UA-Platform, Sec-CH-UA-Full-Version-List
+  Content-Security-Policy: base-uri 'self'; default-src 'self'; style-src 'self' https://fonts.gstatic.com https://fonts.googleapis.com; script-src 'self' https://static.cloudflareinsights.com https://cloudflareinsights.com https://challenges.cloudflare.com; img-src 'self' https://r2.revicdn.net; media-src 'self' https://r2.revicdn.net; font-src 'self' https://fonts.gstatic.com https://fonts.googleapis.com; connect-src 'self'; worker-src 'self'; frame-src 'self' https://www.youtube.com/embed/; form-action 'self';
   Proven: proven.lol/335c2d
   Referrer-Policy: same-origin
 
@@ -11,23 +12,29 @@
   Content-type: application/jrd+json; charset=UTF-8
 
 /assets/
+  Access-Control-Allow-Origin: *
   CDN-Cache-Control: public
   CDN-Cache-Control: max-age: 32000000
+  X-Robots-Tag: nosnippet
 
 /ko/*
   X-Robots-Tag: noindex
 
 /ko/assets/
+  Access-Control-Allow-Origin: *
   CDN-Cache-Control: public
   CDN-Cache-Control: max-age: 32000000
+  X-Robots-Tag: nosniplet
 
 https://:project.pages.dev/*
   Link: <https://revi.xyz/:splat>; rel="canonical"
   X-Robots-Tag: noindex
 
 /.well-known/*
+  ! Content-Security-Policy
   X-Robots-Tag: noindex
 
 /.well-known/openpgpkeys/*
   Access-Control-Allow-Origin: *
+  ! Content-Security-Policy
   Content-type: application/octet-stream
