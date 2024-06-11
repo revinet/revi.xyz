@@ -1,14 +1,16 @@
 -----BEGIN PGP SIGNED MESSAGE-----
 Hash: SHA256
 
+# WARNING: You must include the word 'blanc.security.revi.xyz'
+# inside the text body to be considered.
 Contact: mailto:security@revi.dev
-Expires: 2025-12-31T14:59:00.000Z
+Expires: 2024-12-31T14:59:00.000Z
 Encryption: https://revi.xyz/0xEA100E94.asc
 Preferred-Languages: ko, en
 Canonical: https://revi.xyz/.well-known/security.txt
 -----BEGIN PGP SIGNATURE-----
 
-iQsSBAEBCAj8FiEEEt1TBkGMjgqPVXYdHrT2zuoQDpQFAmYhEIXIHSYAmQINBGYX
+iQsSBAEBCAj8FiEEEt1TBkGMjgqPVXYdHrT2zuoQDpQFAmZn/9PIHSYAmQINBGYX
 6wQBEADRQZqslZnq6n772/Iuw+4pDFJ4iMuTopKNr6k5wKWjBaQJzelLPLt/iHO0
 /KEyX5yk4Na73cMREslrqK33rlR8A672/yu7fhMNamZTNSX4Evo868m+R6mrthVz
 RBhlDpQuEsYABhfZJndqr+tL7/L2Halqxd03z9DcsIr7+Nwn1nQUni/whZxr5lqd
@@ -56,17 +58,17 @@ gr5kH+dMxKQ8Ip9rR9acwMR3Z0y6Te+y7t9hb4AYrGfjwEmZg1R857qxEQTlB2JX
 PwhN+h/85ToZRwo9QwYWVyr0uRZZEp2TXgYc48DoVhECiHZpUNcBPG43SnSSAxXQ
 ZOrOHY5pmJ6m720i+jZFs5b+N0heEGFsiBB7HEYaS+yksfeDME7XL97z7WaBHUgG
 RwRBoehouO0A8VHiZEREeUe6LFBhsrgjIfR9cgvsET3JyGri7UwPDPa6SLSgOvzg
-+2WRDBwACgkQHrT2zuoQDpQFHA//VHljZMWbTxOqxDfwjRtze69XrqDioboxjDn/
-5sYYaltCuQufPHBiEqH2IiG2+kJQJUj41es4mmdxzviFISgL+897+mzvZ1vdkx21
-huv34Xytb5wTP80igcbfSoazv6jFIxJ7fpfU4xg9iphGMMOzM6CxJFRYs0IyLvJQ
-3vKVVf8TFkuOXRvZznHCxRCYSiInJZ51Z96BITnupmhJUV9i6zQmg+BbGuyuXEle
-l/lTakmcJ7rY23n9M5jcF0jqogR22Yi/dEPNERgYFOjWsqKJ6UYnI1EsN9MLRRGj
-Ha7n9VgJPwKIGZoQl/ASxBHOVaswcQ1zd5jf8hNPdm3LBqiMuPDlrwpv7zNAa7aj
-QA1yAveikv6QtYtlO+sCT4AijQ7hyq45sH2XzN7+u2V94jI4BY8kt2AICNg5Lcz4
-YVdQPG36jtsSjRZ4gLWV96PL0Gi/ZbBVr8X334VhtuR09h3zv0lI4acIt2gSemq/
-2qNfbHsg6YAwjab+fpBYZKRci/PYg4fd4jI0f1WpP7hNy1RkYfps51oGz/bNll1w
-ya5q0PLb6khxfqlkyTSd/GvEZ9MFGOPRjJdG8/l4hxp3bwZFkbfzpC4t5o3oCy7X
-zhYbQ6BKLbq7nUqJgk2P33oZz+IMjfJVojd+TOPJ2TjuCogl77T+2alx4HkItouA
-8o0valE=
-=lUxO
++2WRDBwACgkQHrT2zuoQDpSgzhAAwLC3dAmlDblrCsXIA6gaMRzaTk/EmTjwC2hU
+GebhHqvENZgIjUzTQtbWF2AcYl94QYz5v67bEirixItrb5F9mXdLKC3V1jbs5qzM
+9pkgteTvEuzQH+w0TDH2tC5usAhxKogqXv57SvBLU0aEuhS65EKbAK9XOeunaALO
+vpvTCQyJ4IGBR9aWjARh+oe/jZf1P6uPAFvN6XN/9e9aF45rIc6n0CvVHOta0mWE
+mawHpWApVvU7HFgpynAb4MNBFpyGD5El7bZeBha/xtwBe0UvdgZA1fbJLVoTywyp
+gbirUElI/nWRUay+w6KTeVeLhpbprVy5JLYNJ1sXILhkEOnctYoh+ExO6X9es/B/
+waMaP3rcRa62scnwET0A7/vk/4mb6dFbiLgsU7oIbS1zgzbIeqMs0D/Ml1fxBN5S
+73YEYr5hLer9HTUhQDUMup7l/28mQJB37tihd+fxn2JOgy+7gQpl2SpVgC3+HgUO
+dFfIn0l6Qy/IEl9qz0MXdUhRqdsX+6ZJQya88SvEQ2xYLuNTS71O1ANbifCmpfDL
+8GnmmZLjeteMf3TTci0uKEKQd/6hCycoOT0RTflOpOGegGqamcaikPfBX9nSmExl
+7YyX3SX52NmZUan4IK9/Y8gLqiHsiFXKoS60n3TivlafGhU+hR32UdpuVp2ztbIB
+SQwhnus=
+=wS7s
 -----END PGP SIGNATURE-----
