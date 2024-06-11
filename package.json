@@ -4,7 +4,7 @@
     "jshint": "^2.13.6",
     "prettier": "^3.3.1",
     "turbo": "^2.0.3",
-    "wrangler": "^3.60.0"
+    "wrangler": "^3.60.1"
   },
   "scripts": {
     "alint": "arc lint",
