@@ -9,6 +9,8 @@ on: # yamllint disable-line rule:truthy
       - 'docusaurus/**'
   workflow_dispatch:
 
+env: IBM_TELEMETRY_DISABLED='true'
+
 jobs:
   prettier:
     name: 'Prettier CI'

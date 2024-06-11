@@ -19,6 +19,8 @@ on: #  yamllint: disable-line rule:truthy
   schedule:
     - cron: '36 4 * * 1'
 
+env: IBM_TELEMETRY_DISABLED='true'
+
 jobs:
   analyze:
     name: Analyze (${{ matrix.language }})
