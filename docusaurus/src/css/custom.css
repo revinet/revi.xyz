@@ -6,22 +6,8 @@
 
 /* You can override the default Infima variables here. */
 
-/* @font-face {
-  font-family: 'IBM Plex Sans KR';
-  src: url('/fonts/IBM Plex Sans KR/IBMPlexSansKR-Regular.woff2') format('woff2');
-}
-
 @font-face {
-  font-family: 'Noto Serif KR';
-  src: url('/fonts/Noto Serif KR/NotoSerifKR-Regular.otf') format('otf');
-}*/
-
-@font-face {
-  font-family: 'Pretendard';
-  src: url('/fonts/Pretendard/Pretendard-Regular.woff2') format('woff2');
-}
-
-@font-face {
+  font-display: swap;
   font-family: '0xProto';
   src: url('/fonts/0xProto/0xProto-Regular.woff2') format('woff2');
 }

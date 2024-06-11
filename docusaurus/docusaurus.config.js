@@ -79,7 +79,14 @@ const config = {
           filename: 'sitemap.xml',
         },
         theme: {
-          customCss: './src/css/custom.css',
+          customCss: [
+            '../node_modules/@ibm/plex/css/ibm-plex-sans-kr.min.css',
+            '../node_modules/@ibm/plex/css/ibm-plex.min.css',
+            '../node_modules/pretendard/dist/web/static/pretendard.css',
+            '../node_modules/@fontsource/noto-serif-kr/korean.css',
+            '../node_modules/@fontsource/montserrat/index.css',
+            './src/css/custom.css',
+          ],
         },
       }),
     ],
@@ -90,41 +97,6 @@ const config = {
   },
 
   headTags: [
-    {
-      tagName: 'link',
-      attributes: {
-        rel: 'stylesheet',
-        href: 'https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+KR&display=swap',
-      },
-    },
-    {
-      tagName: 'link',
-      attributes: {
-        rel: 'stylesheet',
-        href: 'https://fonts.googleapis.com/css2?family=IBM+Plex+Sans&display=swap',
-      },
-    },
-    {
-      tagName: 'link',
-      attributes: {
-        rel: 'stylesheet',
-        href: 'https://fonts.googleapis.com/css2?family=Montserrat&display=swap',
-      },
-    },
-    {
-      tagName: 'link',
-      attributes: {
-        rel: 'stylesheet',
-        href: 'https://fonts.googleapis.com/css2?family=Nanum+Myeongjo&display=swap',
-      },
-    },
-    {
-      tagName: 'link',
-      attributes: {
-        rel: 'stylesheet',
-        href: 'https://fonts.googleapis.com/css2?family=Noto+Serif+KR&display=swap',
-      },
-    },
     {
       tagName: 'link',
       attributes: {
