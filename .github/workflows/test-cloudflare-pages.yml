@@ -12,7 +12,7 @@ on: # yamllint disable-line rule:truthy
 
 # prettier-ignore
 env:
-  IBM_TELEMETRY_DISABLED='true'
+  IBM_TELEMETRY_DISABLED: true
 
 jobs:
   build:
