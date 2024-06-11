@@ -28,8 +28,7 @@ updates:
     # npm package dependencies in the location of `/package.json`.
     directory: '/'
     schedule:
-      interval: 'weekly'
-      day: 'monday'
+      interval: 'daily'
       time: '10:00'
       timezone: 'Asia/Seoul'
     target-branch: 'master'
@@ -45,8 +44,7 @@ updates:
     # npm package dependencies in the location of `docusaurus/package.json`.
     directory: 'docusaurus/'
     schedule:
-      interval: 'weekly'
-      day: 'monday'
+      interval: 'daily'
       time: '10:00'
       timezone: 'Asia/Seoul'
     target-branch: 'master'
