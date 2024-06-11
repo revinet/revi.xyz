@@ -51,7 +51,7 @@ I'm an admin at [Korean Wikipedia](https://ko.wikipedia.org/), [Wikimedia Common
 
 ### Credit
 
-- Profile picture: [Copyright © 시안 2022](https://archive.today/2022.01.27-085510/https://dreaming-flower.postype.com/post/11562299), used with permission
+- Profile picture: [Copyright © 시안 2022](https://archive.today/2022.01.27-085510/https://dreaming-flower.postype.com/post/11562299), used with permission.
 
 ### Webrings
 

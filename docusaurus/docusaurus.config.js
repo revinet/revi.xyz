@@ -201,6 +201,10 @@ const config = {
             title: 'Legal',
             items: [
               {
+                label: 'Legal',
+                to: '/meta#legal',
+              },
+              {
                 label: 'Privacy Policy',
                 to: '/privacy-policy',
               },

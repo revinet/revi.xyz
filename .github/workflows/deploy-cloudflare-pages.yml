@@ -6,9 +6,13 @@ on: # yamllint disable-line rule:truthy
       - prod
     paths:
       - 'docusaurus/**'
+      - 'package.json'
+      - 'package-lock.json'
   workflow_dispatch:
 
-env: IBM_TELEMETRY_DISABLED='true'
+# prettier-ignore
+env:
+  IBM_TELEMETRY_DISABLED='true'
 
 jobs:
   build:
