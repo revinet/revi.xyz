@@ -6,6 +6,7 @@ ci:
       - http://localhost/index.html
       - http://localhost/contact-method/index.html
       - http://localhost/gender-pronounciation/index.html
+      - http://localhost/meta/index.html
       - http://localhost/privacy-policy/index.html
       - http://localhost/time/index.html
       - http://localhost/blog/index.html
@@ -16,6 +17,7 @@ ci:
       - http://localhost/ko/index.html
       - http://localhost/ko/contact-method/index.html
       - http://localhost/ko/gender-pronounciation/index.html
+      - http://localhost/ko/meta/index.html
       - http://localhost/ko/privacy-policy/index.html
       - http://localhost/ko/time/index.html
       - http://localhost/ko/blog/index.html

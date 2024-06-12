@@ -87,7 +87,7 @@ const config = {
             '../node_modules/@ibm/plex/css/ibm-plex.min.css',
             '../node_modules/pretendard/dist/web/static/pretendard.css',
             '../node_modules/@fontsource/noto-serif-kr/korean.css',
-            '../node_modules/@fontsource/montserrat/index.css',
+            '../node_modules/@fontsource/montserrat/latin.css',
             './src/css/custom.css',
           ],
         },
