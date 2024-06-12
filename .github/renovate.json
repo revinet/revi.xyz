@@ -1,0 +1,45 @@
+{
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "extends": ["config:best-practices", ":gitSignOff"],
+  "assignAutomerge": true,
+  "assignees": ["revi"],
+  "packageRules": [
+    {
+      "groupname": "docusaurus",
+      "matchDatasources": ["npm"],
+      "matchPackageNames": ["clsx", "prism", "react"],
+      "matchPackagePatterns": ["^@docusaurus/", "^@mdx-js"],
+      "automerge": false
+    },
+    {
+      "groupname": "linters",
+      "matchDatasources": ["npm"],
+      "matchPackageNames": [
+        "csslint",
+        "eslint",
+        "globals",
+        "jshint",
+        "prettier",
+        "turbo",
+        "wrangler"
+      ],
+      "matchPackagePatterns": ["^@eslint/", "^@lhci/", "@remy/"],
+      "matchUpdateTypes": ["patch"],
+      "automerge": true,
+      "platformAutomerge": true,
+      "schedule": ["after 4am and before 11am every weekday", "every weekend"]
+    },
+    {
+      "groupname": "npm patch upgrades",
+      "matchDatasources": ["npm"],
+      "matchUpdateTypes": ["patch"],
+      "automerge": true,
+      "platformAutomerge": true,
+      "schedule": ["after 4am and before 11am every weekday", "every weekend"]
+    },
+    {
+      "matchDatasources": ["npm"],
+      "minimumReleaseAge": "2 days"
+    }
+  ]
+}
