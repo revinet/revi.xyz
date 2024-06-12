@@ -9,6 +9,7 @@
       "matchPackageNames": ["clsx", "prism", "react"],
       "matchPackagePatterns": ["^@docusaurus/", "^@mdx-js"],
       "automerge": false,
+      "minimumReleaseAge": "2 days",
       "groupName": "docusaurus"
     },
     {
@@ -19,6 +20,7 @@
         "globals",
         "jshint",
         "prettier",
+        "renovate",
         "turbo",
         "wrangler"
       ],
@@ -26,6 +28,7 @@
       "matchUpdateTypes": ["minor", "patch"],
       "automerge": true,
       "platformAutomerge": true,
+      "minimumReleaseAge": "2 days",
       "schedule": ["after 4am and before 11am every weekday", "every weekend"],
       "timezone": "Asia/Seoul",
       "groupName": "linters"
@@ -35,13 +38,18 @@
       "matchUpdateTypes": ["patch"],
       "automerge": true,
       "platformAutomerge": true,
+      "minimumReleaseAge": "2 days",
       "schedule": ["after 4am and before 11am every weekday", "every weekend"],
       "timezone": "Asia/Seoul",
       "groupName": "npm patch upgrades"
     },
     {
-      "matchDatasources": ["npm"],
-      "minimumReleaseAge": "2 days"
+      "matchDatasources": ["github-actions"],
+      "automerge": true,
+      "platformAutomerge": true,
+      "schedule": ["after 4am and before 11am every weekday", "every weekend"],
+      "timezone": "Asia/Seoul",
+      "groupName": "github actions workflows upgrades"
     }
   ]
 }
