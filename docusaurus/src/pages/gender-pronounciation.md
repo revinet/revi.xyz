@@ -8,6 +8,8 @@ hide_table_of_contents: true
 <link rel="me" href="https://en.pronouns.page/@revi" />
 </head>
 
+# What should I use to reference you? he? she?
+
 [my pronouns.page profile](https://en.pronouns.page/@revi) interpretation:
 
 - By default, use `he/him`.

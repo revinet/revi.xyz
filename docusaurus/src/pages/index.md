@@ -15,8 +15,8 @@ hide_table_of_contents: true
 
 # revi
 
-- [he/him unless otherwise noted](/gender-pronounciation).
-- [What time is it in my timezone](/time)?
+- [he/him unless otherwise noted](./gender-pronounciation).
+- [What time is it in my timezone](./time)?
 
 ## About
 
@@ -33,13 +33,13 @@ I'm an admin at [Korean Wikipedia](https://ko.wikipedia.org/), [Wikimedia Common
 
 - [Wiki](https://revi.wiki/)
 - [Issue Tracker](https://issuetracker.revi.xyz)
-- [Notes (with full of ranting)](/blog)
+- [Notes (with full of ranting)](/blog/)
 
 ### Contacts
 
-- You might want to read [this guide](/contact-method) on best way to contact me.
+- You might want to read [this guide](./contact-method) on best way to contact me.
 - [GitHub](https://github.com/revi)
-- [Email](mailto:revi@omglol.email)
+- [Email](./contact-method#email)
 - [0xBEFF197A](https://revi.xyz/0xBEFF197A.asc)
 - [0xEA100E94](https://revi.xyz/0xEA100E94.asc)
 - [Matrix](https://matrix.to/#/@revi:omg.lol)
