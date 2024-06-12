@@ -63,6 +63,9 @@ const config = {
           blogSidebarCount: 'ALL',
           blogTitle: 'Cooking Pancakes',
           blogDescription: 'Cannot cook one, though.',
+          feedOptions: {
+            type: 'all',
+          },
           showLastUpdateAuthor: true,
           showLastUpdateTime: true,
           // Please change this to your repo.
@@ -104,13 +107,13 @@ const config = {
         href: 'https://fonts.googleapis.com/css2?family=Nanum+Gothic+Coding&display=swap',
       },
     },
-    // {
-    //  tagName: 'link',
-    //  attributes: {
-    //    rel: 'prefetch',
-    //    href: 'https://revi.xyz/assets/styles.css',
-    //  },
-    //},
+    {
+      tagName: 'link',
+      attributes: {
+        rel: 'webmention',
+        href: 'https://webmention.io/revi.xyz/webmention',
+      },
+    },
     {
       tagName: 'meta',
       attributes: {

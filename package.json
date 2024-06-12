@@ -7,6 +7,7 @@
     "pretendard": "^1.3.9"
   },
   "devDependencies": {
+    "@remy/webmention": "^1.5.0",
     "csslint": "^1.0.5",
     "jshint": "^2.13.6",
     "prettier": "^3.3.1",
@@ -23,7 +24,9 @@
     "lint:test": "arc lint && prettier --check .",
     "p:c": "prettier --check",
     "p:w": "prettier --write",
-    "test": "cd docusaurus && docusaurus build && docusaurus serve"
+    "test": "cd docusaurus && docusaurus build && docusaurus serve",
+    "webping:send": "webmention https://revi.xyz/blog/rss.xml --limit 1 --send",
+    "webping:test": "webmention https://revi.xyz/blog/rss.xml --limit 1"
   },
   "workspaces": [
     "./docusaurus"
