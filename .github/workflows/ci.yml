@@ -6,7 +6,12 @@ on: # yamllint disable-line rule:truthy
       - master
       - arcpatch-D**
     paths:
+      - '.github/workflows/**'
+      - '.github/dependabot.yml'
+      - '.github/renovate.json'
       - 'docusaurus/**'
+      - 'package.json'
+      - 'package-lock.json'
   workflow_dispatch:
 
 # prettier-ignore
@@ -27,9 +32,25 @@ jobs:
         with:
           node-version: 20
       - name: 'Install dependencies'
-        run: npm ci
+        run: npm ci --fund=false --omit=optional
       - name: 'Prettier check'
-        run: npm run pcheck
+        run: npm run p:c .
+  renovate:
+    name: 'Run Renovate Config Validator'
+    runs-on: ubuntu-latest
+    steps:
+      - name: 'Checkout'
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - name: 'Setup Node.js'
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+      - name: 'Install dependencies'
+        run: npm ci --fund=false
+      - name: 'Run renovate-config-validator'
+        run: npm run lint:renovate
   lighthouse-ci:
     name: 'Lighthouse CI'
     runs-on: ubuntu-latest
@@ -43,7 +64,7 @@ jobs:
         with:
           node-version: 20
       - name: 'Install dependencies'
-        run: npm ci
+        run: npm ci --fund=false --omit=optional
       - name: 'Build docusaurus'
         run: npm run dbuild
       - name: 'Run lighthouse CI'
