@@ -128,7 +128,7 @@ const config = {
       navbar: {
         title: 'revi',
         logo: {
-          alt: 'revi',
+          alt: "revi's logo",
           src: 'img/logo.png',
         },
         items: [
@@ -140,6 +140,11 @@ const config = {
           {
             to: '/blog',
             label: 'Notes',
+            position: 'left',
+          },
+          {
+            to: '/meta',
+            label: 'meta',
             position: 'left',
           },
           {
@@ -192,6 +197,10 @@ const config = {
                 to: '/time',
               },
               {
+                label: 'meta',
+                to: '/meta',
+              },
+              {
                 label: 'GitHub',
                 href: 'https://github.com/revinet/revi.xyz',
               },
@@ -218,7 +227,7 @@ const config = {
             ],
           },
         ],
-        copyright: `Copyright © 2016 ~ ${new Date().getFullYear()} revi. Licensed under CC BY ND 2.0 KR. Image license might differ. Built with Docusaurus.`,
+        copyright: `Copyright © 2016 ~ ${new Date().getFullYear()} revi. <a href='/meta#license'>Some Rights Reserved</a>. Built with Docusaurus.`,
       },
       prism: {
         theme: prismThemes.github,
