@@ -18,6 +18,9 @@
     "turbo": "^2.0.3",
     "wrangler": "^3.60.2"
   },
+  "optionalDependencies": {
+    "renovate": "^37.405.1"
+  },
   "license": "Apache-2.0",
   "homepage": "https://revi.xyz",
   "bugs": {
