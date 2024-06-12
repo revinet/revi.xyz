@@ -173,7 +173,7 @@ ReviNet은 정보주체의 개인정보 열람청구가 신속하게 처리되�
 <summary>이메일 주소 보기</summary>
 
 ```js
-let myEmail = "legal" + "@" + "revi.dev"
+let myEmail = 'legal' + '@' + 'revi.dev';
 ```
 
 </details>

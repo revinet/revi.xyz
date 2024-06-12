@@ -235,6 +235,7 @@ const config = {
       prism: {
         theme: prismThemes.github,
         darkTheme: prismThemes.dracula,
+        // prettier-ignore
         additionalLanguages: [
           'bash',
           'css',
