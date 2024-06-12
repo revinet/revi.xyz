@@ -5,14 +5,14 @@
   "assignees": ["revi"],
   "packageRules": [
     {
-      "groupname": "docusaurus",
+      "groupName": "docusaurus",
       "matchDatasources": ["npm"],
       "matchPackageNames": ["clsx", "prism", "react"],
       "matchPackagePatterns": ["^@docusaurus/", "^@mdx-js"],
       "automerge": false
     },
     {
-      "groupname": "linters",
+      "groupName": "linters",
       "matchDatasources": ["npm"],
       "matchPackageNames": [
         "csslint",
@@ -30,7 +30,7 @@
       "schedule": ["after 4am and before 11am every weekday", "every weekend"]
     },
     {
-      "groupname": "npm patch upgrades",
+      "groupName": "npm patch upgrades",
       "matchDatasources": ["npm"],
       "matchUpdateTypes": ["patch"],
       "automerge": true,
