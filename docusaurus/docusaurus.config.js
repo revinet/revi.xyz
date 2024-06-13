@@ -104,6 +104,7 @@ const config = {
   },
 
   headTags: [
+    /** @type {import('@docusaurus/types').headTags} */
     {
       tagName: 'link',
       attributes: {
