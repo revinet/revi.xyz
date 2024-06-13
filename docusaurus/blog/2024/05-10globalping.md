@@ -1,14 +1,15 @@
 ---
 date: 2024-05-10T09:55
-title: GlobalPing
 description: Talking about jsdelivr's globalping
-authors:
-  - revi
+authors: revi
 tags: [English, jsdelivr, network, probe, tech]
 ---
 
+# GlobalPing
+
 JsDelivr's [2024-05-02 outage](https://www.jsdelivr.com/blog/jsdelivr-may-outage-postmortem/)
-mentioned [GlobalPing](https://jsdelivr.com/globalping), and I took a quick look at it.
+mentioned [GlobalPing](https://jsdelivr.com/globalping),
+and I took a quick look at it.
 
 It looked pretty nice, except after about a week of sporadic tests,
 most of the probes there seems to be AWS, Google Cloud, Oracle, Vultr,
@@ -37,7 +38,9 @@ suggests there are approximately 8055 nodes[^4]. You get the size difference.
 
 [^2]:
     [RIPE Atlas Coverage and Statistics](https://atlas.ripe.net/coverage/) has 12905
-    probes, HW nodes and SW nodes combined. ([Link to screenshot](atlas-screenshot.png).)
+    probes, HW nodes and SW nodes combined. ([Link to screenshot](atlas-screenshot.png).
+    And the screenshot is not licensed under the
+    [site default image license](/meta#license).)
 
 [^3]: I used `GET /api/v2/probes` with `tags=Home` param. [response](https://issuetracker.revi.xyz/P101).
 
