@@ -1,11 +1,11 @@
 ---
-date: 2024-04-18T17:47
-title: On a Trump trial
+date: 2024-04-18T08:47
 language: en
-authors:
-  - revi
+authors: revi
 tags: [English, politics]
 ---
+
+# On a Trump trial
 
 I find it pretty hilarious to see US people making a fuss about the idea of former
 presidents standing in a criminal trials -- We've done this before, and we've

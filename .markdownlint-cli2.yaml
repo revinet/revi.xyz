@@ -2,7 +2,7 @@
 # Syntax: https://github.com/DavidAnson/markdownlint-cli2#configuration
 
 # Front matters
-frontMatter: '(^---\s*$[^]*?^---\s*$)(\r\n|\r|\n|$)'
+frontMatter: '/((^---\s*$[\s\S]+?^---\s*)|(^\+\+\+\s*$[\s\S]+?^(\+\+\+|\.\.\.)\s*)|(^\{\s*$[\s\S]+?^\}\s*))(\r\n|\r|\n|$)/m'
 
 # Disable markdownlint for this file
 ignores:
@@ -10,12 +10,35 @@ ignores:
   - LICENSE
 
 # Rules: https://github.com/DavidAnson/vscode-markdownlint#rules
+# https://github.com/DavidAnson/markdownlint/blob/main/doc/md<RULE NUMBER>.md
 config:
   default: true
+  # https://github.com/DavidAnson/markdownlint/blob/main/style/prettier.json
+  extends: prettier
   MD003:
     style: atx
   MD013: 80
+  MD026: false
+  MD029: ordered
   MD033:
     allowed_elements:
       ['details', 'head', 'link', 'script', 'summary', 'Tabs', 'TabItem']
+  MD035:
+    style: '---'
   MD041: false
+  MD046:
+    style: indented
+  MD048:
+    style: backtick
+  MD049:
+    style: underscore
+  MD050:
+    style: asterisk
+  MD054:
+    autolink: true
+    collapsed: false
+    full: false
+    inline: true
+    shortcut: false
+  MD055:
+    style: leading_and_trailing

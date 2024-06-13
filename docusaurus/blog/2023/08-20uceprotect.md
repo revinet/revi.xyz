@@ -1,8 +1,7 @@
 ---
-date: 2023-08-20 03:04
+date: 2023-08-19 18:04
 language: en
-authors:
-  - revi
+authors: revi
 tags: [English, tech, UCEProtect]
 ---
 
@@ -16,7 +15,8 @@ I see their business strategy… not morally right.
 
 - [Blog post by Sucuri](https://blog.sucuri.net/2021/02/uceprotect-when-rbls-go-bad.html)
 - [Linode forum: uceprotect.net has us blacklisted?](https://www.linode.com/community/questions/2324/uceprotectnet-has-us-blacklisted)
-- [Socking at English Wikipedia](https://en.wikipedia.org/wiki/Category:Wikipedia_sockpuppets_of_UrsMair) [^2]
+- [Socking at English Wikipedia](https://en.wikipedia.org/wiki/Category:Wikipedia_sockpuppets_of_UrsMair)
+  [^2]
 
 <!-- truncate -->
 

@@ -1,6 +1,6 @@
 {
   "author": {
-    "name": "Revi",
+    "name": "revi",
     "email": "revi@omglol.email"
   },
   "name": "@revi/revi.xyz",
@@ -34,7 +34,7 @@
     "alint": "arc lint",
     "dbuild": "cd docusaurus && docusaurus clear && docusaurus build",
     "dserve": "cd docusaurus && docusaurus serve",
-    "dstart": "cd docusaurus && docusaurus start",
+    "dstart": "cd docusaurus && docusaurus clear && docusaurus start",
     "lighthouse": "lhci autorun",
     "lint": "sh .github/lint.sh",
     "lint:eslint": "cd docusaurus && eslint .",

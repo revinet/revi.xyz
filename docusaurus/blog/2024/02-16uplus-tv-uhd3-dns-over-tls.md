@@ -1,9 +1,8 @@
 ---
-date: 2024-02-16T20:58
+date: 2024-02-16T10:58
 title: U+TV UHD3 DNS Over TLS
 language: ko
-authors:
-  - revi
+authors: revi
 tags: [한국어, android, android TV, dns, dns over TLS, LGU+, tech, tv]
 ---
 
@@ -22,4 +21,6 @@ tags: [한국어, android, android TV, dns, dns over TLS, LGU+, tech, tv]
 5. …
 6. PROFIT!
 
-[^1]: `hostname` 원문 그대로 쳐야 함. `hostname`을 실제 `hostname` (ie. `dns.google` 등)으로 변경하면 안 됨.
+[^1]:
+    `hostname` 원문 그대로 쳐야 함. `hostname`을 실제 `hostname`
+    (ie. `dns.google` 등)으로 변경하면 안 됨.
