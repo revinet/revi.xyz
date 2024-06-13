@@ -1,3 +1,4 @@
+// @ts-check
 /**
  * @file Displays current date&time info for the place where revi currently is.
  * @copyright Hong Yongmin 2024
@@ -32,12 +33,14 @@ function Clock() {
     timeZone: 'Asia/Seoul',
   }).format(date);
 
+  /* jshint ignore:start */
   return (
     <p suppressHydrationWarning={true}>
       It is {nowTime} in <code>Asia/Seoul</code> where <Link to="/">revi</Link>{' '}
       lives.
     </p>
   );
+  /* jshint ignore:end */
 }
 
 export default Clock;

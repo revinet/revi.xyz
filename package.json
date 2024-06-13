@@ -16,6 +16,7 @@
     "jshint": "^2.13.6",
     "prettier": "^3.3.2",
     "turbo": "^2.0.3",
+    "typescript": "^5.4.5",
     "wrangler": "^3.60.2"
   },
   "optionalDependencies": {

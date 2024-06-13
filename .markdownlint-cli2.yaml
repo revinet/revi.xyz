@@ -16,5 +16,6 @@ config:
     style: atx
   MD013: 80
   MD033:
-    allowed_elements: ['details', 'head', 'link', 'summary', 'Tabs', 'TabItem']
+    allowed_elements:
+      ['details', 'head', 'link', 'script', 'summary', 'Tabs', 'TabItem']
   MD041: false
