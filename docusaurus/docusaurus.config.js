@@ -17,6 +17,7 @@ const config = {
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
   baseUrl: '/',
+  trailingSlash: true,
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
@@ -71,6 +72,9 @@ const config = {
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           // editUrl: 'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
+        },
+        pages: {
+          showLastUpdateTime: true,
         },
         sitemap: {
           lastmod: 'datetime',
@@ -128,6 +132,16 @@ const config = {
     ({
       // Replace with your project's social card
       image: 'img/bbip-bg.png',
+      metadata: [
+        {
+          name: 'twitter:card',
+          content: 'summary',
+        },
+      ],
+      tableOfContent: {
+        minHeadingLevel: 2,
+        maxHeadingLevel: 4,
+      },
       navbar: {
         title: 'revi',
         logo: {
@@ -151,21 +165,25 @@ const config = {
             position: 'left',
           },
           {
-            href: 'https://revi.xyz/wiki',
-            label: 'Wiki',
+            type: 'dropdown',
+            label: 'other sites',
             position: 'left',
-          },
-          {
-            href: 'https://revi.xyz/phab',
-            label: 'Issue Tracker',
-            position: 'left',
+            items: [
+              {
+                href: 'https://revi.xyz/wiki',
+                label: 'Wiki',
+              },
+              {
+                href: 'https://revi.xyz/phab',
+                label: 'Issue Tracker',
+              },
+              {
+                href: 'https://github.com/revinet/revi.xyz',
+                label: 'GitHub',
+              },
+            ],
           },
           // {type: 'localeDropdown', position: 'right'},
-          {
-            href: 'https://github.com/revinet/revi.xyz',
-            label: 'GitHub',
-            position: 'right',
-          },
         ],
       },
       footer: {
@@ -221,11 +239,7 @@ const config = {
                 to: '/privacy-policy',
               },
               {
-                html: `
-                      <a href="https://creativecommons.org/licenses/by-nd/2.0/kr/", target="_blank" rel="noreferrer" alt="CC BY ND 2.0 KR License">
-                        <img src="/img/by-nd.svg" alt="CC BY ND 2.0 KR License" width="88" height="31" />
-                      </a>
-                    `,
+                html: `<a href="https://creativecommons.org/licenses/by-nd/2.0/kr/", target="_blank" rel="noreferrer" alt="CC BY ND 2.0 KR License"><img src="/img/by-nd.svg" alt="CC BY ND 2.0 KR License" width="88" height="31" /></a>`,
               },
             ],
           },
@@ -236,12 +250,41 @@ const config = {
         theme: prismThemes.github,
         darkTheme: prismThemes.dracula,
         // prettier-ignore
+        /* default langauges as of 2024-06-13
+          "markup", // html, xml, svg, mathml, ssml, atom, rss
+          "cpp",
+          "graphql",
+          "go",
+          "js-extras",
+          "jsx",
+          "kotlin",
+          "markdown",
+          "objectivec",
+          "python",
+          "reason",
+          "rust",
+          "swift",
+          "tsx",
+          "yaml",
+         */
         additionalLanguages: [
           'bash',
+          'csharp',
           'css',
+          'css-extras',
           'diff',
+          'dns-zone-file',
+          'docker',
+          'editorconfig',
+          'git',
           'java',
+          'json',
+          'json5',
+          'log',
           'php',
+          'regex',
+          'toml',
+          'wiki',
         ],
       },
     }),
