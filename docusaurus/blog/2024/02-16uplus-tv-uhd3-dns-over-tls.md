@@ -11,7 +11,7 @@ tags: [한국어, android, android TV, dns, dns over TLS, LGU+, tech, tv]
 
 <!-- truncate -->
 
-## 원격 접속
+## 원격 접속 {#원격-접속}
 
 (개발자 모드, ADB 승인까지는 완료했다고 가정)
 

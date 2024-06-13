@@ -4,7 +4,7 @@ unlisted: true
 
 # WKD (Web Key Directory)
 
-## Command to generate the correct file name
+## Command to generate the correct file name {#command-to-generate-the-correct-file-name}
 
 [Reference](https://wiki.gnupg.org/WKDHosting).
 

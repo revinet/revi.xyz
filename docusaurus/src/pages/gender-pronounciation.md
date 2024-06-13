@@ -18,6 +18,6 @@ hide_table_of_contents: true
   - Basic rule of thumb is, if you have to ask yourself or me if we are close enough, you are not.
   - If you think we are 'close enough' but not completely sure, you can just ask and I'll make the determination for you.
 
-### Remarks
+### Remarks {#remarks}
 
 Korean language does not make use of pronouns that much when it comes to referring someone else (our names are generally short enough that does not need any compression - we can just refer to someone else by `$firstname` prepended by gender-neutral form of sir/madam.) so I find English pronouns to be a bit confusing. This means it might be confusing both to me and to you. Sorry if you are confused.
