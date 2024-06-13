@@ -22,8 +22,8 @@
       "include": [
         "(\\.cjs$)",
         "(\\.js$)",
-        "(\\.jsx$)",
-        "(\\.mjs$)"
+        "(\\.mjs$)",
+        "(\\.ts$)"
       ],
       "jshint.jshintrc": ".jshintrc.json"
     },

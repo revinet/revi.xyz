@@ -1,6 +1,5 @@
 ---
 description: Sort of meta-data about this site.
-hide_table_of_contents: true
 ---
 
 # About this site

@@ -5,6 +5,7 @@
 // See: https://docusaurus.io/docs/api/docusaurus-config
 
 import {themes as prismThemes} from 'prism-react-renderer';
+import joinCJKLines from 'remark-join-cjk-lines';
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
@@ -67,6 +68,7 @@ const config = {
           feedOptions: {
             type: 'all',
           },
+          remarkPlugins: [joinCJKLines],
           showLastUpdateAuthor: true,
           showLastUpdateTime: true,
           // Please change this to your repo.
@@ -74,6 +76,7 @@ const config = {
           // editUrl: 'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
         },
         pages: {
+          remarkPlugins: [joinCJKLines],
           showLastUpdateTime: true,
         },
         sitemap: {

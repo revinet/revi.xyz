@@ -192,7 +192,7 @@ ReviNet은 정보주체의 개인정보 열람청구가 신속하게 처리되�
     [이 사이트](https://go.dev/play) 에 접속한 후, 다음 코드를 붙여넣고 우측 상단 노란색으로 강조된
     "Run" 을 클릭하세요. (스팸메일 방지를 위한 대책입니다.)
 
-    ```go
+    ```go title="main.go"
     package main
 
     import "fmt"
