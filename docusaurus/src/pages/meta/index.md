@@ -31,6 +31,9 @@ I am bound to that single repository, which is not really desirable.
 I'd like to thank these people for inspiration:
 
 - [Aaron Parecki](https://aaronparecki.com/now/) for [/time/](https://revi.xyz/time/).
+- [go.dev](https://go.dev/doc/tutorial/workspaces) folks for their [reverse.go](https://go.googlesource.com/example/+/refs/heads/master/hello/reverse/reverse.go),
+  along with [go playground](https://go.dev/play) which is used for email
+  address obfuscation.
 
 ## Legal {#legal}
 
@@ -53,7 +56,7 @@ Unless noted otherwise, non-text programming codes are licensed under
 
 :::info[Images are freely licensed]
 
-Unlike the text contents, images are dual-licensed.
+Unlike the text contents, images are [freely licensed](https://freedomdefined.org/Definition).
 You may choose your favorite license from one of those two licenses.
 
 :::
@@ -91,9 +94,9 @@ the default image license.
 
 :::
 
-- [Creative Commons BY ND logo](/img/by-nd.svg):
+- [Creative Commons BY ND logo](https://revi.xyz/img/by-nd.svg):
   Copyright © Creative Commons, [used in compliance with their trademark policy](https://creativecommons.org/policies/#trademark).
-- [OpenGraph picture](/img/bbip-bg.png): Copyright © 삐쀼 2022, used with permission.
-- [Profile picture](/img/logo.png):
+- [OpenGraph picture](https://revi.xyz/img/bbip-bg.png): Copyright © 삐쀼 2022, used with permission.
+- [Profile picture](https://revi.xyz/img/logo.png):
   [Copyright © 시안 2022](https://archive.today/2022.01.27-085510/https://dreaming-flower.postype.com/post/11562299),
   used with permission.

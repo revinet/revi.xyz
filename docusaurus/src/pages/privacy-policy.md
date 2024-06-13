@@ -211,7 +211,9 @@ ReviNet은 정보주체의 개인정보 열람청구가 신속하게 처리되�
     ```
 
     하단에 정상적인 이메일 주소와 함께 `Program exited.` 라는 문구가 뜨면 됩니다.
-    ([예시](./emailexample.png) 를 참조하세요.)
+    ([예시](https://revi.xyz/img/emailexample.png) 를 참조하세요.
+    이 코드는 [go.dev](https://go.googlesource.com/example/+/refs/heads/master/hello/reverse/reverse.go)
+    에서 발췌한 것으로 [BSD 라이선스](https://go.dev/LICENSE)에 의해 배포됩니다.)
     [이 링크](https://go.dev/play/p/oDq0ZRWQb16)를 클릭하면 위 코드를 자동으로 채워 줍니다.
     자동으로 채워진 경우 우측 상단 노란색 "Run"을 클릭하기만 하면 됩니다.
 
