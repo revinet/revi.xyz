@@ -1,0 +1,20 @@
+# .markdownlint-cli2.yaml
+# Syntax: https://github.com/DavidAnson/markdownlint-cli2#configuration
+
+# Front matters
+frontMatter: '(^---\s*$[^]*?^---\s*$)(\r\n|\r|\n|$)'
+
+# Disable markdownlint for this file
+ignores:
+  - CODEOWNERS
+  - LICENSE
+
+# Rules: https://github.com/DavidAnson/vscode-markdownlint#rules
+config:
+  default: true
+  MD003:
+    style: atx
+  MD013: 80
+  MD033:
+    allowed_elements: ['details', 'head', 'link', 'summary', 'Tabs', 'TabItem']
+  MD041: false
