@@ -1,8 +1,9 @@
-name: 'Deploy Cloudflare Pages'
+name: 'Cloudflare Pages'
 
 on: # yamllint disable-line rule:truthy
   push:
     branches:
+      - master
       - prod
     paths:
       - '.github/workflows/**'
@@ -16,6 +17,8 @@ on: # yamllint disable-line rule:truthy
 # prettier-ignore
 env:
   IBM_TELEMETRY_DISABLED: true
+  CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+  CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
 
 jobs:
   build:
@@ -35,9 +38,11 @@ jobs:
         run: npm ci --fund=false --omit=optional
       - name: 'Build website'
         run: npm run dbuild
-      - name: 'Deploy to Cloudflare Pages'
+      - name: 'Deploy to Cloudflare Pages (master)'
+        if: github.ref_name == 'master'
+        # yamllint disable-line rule:line-length
+        run: npx wrangler pages deploy ${{ github.workspace }}/docusaurus/build --project-name=revi-xyz --branch master --commit-dirty=true
+      - name: 'Deploy to Cloudflare Pages (prod)'
+        if: github.ref_name == 'prod'
         # yamllint disable-line rule:line-length
         run: npx wrangler pages deploy ${{ github.workspace }}/docusaurus/build --project-name=revi-xyz --commit-dirty=true
-        env:
-          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
-          CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
