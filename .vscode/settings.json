@@ -1,6 +1,9 @@
 {
   "files.autoSave": "afterDelay",
   "files.associations": {
+    "^.arc*": "json",
+    "^CODEOWNERS": "codeowners",
+    "^.imgbotconfig": "json",
     "*.mdx": "markdown"
   },
   "markdownlint.lintWorkspaceGlobs": [

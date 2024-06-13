@@ -4,6 +4,7 @@
     "christian-kohler.npm-intellisense",
     "editorconfig.editorconfig",
     "esbenp.prettier-vscode",
-    "github.vscode-github-actions"
+    "github.vscode-github-actions",
+    "jasonnutter.vscode-codeowners"
   ]
 }
