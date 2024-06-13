@@ -31,7 +31,7 @@
   },
   "scripts": {
     "alint": "arc lint",
-    "dbuild": "cd docusaurus && docusaurus build",
+    "dbuild": "cd docusaurus && docusaurus clear && docusaurus build",
     "dserve": "cd docusaurus && docusaurus serve",
     "dstart": "cd docusaurus && docusaurus start",
     "lighthouse": "lhci autorun",
@@ -41,7 +41,7 @@
     "lint:test": "arc lint && prettier --check .",
     "p:c": "prettier --check",
     "p:w": "prettier --write",
-    "test": "cd docusaurus && docusaurus build && docusaurus serve",
+    "test": "sh .github/test.sh",
     "webping:send": "webmention https://revi.xyz/blog/rss.xml --limit 1 --send",
     "webping:test": "webmention https://revi.xyz/blog/rss.xml --limit 1"
   },
