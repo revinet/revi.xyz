@@ -12,10 +12,13 @@ on: # yamllint disable-line rule:truthy
       - '**.yaml'
       - '.yamllint'
   merge_group:
+  workflow_dispatch:
+
 jobs:
-  lint-everything:
+  yamlLint:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      - name: 'Checkout'
+        uses: actions/checkout@v4
       - name: yaml-lint
         uses: ibiqlik/action-yamllint@v3

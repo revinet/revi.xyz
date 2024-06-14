@@ -90,6 +90,11 @@
     },
     {
       "rel": "http://webfinger.net/rel/profile-page",
+      "href": "https://www.npmjs.com/~revi",
+      "type": "text/html"
+    },
+    {
+      "rel": "http://webfinger.net/rel/profile-page",
       "href": "https://bugzilla.mozilla.org/user_profile?user_id=509779",
       "type": "text/html"
     },
