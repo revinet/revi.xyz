@@ -12,6 +12,15 @@ on: # yamllint disable-line rule:truthy
       - 'docusaurus/**'
       - 'package.json'
       - 'package-lock.json'
+  pull_request:
+    paths:
+      - '.github/workflows/**'
+      - '.github/dependabot.yml'
+      - '.github/renovate.json'
+      - 'docusaurus/**'
+      - 'package.json'
+      - 'package-lock.json'
+  merge_group:
   workflow_dispatch:
 
 # prettier-ignore

@@ -11,6 +11,7 @@ on: # yamllint disable-line rule:truthy
       - '**.yml'
       - '**.yaml'
       - '.yamllint'
+  merge_group:
 jobs:
   lint-everything:
     runs-on: ubuntu-latest
