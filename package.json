@@ -13,6 +13,7 @@
   },
   "devDependencies": {
     "@remy/webmention": "^1.5.0",
+    "@revi/prettier-config": "^0.0.1",
     "csslint": "^1.0.5",
     "jshint": "^2.13.6",
     "prettier": "^3.3.2",
@@ -28,6 +29,7 @@
   "bugs": {
     "url": "https://revi.xyz/new"
   },
+  "prettier": "@revi/prettier-config",
   "engines": {
     "node": ">=18.0"
   },

@@ -15,8 +15,8 @@ export default function FooterLayout({
       })}>
       <div className="container container-fluid">
         <p>
-          If you want to comment on contents of this blog,
-          &nbsp;<a href="/contact-method/#email">email me</a>.
+          If you want to comment on contents of this blog, &nbsp;
+          <a href="/contact-method/#email">email me</a>.
         </p>
         {links}
         {(logo || copyright) && (
