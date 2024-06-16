@@ -75,6 +75,10 @@
     "xml": {
       "type": "xml",
       "include": ["(\\.svg$)", "(\\.xml$)"]
+    },
+    "yamlLint": {
+      "type": "yamllint",
+      "include": ["(\\.yaml$)", "(\\.yml$)", "(^.yamllint$)"]
     }
   }
 }
