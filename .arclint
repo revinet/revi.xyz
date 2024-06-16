@@ -28,7 +28,8 @@
         "(^.arcunit$)",
         "(^.imgbotconfig$)",
         "(\\.json$)"
-      ]
+      ],
+      "exclude": ["(^.vscode/)"]
     },
     "merge-conflict": {
       "type": "merge-conflict"
