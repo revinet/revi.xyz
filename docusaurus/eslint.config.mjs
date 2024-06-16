@@ -1,5 +1,4 @@
-import globals from 'globals';
-import pluginJs from '@eslint/js';
+import reviConfig from '@revi/eslint-config';
 import pluginReactConfig from 'eslint-plugin-react/configs/recommended.js';
 import docusaurus from '@docusaurus/eslint-plugin';
 
@@ -13,7 +12,7 @@ export default [
       'sidebars.js',
     ],
   },
-  pluginJs.configs.recommended,
+  ...reviConfig,
   pluginReactConfig,
   {
     plugins: {'@docusaurus': docusaurus},
@@ -27,12 +26,6 @@ export default [
       '@docusaurus/string-literal-i18n-messages': 'warn',
       '@docusaurus/no-html-links': 'warn',
       '@docusaurus/prefer-docusaurus-heading': 'warn',
-    },
-    languageOptions: {
-      globals: {
-        ...globals.browser,
-        ...globals.node,
-      },
     },
   },
 ];

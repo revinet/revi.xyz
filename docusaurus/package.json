@@ -31,9 +31,11 @@
     "@docusaurus/tsconfig": "3.4.0",
     "@docusaurus/types": "3.4.0",
     "@eslint/compat": "^1.1.0",
-    "@eslint/js": "^9.3.0",
+    "@eslint/js": "^9.5.0",
     "@lhci/cli": "^0.13.0",
-    "eslint": "^9.4.0",
+    "@revi/eslint-config": "^0.0.2",
+    "eslint": "^9.5.0",
+    "eslint-config-prettier": "^9.1.0",
     "eslint-plugin-react": "^7.34.2",
     "globals": "^15.4.0"
   },

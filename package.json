@@ -35,6 +35,8 @@
   },
   "scripts": {
     "alint": "arc lint",
+    "browserlist:prod": "cd docusaurus && browserslist --env=\"production\"",
+    "browserlist:dev": "cd docusaurus && browserslist --env=\"development\"",
     "dbuild": "cd docusaurus && docusaurus clear && docusaurus build",
     "dserve": "cd docusaurus && docusaurus serve",
     "dstart": "cd docusaurus && docusaurus clear && docusaurus start",
