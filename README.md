@@ -10,5 +10,5 @@ See [meta](https://revi.xyz/meta/) for detailed info.
 <!-- prettier-ignore -->
 | Workflow | Badge |
 | ---- | ---- |
-| Deploy | ![GitHub Actions Workflow Status](https://img.shields.io/github/actions/workflow/status/revinet/revi.xyz/cloudflare-pages.yml?branch=prod) |
-| Test | ![GitHub Actions Workflow Status](https://img.shields.io/github/actions/workflow/status/revinet/revi.xyz/cloudflare-pages.yml?branch=master) |
+| Deploy | ![GitHub Actions Workflow Status](https://img.shields.io/github/actions/workflow/status/revinet/revi.xyz/cloudflare-pages.yml?branch=prod&logo=github) |
+| Test | ![GitHub Actions Workflow Status](https://img.shields.io/github/actions/workflow/status/revinet/revi.xyz/cloudflare-pages.yml?branch=master&logo=github) |

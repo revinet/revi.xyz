@@ -1,6 +1,6 @@
 /*
   Accept-CH: Sec-CH-UA, Sec-CH-UA-Mobile, Sec-CH-UA-Platform, Sec-CH-UA-Full-Version-List
-  Content-Security-Policy: base-uri 'self'; default-src 'self'; style-src 'self' https://fonts.gstatic.com https://fonts.googleapis.com data: 'unsafe-inline'; script-src 'self' data: https://static.cloudflareinsights.com https://cloudflareinsights.com https://challenges.cloudflare.com 'unsafe-inline'; img-src 'self' data: https://r2.revicdn.net; media-src 'self' data: https://r2.revicdn.net; font-src 'self' data: https://fonts.gstatic.com https://fonts.googleapis.com 'unsafe-inline'; connect-src 'self'; worker-src 'self'; frame-src 'self' https://www.youtube.com/embed/ 'unsafe-inline'; form-action 'self' 'unsafe-inline';
+  Content-Security-Policy: base-uri 'self'; default-src 'self'; style-src 'self' https://fonts.gstatic.com https://fonts.googleapis.com data: 'unsafe-inline'; script-src 'self' data: https://static.cloudflareinsights.com https://cloudflareinsights.com https://challenges.cloudflare.com 'unsafe-inline'; img-src 'self' data: https://r2.revicdn.net https://img.shields.io; media-src 'self' data: https://r2.revicdn.net; font-src 'self' data: https://fonts.gstatic.com https://fonts.googleapis.com 'unsafe-inline'; connect-src 'self'; worker-src 'self'; frame-src 'self' https://www.youtube.com/embed/ 'unsafe-inline'; form-action 'self' 'unsafe-inline';
   Proven: proven.lol/335c2d
   Referrer-Policy: same-origin
   X-Frame-Options: SAMEORIGIN

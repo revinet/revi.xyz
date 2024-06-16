@@ -26,6 +26,16 @@ time - I just need to port the build script to use new CI server.
 When I use Cloudflare's GitHub connection with Cloudflare Build server,
 I am bound to that single repository, which is not really desirable.
 
+### Build badges {#build-badges}
+
+This is the current build status for this website.
+
+<!-- prettier-ignore -->
+| Workflow | Badge |
+| ---- | ---- |
+| Deploy | ![GitHub Actions Workflow Status](https://img.shields.io/github/actions/workflow/status/revinet/revi.xyz/cloudflare-pages.yml?branch=prod&logo=github) |
+| Test | ![GitHub Actions Workflow Status](https://img.shields.io/github/actions/workflow/status/revinet/revi.xyz/cloudflare-pages.yml?branch=master&logo=github) |
+
 ## Credit {#credit}
 
 I'd like to thank these people for inspiration:
