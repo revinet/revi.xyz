@@ -43,6 +43,7 @@
     "lint:eslint": "cd docusaurus && eslint .",
     "lint:renovate": "renovate-config-validator",
     "lint:test": "arc lint && prettier --check .",
+    "new": "cd docusaurus && docusaurus-post-generator new blog",
     "p:c": "prettier --check",
     "p:w": "prettier --write",
     "test": "sh .github/scripts/test.sh",
