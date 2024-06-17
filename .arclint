@@ -29,7 +29,7 @@
         "(^.imgbotconfig$)",
         "(\\.json$)"
       ],
-      "exclude": ["(^.vscode/)"]
+      "exclude": ["(^.devcontainer/)", "(^.vscode/)"]
     },
     "merge-conflict": {
       "type": "merge-conflict"
