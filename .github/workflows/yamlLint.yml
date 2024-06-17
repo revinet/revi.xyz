@@ -1,16 +1,12 @@
 ---
 name: YAML Lint
-on: # yamllint disable-line rule:truthy
+on:
   push:
     paths:
       - '**.yml'
       - '**.yaml'
       - '.yamllint'
   pull_request:
-    paths:
-      - '**.yml'
-      - '**.yaml'
-      - '.yamllint'
   merge_group:
   workflow_dispatch:
 
