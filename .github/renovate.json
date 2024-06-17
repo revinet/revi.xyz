@@ -6,11 +6,19 @@
   "packageRules": [
     {
       "matchDatasources": ["npm"],
-      "matchPackageNames": ["clsx", "prism", "react"],
+      "matchPackageNames": ["clsx", "docusaurus", "prism", "react", "remark"],
       "matchPackagePatterns": ["^@docusaurus/", "^@mdx-js"],
       "automerge": false,
       "minimumReleaseAge": "2 days",
       "groupName": "docusaurus"
+    },
+    {
+      "matchDatasources": ["npm"],
+      "matchPackageNames": ["pretendard"],
+      "matchPackagePatterns": ["^@fontsource/", "^@ibm/"],
+      "automerge": false,
+      "minimumReleaseAge": "2 days",
+      "groupName": "webFonts"
     },
     {
       "matchDatasources": ["npm"],
@@ -22,9 +30,10 @@
         "prettier",
         "renovate",
         "turbo",
+        "typescript",
         "wrangler"
       ],
-      "matchPackagePatterns": ["^@eslint/", "^@lhci/", "@remy/"],
+      "matchPackagePatterns": ["^@eslint/", "^@lhci/", "^@remy/", "^@revi/"],
       "matchUpdateTypes": ["minor", "patch"],
       "automerge": true,
       "platformAutomerge": true,
