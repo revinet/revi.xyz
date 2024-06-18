@@ -42,6 +42,8 @@ jobs:
           node-version: 20
       - name: 'Install dependencies'
         run: npm ci --fund=false --omit=optional
+      - name: 'Prettier version check'
+        run: npx prettier --version
       - name: 'Prettier check'
         run: npm run p:c .
   renovate:
@@ -58,6 +60,8 @@ jobs:
           node-version: 20
       - name: 'Install dependencies'
         run: npm ci --fund=false
+      - name: 'Renovate version check'
+        run: npx renovate -v
       - name: 'Run renovate-config-validator'
         run: npm run lint:renovate
   lighthouse-ci:
@@ -76,6 +80,8 @@ jobs:
         run: npm ci --fund=false --omit=optional
       - name: 'Build docusaurus'
         run: npm run dbuild
+      - name: 'lhci version check'
+        run: npx lhci --version --workspace=docusaurus
       - name: 'Run lighthouse CI'
         run: npm run lighthouse
         env:
