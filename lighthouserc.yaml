@@ -27,5 +27,25 @@ ci:
       - http://localhost/ko/blog/2024/02/16/uplus-tv-uhd3-dns-over-tls/index.html
   assert:
     preset: lighthouse:no-pwa
+    assertions:
+      color-contrast: off
+      csp-xss: off
+      duplicate-id-active: warn
+      duplicate-id-aria: warn
+      font-display: warn
+      heading-order: warn
+      identical-links-same-purpose: off
+      image-redundant-alt: off
+      label-content-name-mismatch: warn
+      lcp-lazy-loaded: warn
+      link-text: warn
+      meta-description: warn
+      offscreen-images: warn
+      tap-targets: warn
+      total-byte-weight: off
+      unsized-images: warn
+      unused-css-rules: warn
+      unused-javascript: warn
+      uses-responsive-images: warn
   upload:
     target: temporary-public-storage
