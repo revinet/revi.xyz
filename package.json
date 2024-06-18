@@ -19,7 +19,7 @@
     "prettier": "^3.3.2",
     "turbo": "^2.0.3",
     "typescript": "^5.4.5",
-    "wrangler": "^3.60.2"
+    "wrangler": "^3.60.3"
   },
   "optionalDependencies": {
     "renovate": "^37.408.2"
