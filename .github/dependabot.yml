@@ -1,4 +1,107 @@
+---
 # https://issuetracker.revi.xyz/u/dependabot
 # for documentation link
 
-# emptied in favor of renovate while testing it.
+version: 2
+updates:
+  # Maintain dependencies for DevContainers
+  - package-ecosystem: 'devcontainers'
+    assignees:
+      - 'revi'
+    # DevContainers in the location of `/`.
+    directory: '/'
+    schedule:
+      interval: 'weekly'
+      day: 'wednesday'
+      time: '10:00'
+      timezone: 'Asia/Seoul'
+    target-branch: 'master'
+    open-pull-requests-limit: 3
+    commit-message:
+      prefix: 'meta'
+      include: 'scope'
+
+  # Maintain dependencies for Git Submodules
+  - package-ecosystem: 'gitsubmodule'
+    assignees:
+      - 'revi'
+    # Git Submodules in the location of `/`.
+    directory: '/'
+    schedule:
+      interval: 'weekly'
+      day: 'sunday'
+      time: '10:00'
+      timezone: 'Asia/Seoul'
+    target-branch: 'master'
+    open-pull-requests-limit: 3
+    commit-message:
+      prefix: 'meta'
+      include: 'scope'
+
+  # Maintain dependencies for GitHub Actions
+  - package-ecosystem: 'github-actions'
+    assignees:
+      - 'revi'
+    # Workflow files stored in the default location of `.github/workflows`.
+    # You don't need to specify `/.github/workflows` for `directory`.
+    # You can use `directory: "/"`.
+    directory: '/'
+    schedule:
+      interval: 'weekly'
+      day: 'monday'
+      time: '10:00'
+      timezone: 'Asia/Seoul'
+    target-branch: 'master'
+    open-pull-requests-limit: 3
+    commit-message:
+      prefix: 'meta'
+      include: 'scope'
+
+  # Maintain dependencies for `npm` @ rootdir
+  - package-ecosystem: 'npm'
+    assignees:
+      - 'revi'
+    # npm package dependencies in the location of `/package.json`.
+    directory: '/'
+    schedule:
+      interval: 'daily'
+      time: '10:00'
+      timezone: 'Asia/Seoul'
+    target-branch: 'master'
+    open-pull-requests-limit: 3
+    groups:
+      fonts:
+        patterns: ['@fontsource/*', '@ibm/plex', 'pretendard']
+    commit-message:
+      prefix: 'meta'
+      include: 'scope'
+
+  # Maintain dependencies for `npm` @ Docusaurus
+  - package-ecosystem: 'npm'
+    assignees:
+      - 'revi'
+    # npm package dependencies in the location of `docusaurus/package.json`.
+    directory: 'docusaurus/'
+    schedule:
+      interval: 'daily'
+      time: '10:00'
+      timezone: 'Asia/Seoul'
+    target-branch: 'master'
+    open-pull-requests-limit: 3
+    groups:
+      docusaurus:
+        patterns:
+          [
+            '@docusaurus/*',
+            '@mdx-js/react',
+            'docusaurus-post-generator',
+            'prism-react-renderer',
+            'react',
+            'react-dom',
+            'remark-join-cjk-lines',
+          ]
+      eslint:
+        patterns: ['@eslint/*', 'eslint', 'eslint-*']
+    commit-message:
+      prefix: 'meta'
+      include: 'scope'
