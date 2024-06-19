@@ -182,6 +182,10 @@ const config = {
                 label: 'Issue Tracker',
               },
               {
+                to: '/fediverse',
+                label: 'fediverse accounts',
+              },
+              {
                 href: 'https://github.com/revinet/revi.xyz',
                 label: 'GitHub',
               },
@@ -207,6 +211,10 @@ const config = {
               {
                 label: 'Issue Tracker',
                 href: 'https://revi.xyz/phab',
+              },
+              {
+                label: 'Fediverse accounts',
+                to: '/fediverse',
               },
             ],
           },
