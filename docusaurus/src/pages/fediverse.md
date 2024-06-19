@@ -6,7 +6,10 @@ unlisted: true
 <head>
 <link rel="me" href="https://old.sharlayan.city/@revi" />
 <link rel="me" href="https://planet.moe/@revi" />
+<link rel="me" href="https://social.silicon.moe/@revi" />
 <link rel="me" href="https://social.lol/@revi" />
+<link rel="me" href="https://mastodon.sdf.org/@revi" />
+<link rel="me" href="https://mstdn.io/@revi" />
 <link rel="me" href="https://revi.xyz/" />
 </head>
 
@@ -23,8 +26,12 @@ I may grant some exceptions to this, but don't rely on this.
 
 :::
 
-- [ko/1](https://old.sharlayan.city/@revi)
-- [ko/2](https://planet.moe/@revi)
-- [en/1](https://social.lol/@revi)
+- [한국어](https://old.sharlayan.city/@revi), 본 계정
+- [한국어](https://planet.moe/@revi), 부계정
+- [한국어](https://twingyeo.kr/@revi), Rest in Peace
+- [한국어](https://social.silicon.moe/@revi)
+- [English](https://social.lol/@revi), Main account
+- [English](https://mastodon.sdf.org/@revi), historical
+- [English](https://mstdn.io/@revi), historical
 
-TODO: fill in from relme.revi
+<!-- TODO: fill in from relme.revi -->
