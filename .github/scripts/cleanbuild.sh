@@ -1,4 +1,4 @@
-#!bin/bash
+#!/usr/bin/env bash
 # Copyright 2024 Hong Yongmin
 # SPDX-License-Identifier: Apache-2.0
 # Clean-install the dependencies and build the site
