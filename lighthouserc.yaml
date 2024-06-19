@@ -5,7 +5,7 @@ ci:
     url:
       - http://localhost/index.html
       - http://localhost/contact-method/index.html
-      - http://localhost/fediverse.html
+      - http://localhost/fediverse/index.html
       - http://localhost/gender-pronounciation/index.html
       - http://localhost/meta/index.html
       - http://localhost/privacy-policy/index.html
@@ -17,7 +17,7 @@ ci:
       - http://localhost/blog/2024/02/16/uplus-tv-uhd3-dns-over-tls/index.html
       - http://localhost/ko/index.html
       - http://localhost/ko/contact-method/index.html
-      - http://localhost/ko/fediverse.html
+      - http://localhost/ko/fediverse/index.html
       - http://localhost/ko/gender-pronounciation/index.html
       - http://localhost/ko/meta/index.html
       - http://localhost/ko/privacy-policy/index.html
