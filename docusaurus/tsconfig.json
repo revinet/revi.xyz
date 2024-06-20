@@ -2,6 +2,7 @@
   "extends": "@docusaurus/tsconfig",
   "jsx": "react",
   "compilerOptions": {
-    "baseUrl": "./"
+    "baseUrl": "./",
+    "module": "esnext"
   }
 }
