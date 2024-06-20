@@ -24,6 +24,7 @@ docusaurus/static/.well-known/openpgpkey/hu/* binary
 # https://github.com/github-linguist/linguist/blob/master/docs/overrides.md
 .arclint              linguist-language=json
 .devcontainer/**.json linguist-language=jsonc
+.npmrc                linguist-language=ini
 .vscode/**.json       linguist-language=jsonc
 .yamllint             linguist-language=yaml
 *.md                  linguist-detectable

@@ -1,6 +1,7 @@
+---
 name: 'CI test'
 
-on: # yamllint disable-line rule:truthy
+on:
   push:
     branches:
       - master
@@ -41,7 +42,7 @@ jobs:
         with:
           node-version: 20
       - name: 'Install dependencies'
-        run: npm ci --fund=false --omit=optional
+        run: npm ci --omit=optional
       - name: 'Prettier version check'
         run: npx prettier --version
       - name: 'Prettier check'
@@ -59,7 +60,7 @@ jobs:
         with:
           node-version: 20
       - name: 'Install dependencies'
-        run: npm ci --fund=false
+        run: npm ci
       - name: 'Renovate version check'
         run: npx renovate -v
       - name: 'Run renovate-config-validator'
@@ -77,7 +78,7 @@ jobs:
         with:
           node-version: 20
       - name: 'Install dependencies'
-        run: npm ci --fund=false --omit=optional
+        run: npm ci --omit=optional
       - name: 'Build docusaurus'
         run: npm run dbuild
       - name: 'lhci version check'
