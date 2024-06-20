@@ -93,9 +93,7 @@ for everyone.
 - [Montserrat](https://github.com/JulietaUla/Montserrat), SIL Open Font License 1.1
 - [Naver Nanum Fonts](https://hangeul.naver.com/fonts/search?f=nanum),
   SIL Open Font License 1.1
-- [Noto](https://fonts.google.com/noto), SIL Open Font License 1.1
-- [Pretendard](https://github.com/orioncactus/pretendard),
-  SIL Open Font License 1.1
+- [Noto Serif KR](https://fonts.google.com/noto), SIL Open Font License 1.1
 
 ### Images {#images}
 

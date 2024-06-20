@@ -92,7 +92,6 @@ const config = {
           customCss: [
             '../node_modules/@ibm/plex/css/ibm-plex-sans-kr.min.css',
             '../node_modules/@ibm/plex/css/ibm-plex.min.css',
-            '../node_modules/pretendard/dist/web/static/pretendard.css',
             '../node_modules/@fontsource/noto-serif-kr/korean.css',
             '../node_modules/@fontsource/montserrat/latin.css',
             './src/css/custom.css',
