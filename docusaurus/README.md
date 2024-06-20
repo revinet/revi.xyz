@@ -18,7 +18,7 @@ docusaurus $ npm run serve
 
 ## Browserlist config
 
-This is as of 2024-06-08 (KST).
+This is as of 2024-06-20 (KST).
 
 ### prod
 
@@ -43,15 +43,20 @@ firefox 115
 ios_saf 17.5
 ios_saf 17.4
 ios_saf 17.3
+ios_saf 17.2
+ios_saf 17.1
+ios_saf 17.0
 ios_saf 16.6-16.7
+ios_saf 16.5
+ios_saf 16.4
+ios_saf 16.3
+ios_saf 16.2
+ios_saf 16.1
+ios_saf 16.0
 ios_saf 15.6-15.8
 kaios 3.0-3.1
-kaios 2.5
-op_mini all
 op_mob 80
 opera 109
-opera 108
-opera 107
 safari 17.5
 safari 17.4
 samsung 24

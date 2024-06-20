@@ -43,10 +43,11 @@
     "production": [
       ">5%",
       ">0.5% in KR",
-      "last 1 versions",
-      "last 3 firefox version",
+      "last 1 version",
+      "last 3 firefox versions",
       "Firefox ESR",
       "last 2 iOS major versions",
+      "last 2 safari versions",
       "not dead",
       "not op_mini all"
     ],
