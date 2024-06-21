@@ -14,7 +14,6 @@
     },
     {
       "matchDatasources": ["npm"],
-      "matchPackageNames": ["pretendard"],
       "matchPackagePatterns": ["^@fontsource/", "^@ibm/"],
       "automerge": false,
       "minimumReleaseAge": "2 days",
