@@ -71,7 +71,7 @@ updates:
     open-pull-requests-limit: 3
     groups:
       fonts:
-        patterns: ['@fontsource/*', '@ibm/plex', 'pretendard']
+        patterns: ['@fontsource/*', '@ibm/plex']
     commit-message:
       prefix: 'meta'
       include: 'scope'

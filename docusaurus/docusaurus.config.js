@@ -92,8 +92,9 @@ const config = {
           customCss: [
             '../node_modules/@ibm/plex/css/ibm-plex-sans-kr.min.css',
             '../node_modules/@ibm/plex/css/ibm-plex.min.css',
-            '../node_modules/@fontsource/noto-serif-kr/korean.css',
-            '../node_modules/@fontsource/montserrat/latin.css',
+            '../node_modules/@fontsource/montserrat/index.css',
+            '../node_modules/@fontsource/nanum-gothic-coding/index.css',
+            '../node_modules/@fontsource/noto-serif-kr/index.css',
             './src/css/custom.css',
           ],
         },
@@ -107,13 +108,6 @@ const config = {
 
   headTags: [
     /** @type {import('@docusaurus/types').headTags} */
-    {
-      tagName: 'link',
-      attributes: {
-        rel: 'stylesheet',
-        href: 'https://fonts.googleapis.com/css2?family=Nanum+Gothic+Coding&display=swap',
-      },
-    },
     {
       tagName: 'link',
       attributes: {
