@@ -14,12 +14,13 @@ export default defineConfig({
   testDir: './tests',
   /* Run tests in files in parallel */
   fullyParallel: true,
-  /* Fail the build on CI if you accidentally left test.only in the source code. */
+  /* Fail the build on CI if you accidentally
+  left test.only in the source code. */
   forbidOnly: !!process.env.CI,
   /* Retry on CI only */
   retries: process.env.CI ? 2 : 0,
   /* Opt out of parallel tests on CI. */
-  workers: process.env.CI ? 1 : undefined,
+  workers: process.env.CI ? 1 : '50%',
   /* Shared settings for all the projects below.
   See https://playwright.dev/docs/api/class-testoptions. */
   use: {
@@ -50,12 +51,16 @@ export default defineConfig({
 
     /* Test against mobile viewports. */
     {
-      name: 'Mobile Chrome',
+      name: 'Android Chrome',
       use: {...devices['Pixel 7']},
     },
     {
-      name: 'Mobile Safari',
+      name: 'iOS Safari',
       use: {...devices['iPhone 11 Pro']},
+    },
+    {
+      name: 'iPadOS Safari',
+      use: {...devices['iPad Pro 11']},
     },
 
     /* Test against branded browsers. */
@@ -76,12 +81,19 @@ export default defineConfig({
   //  reuseExistingServer: !process.env.CI,
   //},
 
+  /* Stores the test artifacts in playwright-report directory */
+  outputDir: 'test-results/',
+
   /* Produce report in `line`, `json`, `buildkite`, `github` format */
   /* Reporter to use. See https://playwright.dev/docs/test-reporters */
   reporter: [
-    ['line'],
-    ['json'],
+    ['json', {outputFile: 'test-results/results.json'}],
     [process.env.CI ? 'github' : 'list'],
-    ['buildkite-test-collector/playwright/reporter'],
+    [
+      //prettier-ignore (? in a new line generates jshint warning)
+      process.env.BUILDKITE_ANALYTICS_TOKEN ?
+        'buildkite-test-collector/playwright/reporter'
+        : 'html',
+    ],
   ],
 });

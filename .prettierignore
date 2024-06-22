@@ -3,3 +3,5 @@ docusaurus/build
 docusaurus/static
 node_modules
 .pinterest-linters/
+playwright-report/
+test-results/

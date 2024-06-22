@@ -2,7 +2,9 @@
   "exclude": [
     "(^docusaurus/build/)",
     "(^node_modules/)",
-    "(^package-lock.json$)"
+    "(^package-lock.json$)",
+    "(^playwright-report/)",
+    "(^test-results/)"
   ],
   "linters": {
     "chmod": {
