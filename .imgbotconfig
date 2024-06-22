@@ -1,6 +1,11 @@
 {
   "schedule": "weekly",
-  "ignoredFiles": ["*.svg", "docusaurus/static/img/logo.png"],
+  "ignoredFiles": [
+    "*.svg",
+    "docusaurus/blog/2023/Photo-2023-11-22-19-56.jpeg",
+    "docusaurus/static/img/bbip-bg.png",
+    "docusaurus/static/img/logo.png"
+  ],
   "aggressiveCompression": "true",
   "minKBReduced": 100
 }
