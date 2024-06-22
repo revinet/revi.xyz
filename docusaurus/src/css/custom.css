@@ -29,6 +29,7 @@
   --ifm-font-family-monospace: '0xProto', 'Nanum Gothic Coding', 'D2Coding',
     'IBM Plex Mono', 'Courier New', monospace;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
+  overflow-wrap: break-word;
   word-break: keep-all;
 }
 
