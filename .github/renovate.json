@@ -9,14 +9,14 @@
       "matchPackageNames": ["clsx", "docusaurus", "prism", "react", "remark"],
       "matchPackagePatterns": ["^@docusaurus/", "^@mdx-js"],
       "automerge": false,
-      "minimumReleaseAge": "2 days",
+      "minimumReleaseAge": "3 days",
       "groupName": "docusaurus"
     },
     {
       "matchDatasources": ["npm"],
       "matchPackagePatterns": ["^@fontsource/", "^@ibm/"],
       "automerge": false,
-      "minimumReleaseAge": "2 days",
+      "minimumReleaseAge": "3 days",
       "groupName": "webFonts"
     },
     {
@@ -32,21 +32,32 @@
         "typescript",
         "wrangler"
       ],
-      "matchPackagePatterns": ["^@eslint/", "^@lhci/", "^@remy/", "^@revi/"],
+      "matchPackagePatterns": ["^@eslint/", "^@lhci/", "^@remy/"],
       "matchUpdateTypes": ["minor", "patch"],
       "automerge": true,
       "platformAutomerge": true,
-      "minimumReleaseAge": "2 days",
+      "minimumReleaseAge": "3 days",
       "schedule": ["after 4am and before 11am every weekday", "every weekend"],
       "timezone": "Asia/Seoul",
       "groupName": "linters"
     },
     {
       "matchDatasources": ["npm"],
+      "matchPackagePatterns": ["^@revi/"],
+      "matchUpdateTypes": ["major", "minor", "patch"],
+      "automerge": true,
+      "platformAutomerge": true,
+      "minimumReleaseAge": "1 hour",
+      "schedule": ["every weekday", "every weekend"],
+      "timezone": "Asia/Seoul",
+      "groupName": "internal-deps"
+    },
+    {
+      "matchDatasources": ["npm"],
       "matchUpdateTypes": ["patch"],
       "automerge": true,
       "platformAutomerge": true,
-      "minimumReleaseAge": "2 days",
+      "minimumReleaseAge": "3 days",
       "schedule": ["after 4am and before 11am every weekday", "every weekend"],
       "timezone": "Asia/Seoul",
       "groupName": "npm patch upgrades"
