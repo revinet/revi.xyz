@@ -33,7 +33,7 @@ test('Has blog/2024/02/16/uplus-tv-uhd3-dns-over-tls/ page', async ({page}) => {
   );
 
   // Expect the title to be there.
-  await expect(page).toHaveTitle(/U+TV UHD3 DNS Over TLS/);
+  await expect(page).toHaveTitle(/U\+TV UHD3 DNS Over TLS/);
 
   // Expect the text to be there.
   await expect(
