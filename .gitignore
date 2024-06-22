@@ -144,3 +144,9 @@ dist
 .lighthouseci/
 
 # End of https://www.toptal.com/developers/gitignore/api/docusaurus,lighthouseci
+
+# PlayWright
+/test-results/
+/playwright-report/
+/blob-report/
+/playwright/.cache/

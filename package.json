@@ -12,8 +12,11 @@
     "@ibm/plex": "6.4.1"
   },
   "devDependencies": {
+    "@playwright/test": "1.44.1",
     "@remy/webmention": "1.5.0",
     "@revi/prettier-config": "0.0.5",
+    "@types/node": "20.14.8",
+    "buildkite-test-collector": "1.7.1",
     "csslint": "1.0.5",
     "jshint": "2.13.6",
     "prettier": "3.3.2",
@@ -37,6 +40,7 @@
     "alint": "arc lint",
     "browserlist:prod": "cd docusaurus && browserslist --env=\"production\"",
     "browserlist:dev": "cd docusaurus && browserslist --env=\"development\"",
+    "build": "sh .github/scripts/build.sh",
     "cleanbuild": "sh .github/scripts/cleanbuild.sh",
     "dbuild": "cd docusaurus && docusaurus clear && docusaurus build",
     "dserve": "cd docusaurus && docusaurus serve",
@@ -49,7 +53,8 @@
     "new": "cd docusaurus && docusaurus-post-generator new blog",
     "p:c": "prettier --check",
     "p:w": "prettier --write",
-    "test": "sh .github/scripts/test.sh",
+    "pw:i": "playwright install",
+    "test": "playwright test",
     "webping:send": "webmention https://revi.xyz/blog/rss.xml --limit 1 --send",
     "webping:test": "webmention https://revi.xyz/blog/rss.xml --limit 1"
   },

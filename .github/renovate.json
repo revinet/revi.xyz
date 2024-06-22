@@ -22,6 +22,7 @@
     {
       "matchDatasources": ["npm"],
       "matchPackageNames": [
+        "buildkite-test-collector",
         "csslint",
         "eslint",
         "globals",
@@ -32,7 +33,13 @@
         "typescript",
         "wrangler"
       ],
-      "matchPackagePatterns": ["^@eslint/", "^@lhci/", "^@remy/"],
+      "matchPackagePatterns": [
+        "^@eslint/",
+        "^@lhci/",
+        "^@playwright/",
+        "^@remy/",
+        "^@types/"
+      ],
       "matchUpdateTypes": ["minor", "patch"],
       "automerge": true,
       "platformAutomerge": true,
