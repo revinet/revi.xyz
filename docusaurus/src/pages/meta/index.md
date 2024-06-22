@@ -35,8 +35,8 @@ This is the current build status for this website.
 <!-- prettier-ignore -->
 | Workflow | Badge |
 | ---- | ---- |
-| Deploy | ![GitHub Actions Workflow Status](https://img.shields.io/github/actions/workflow/status/revinet/revi.xyz/cloudflare-pages.yml?branch=prod&logo=github) |
-| Test | ![GitHub Actions Workflow Status](https://img.shields.io/github/actions/workflow/status/revinet/revi.xyz/cloudflare-pages.yml?branch=master&logo=github) |
+| Deploy | ![GitHub Actions Workflow Status (prod branch)](https://img.shields.io/github/actions/workflow/status/revinet/revi.xyz/cloudflare-pages.yml?branch=prod&logo=github) |
+| Test | ![GitHub Actions Workflow Status (master branch)](https://img.shields.io/github/actions/workflow/status/revinet/revi.xyz/cloudflare-pages.yml?branch=master&logo=github) |
 
 ## Credit {#credit}
 

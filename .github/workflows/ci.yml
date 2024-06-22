@@ -13,6 +13,8 @@ on:
       - 'docusaurus/**'
       - 'package.json'
       - 'package-lock.json'
+      - 'playwright.config.ts'
+      - 'tests/**'
   pull_request:
     paths:
       - '.github/workflows/**'
@@ -21,6 +23,8 @@ on:
       - 'docusaurus/**'
       - 'package.json'
       - 'package-lock.json'
+      - 'playwright.config.ts'
+      - 'tests/**'
   merge_group:
   workflow_dispatch:
 
@@ -31,7 +35,6 @@ env:
 jobs:
   playwright:
     name: 'Playwright Tests'
-    timeout-minutes: 60
     runs-on: ubuntu-latest
     steps:
       - name: 'Checkout'

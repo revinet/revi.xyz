@@ -90,10 +90,12 @@ export default defineConfig({
     ['json', {outputFile: 'test-results/results.json'}],
     [process.env.CI ? 'github' : 'list'],
     [
-      //prettier-ignore (? in a new line generates jshint warning)
+      // (? in a new line generates jshint warning)
+      // prettier-ignore
       process.env.BUILDKITE_ANALYTICS_TOKEN ?
         'buildkite-test-collector/playwright/reporter'
         : 'html',
+      {open: 'never'},
     ],
   ],
 });
