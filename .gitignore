@@ -6,7 +6,8 @@
 .docusaurus
 
 # Docusaurus Build Directory
-/build/
+docusaurus/build/
+.cache-loader
 
 ### Docusaurus.Node Stack ###
 # Logs
