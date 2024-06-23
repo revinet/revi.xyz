@@ -57,6 +57,17 @@ third-party's policies.
 
 :::
 
+### Disclaimer {#disclaimer}
+
+:::warning[Disclaimer]
+
+All contents (opinions, statements, etc) belong to me, both the rights and
+responsibilities. This means anything in this site (and any other comments by
+me, even outside this website) does not represent my employers and/or
+affiliated organizations and/or projects unless otherwise stated.
+
+:::
+
 ### License {#license}
 
 Unless noted otherwise, text contents on this site is licensed under
