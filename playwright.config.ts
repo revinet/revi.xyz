@@ -32,6 +32,8 @@ export default defineConfig({
     trace: 'on-first-retry',
   },
 
+  // Full list of devices:
+  // https://issuetracker.revi.xyz/u/playwrightdevicelist
   /* Configure projects for major browsers */
   projects: [
     {
