@@ -1,7 +1,7 @@
 import {test, expect} from '@playwright/test';
 
 test('Has title', async ({page}) => {
-  await page.goto('https://revi.xyz/meta/');
+  await page.goto('/meta/');
 
   // Expect a title "to contain" a substring.
   await expect(page).toHaveTitle(/About this site/);
@@ -9,7 +9,7 @@ test('Has title', async ({page}) => {
 });
 
 test('Has expected page texts', async ({page}) => {
-  await page.goto('https://revi.xyz/meta/');
+  await page.goto('/meta/');
 
   // Expect the text to be there.
   await expect(page.getByRole('article')).toContainText(
@@ -39,7 +39,7 @@ test('Has expected page texts', async ({page}) => {
 });
 
 test('Has expected ALT text', async ({page}) => {
-  await page.goto('https://revi.xyz/meta/');
+  await page.goto('/meta/');
 
   // Expect the alt text to be there.
   await page

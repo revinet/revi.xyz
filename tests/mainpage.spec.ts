@@ -1,7 +1,7 @@
 import {test, expect} from '@playwright/test';
 
 test('Has title', async ({page}) => {
-  await page.goto('https://revi.xyz/');
+  await page.goto('/');
 
   // Expect a title "to contain" a substring.
   await expect(page).toHaveTitle(/revi/);
@@ -9,7 +9,7 @@ test('Has title', async ({page}) => {
 });
 
 test('Has expected page texts', async ({page}) => {
-  await page.goto('https://revi.xyz/');
+  await page.goto('/');
 
   // Expect the text to be there.
   await expect(page.getByRole('article')).toContainText(

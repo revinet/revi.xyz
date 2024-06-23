@@ -2,7 +2,7 @@ import {test, expect} from '@playwright/test';
 
 test('Check headings', async ({page}) => {
   // Connect to main page.
-  await page.goto('https://revi.xyz/');
+  await page.goto('/');
 
   // Click the contact-method link to go to /contact-method/ page.
   await page.getByRole('link', {name: 'this guide'}).click();
@@ -25,7 +25,7 @@ test('Check headings', async ({page}) => {
 
 test('Click email tabs', async ({page}) => {
   // Connect to the contact method pages.
-  await page.goto('https://revi.xyz/contact-method/');
+  await page.goto('/contact-method/');
 
   // Expects page to have a text with the content of "liame.lolgmo@iver"
   await page.getByRole('tab', {name: 'general'}).click();

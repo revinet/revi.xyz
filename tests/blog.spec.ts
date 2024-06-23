@@ -2,7 +2,7 @@ import {test, expect} from '@playwright/test';
 
 test('Has blog/2022/01/28/오픈카톡/ page', async ({page}) => {
   // Go to the blog post page.
-  await page.goto('https://revi.xyz/blog/2022/01/28/오픈카톡/');
+  await page.goto('/blog/2022/01/28/오픈카톡/');
 
   // Expect the title to be there.
   await expect(page).toHaveTitle(/오픈카톡/);
@@ -28,9 +28,7 @@ test('Has blog/2022/01/28/오픈카톡/ page', async ({page}) => {
 
 test('Has blog/2024/02/16/uplus-tv-uhd3-dns-over-tls/ page', async ({page}) => {
   // Go to the blog post page.
-  await page.goto(
-    'https://revi.xyz/blog/2024/02/16/uplus-tv-uhd3-dns-over-tls/',
-  );
+  await page.goto('/blog/2024/02/16/uplus-tv-uhd3-dns-over-tls/');
 
   // Expect the title to be there.
   await expect(page).toHaveTitle(/U\+TV UHD3 DNS Over TLS/);
