@@ -8,14 +8,16 @@
       "matchDatasources": ["npm"],
       "matchPackageNames": ["clsx", "docusaurus", "prism", "react", "remark"],
       "matchPackagePatterns": ["^@docusaurus/", "^@mdx-js"],
-      "automerge": false,
+      "automerge": true,
+      "platformAutomerge": true,
       "minimumReleaseAge": "3 days",
       "groupName": "docusaurus"
     },
     {
       "matchDatasources": ["npm"],
       "matchPackagePatterns": ["^@fontsource/", "^@ibm/"],
-      "automerge": false,
+      "automerge": true,
+      "platformAutomerge": true,
       "minimumReleaseAge": "3 days",
       "groupName": "webFonts"
     },
@@ -44,7 +46,7 @@
       "automerge": true,
       "platformAutomerge": true,
       "minimumReleaseAge": "3 days",
-      "schedule": ["after 4am and before 11am every weekday", "every weekend"],
+      "schedule": ["0 */4 * * *"],
       "timezone": "Asia/Seoul",
       "groupName": "linters"
     },
@@ -55,7 +57,7 @@
       "automerge": true,
       "platformAutomerge": true,
       "minimumReleaseAge": "1 hour",
-      "schedule": ["every weekday", "every weekend"],
+      "schedule": ["0 */4 * * *"],
       "timezone": "Asia/Seoul",
       "groupName": "internal-deps"
     },
@@ -65,7 +67,7 @@
       "automerge": true,
       "platformAutomerge": true,
       "minimumReleaseAge": "3 days",
-      "schedule": ["after 4am and before 11am every weekday", "every weekend"],
+      "schedule": ["0 */4 * * *"],
       "timezone": "Asia/Seoul",
       "groupName": "npm patch upgrades"
     },
@@ -73,7 +75,7 @@
       "matchDatasources": ["github-actions"],
       "automerge": true,
       "platformAutomerge": true,
-      "schedule": ["after 4am and before 11am every weekday", "every weekend"],
+      "schedule": ["0 */4 * * *"],
       "timezone": "Asia/Seoul",
       "groupName": "github actions workflows upgrades"
     }
