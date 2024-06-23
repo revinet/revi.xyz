@@ -46,7 +46,7 @@
       "automerge": true,
       "platformAutomerge": true,
       "minimumReleaseAge": "3 days",
-      "schedule": ["0 */4 * * *"],
+      "schedule": ["* */4 * * *"],
       "timezone": "Asia/Seoul",
       "groupName": "linters"
     },
@@ -57,7 +57,7 @@
       "automerge": true,
       "platformAutomerge": true,
       "minimumReleaseAge": "1 hour",
-      "schedule": ["0 */4 * * *"],
+      "schedule": ["* */4 * * *"],
       "timezone": "Asia/Seoul",
       "groupName": "internal-deps"
     },
@@ -67,7 +67,7 @@
       "automerge": true,
       "platformAutomerge": true,
       "minimumReleaseAge": "3 days",
-      "schedule": ["0 */4 * * *"],
+      "schedule": ["* */4 * * *"],
       "timezone": "Asia/Seoul",
       "groupName": "npm patch upgrades"
     },
@@ -75,7 +75,7 @@
       "matchDatasources": ["github-actions"],
       "automerge": true,
       "platformAutomerge": true,
-      "schedule": ["0 */4 * * *"],
+      "schedule": ["* */4 * * *"],
       "timezone": "Asia/Seoul",
       "groupName": "github actions workflows upgrades"
     }
