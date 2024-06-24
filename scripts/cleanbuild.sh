@@ -7,7 +7,7 @@ set -e
 
 echo 'Now starting the build script...'
 echo 're-installing the NPM dependencies...'
-npm ci --fund=false
+npm ci
 # Change to the website directory
 cd docusaurus
 echo 'Cleaning the build directory for this build...'
