@@ -17,10 +17,12 @@ export default defineConfig({
   /* Fail the build on CI if you accidentally
   left test.only in the source code. */
   forbidOnly: !!process.env.CI,
-  /* Retry on CI only */
-  retries: process.env.CI ? 2 : 0,
+  /* Retry on CI twice, otherwise once */
+  retries: process.env.CI ? 2 : 1,
   /* Opt out of parallel tests on CI. */
   workers: process.env.CI ? 1 : '50%',
+  /* Expect timeout in 10 seconds */
+  expect: {timeout: 10000},
   /* Shared settings for all the projects below.
   See https://playwright.dev/docs/api/class-testoptions. */
   use: {
@@ -77,11 +79,13 @@ export default defineConfig({
   ],
 
   /* Run your local dev server before starting the tests */
-  //webServer: {
-  //  command: 'npm run dstart',
-  //  url: 'http://127.0.0.1:3000',
-  //  reuseExistingServer: !process.env.CI,
-  //},
+  /* Remember that you should've run `npm run dbuild` to build the site */
+  webServer: {
+    command: 'npm run serve --workspace=docusaurus',
+    url: 'http://127.0.0.1:3000',
+    reuseExistingServer: !process.env.CI,
+    timeout: 180 * 1000, // 3 minutes
+  },
 
   /* Stores the test artifacts in playwright-report directory */
   outputDir: 'test-results/',

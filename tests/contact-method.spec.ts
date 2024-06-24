@@ -23,14 +23,37 @@ test('Check headings', async ({page}) => {
   ).toBeVisible();
 });
 
-test('Click email tabs', async ({page}) => {
+test('Check omglol.email is there', async ({page}) => {
   // Connect to the contact method pages.
   await page.goto('/contact-method/');
 
-  // Expects page to have a text with the content of "liame.lolgmo@iver"
+  // Expects page to have Email TabBox visible.
+  await expect(page.getByText('tipgeneralwikiFor a longer-')).toBeVisible();
+  // Expects page to have Tab with the name of "general".
+  await expect(page.getByText('generalwiki')).toBeVisible();
   await page.getByRole('tab', {name: 'general'}).click();
-  await expect(page.locator('pre')).toContainText('liame.lolgmo@iver');
-  // Expect page to have a text with the content of "ikiw.iver@iver"
+  // Expects page to have a TabPanel visible.
+  await expect(page.getByRole('tabpanel')).toBeVisible();
+  // Expects page to have a text with the content of "liame.lolgmo@iver"
+  await expect(page.getByRole('tabpanel')).toContainText(/liame\.lolgmo\@iver/);
+});
+
+test('Check revi.wiki email is there', async ({page}) => {
+  // Connect to the contact method pages.
+  await page.goto('/contact-method/');
+
+  // Expects page to have Email TabBox visible.
+  await expect(page.getByText('tipgeneralwikiFor a longer-')).toBeVisible();
+  // Expects page to have Tab with the name of "general".
+  await expect(page.getByText('generalwiki')).toBeVisible();
+  // Click the wiki tab.
   await page.getByRole('tab', {name: 'wiki'}).click();
-  await expect(page.locator('pre')).toContainText('ikiw.iver@iver');
+  // Expects page to have a TabPanel visible.
+  await expect(page.getByRole('tabpanel')).toBeVisible();
+  // Expects page to have a wiki-specific instruction text.
+  await expect(page.getByRole('tabpanel')).toContainText(
+    /If your topic is about wiki \(wikimedia\, mediawiki\, or other non-Wikimedia wikis\)/,
+  );
+  // Expects page to have a text with the content of "ikiw.iver@iver"
+  await expect(page.getByRole('tabpanel')).toContainText(/ikiw\.iver\@iver/);
 });

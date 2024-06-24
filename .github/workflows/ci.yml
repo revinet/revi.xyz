@@ -45,6 +45,8 @@ jobs:
           node-version: 20
       - name: Install dependencies
         run: npm ci --omit=optional
+      - name: 'Build docusaurus'
+        run: npm run dbuild
       - name: Install Playwright Browsers
         run: npx playwright install --with-deps
       - name: Run Playwright tests
