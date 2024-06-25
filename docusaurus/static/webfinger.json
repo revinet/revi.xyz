@@ -110,6 +110,11 @@
     },
     {
       "rel": "http://webfinger.net/rel/profile-page",
+      "href": "https://orcid.org/0000-0002-4596-8379",
+      "type": "text/html"
+    },
+    {
+      "rel": "http://webfinger.net/rel/profile-page",
       "href": "https://liberapay.com/revi/",
       "type": "text/html"
     },
