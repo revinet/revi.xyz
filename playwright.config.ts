@@ -81,8 +81,8 @@ export default defineConfig({
   /* Run your local dev server before starting the tests */
   /* Remember that you should've run `npm run dbuild` to build the site */
   webServer: {
-    command: 'npm run serve --workspace=docusaurus',
-    url: 'http://127.0.0.1:3000',
+    command: 'npx wrangler pages dev docusaurus/build --port 9090',
+    url: 'http://127.0.0.1:9090',
     reuseExistingServer: !process.env.CI,
     timeout: 180 * 1000, // 3 minutes
   },

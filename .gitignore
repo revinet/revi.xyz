@@ -150,3 +150,6 @@ dist
 /playwright-report/
 /blob-report/
 /playwright/.cache/
+
+# wrangler temporary files
+.wrangler/
