@@ -5,6 +5,8 @@
 # Add steps that analyze code, save build artifacts, deploy, and more:
 # https://docs.microsoft.com/azure/devops/pipelines/languages/javascript
 
+name: 'CI test'
+
 trigger:
   - master
 
@@ -18,18 +20,32 @@ strategy:
     node_22_x:
       node_version: 22.x
 
+variables:
+  npm_config_cache: $(Pipeline.Workspace)/.npm
+
 steps:
+  # https://learn.microsoft.com/en-us/azure/devops/pipelines/tasks/reference/use-node-v1?view=azure-pipelines
   - task: UseNode@1
     inputs:
       version: $(node_version)
     displayName: 'Install Node.js'
+  # https://learn.microsoft.com/en-us/azure/devops/pipelines/release/caching?view=azure-devops#nodejsnpm
+  - task: Cache@2
+    inputs:
+      key: 'npm | "$(Agent.OS)" | package-lock.json'
+      restoreKeys: |
+        npm | "$(Agent.OS)"
+      path: $(npm_config_cache)
+    displayName: 'Cache npm'
   - script: |
       npm ci
+    displayName: 'npm ci'
+  - script: |
       npm run dbuild
-    displayName: 'npm ci and build'
+    displayName: 'Build docusaurus'
   - script: |
       npm run p:c .
     displayName: 'Prettier check'
   - script: |
       npm run lint:renovate
-    displayName: 'Renovate config validator'
+    displayName: 'Validate Renovate config'

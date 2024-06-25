@@ -60,42 +60,6 @@ jobs:
           name: playwright-report
           path: playwright-report/
           retention-days: 30
-  prettier:
-    name: 'Prettier CI'
-    runs-on: ubuntu-latest
-    steps:
-      - name: 'Checkout'
-        uses: actions/checkout@v4
-        with:
-          fetch-depth: 0
-      - name: 'Setup Node.js'
-        uses: actions/setup-node@v4
-        with:
-          node-version: 20
-      - name: 'Install dependencies'
-        run: npm ci --omit=optional
-      - name: 'Prettier version check'
-        run: npx prettier --version
-      - name: 'Prettier check'
-        run: npm run p:c .
-  renovate:
-    name: 'Run Renovate Config Validator'
-    runs-on: ubuntu-latest
-    steps:
-      - name: 'Checkout'
-        uses: actions/checkout@v4
-        with:
-          fetch-depth: 0
-      - name: 'Setup Node.js'
-        uses: actions/setup-node@v4
-        with:
-          node-version: 20
-      - name: 'Install dependencies'
-        run: npm ci
-      - name: 'Renovate version check'
-        run: npx renovate -v
-      - name: 'Run renovate-config-validator'
-        run: npm run lint:renovate
   lighthouse-ci:
     name: 'Lighthouse CI'
     runs-on: ubuntu-latest
