@@ -28,15 +28,21 @@ time - I just need to port the build script to use new CI server.
 When I use Cloudflare's GitHub connection with Cloudflare Build server,
 I am bound to that single repository, which is not really desirable.
 
+When the new revision is landed on `master`, a set of CI tests are run on them,
+for example prettier syntax check, LightHouse CI run (for fun, because Chromium
+support is NOT a priority to me), and playwright tests to verify page renders
+same as I expect.
+
 ### Build badges {#build-badges}
 
 This is the current build status for this website.
 
 <!-- prettier-ignore -->
-| Workflow | Badge |
+| Build | Badge |
 | ---- | ---- |
-| Deploy | ![GitHub Actions Workflow Status (prod branch)](https://img.shields.io/github/actions/workflow/status/revinet/revi.xyz/cloudflare-pages.yml?branch=prod&logo=github) |
-| Test | ![GitHub Actions Workflow Status (master branch)](https://img.shields.io/github/actions/workflow/status/revinet/revi.xyz/cloudflare-pages.yml?branch=master&logo=github) |
+| Cloudfalre Pages deploy (`prod` branch) | ![GitHub Actions Workflow Status (prod branch)](https://img.shields.io/github/actions/workflow/status/revinet/revi.xyz/cloudflare-pages.yml?branch=prod&logo=github) |
+| Cloudflare Pages deploy (`master` branch) | ![GitHub Actions Workflow Status (master branch)](https://img.shields.io/github/actions/workflow/status/revinet/revi.xyz/cloudflare-pages.yml?branch=master&logo=github) |
+| CI tests | [![Build Status](https://revinim.visualstudio.com/reviNet-Public/_apis/build/status%2Frevi.xyz?branchName=master)](https://revinim.visualstudio.com/reviNet-Public/_build/latest?definitionId=2&branchName=master) |
 
 ## Credit {#credit}
 
