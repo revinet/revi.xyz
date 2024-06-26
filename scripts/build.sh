@@ -14,8 +14,9 @@ echo 'Building the site...'
 docusaurus build
 if [ -d build/assets ]; then
   echo 'Build successful!'
-  echo 'Serving the site...'
-  docusaurus serve
+  echo 'Serving the site via wrangler...'
+  cd ../
+  npx wrangler pages dev docusaurus/build/ --port 3000
 else
   echo 'Build failed!'
   exit 1

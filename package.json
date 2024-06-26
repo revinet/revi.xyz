@@ -43,7 +43,7 @@
     "build": "sh scripts/build.sh",
     "cleanbuild": "sh scripts/cleanbuild.sh",
     "dbuild": "cd docusaurus && docusaurus clear && docusaurus build",
-    "dserve": "cd docusaurus && docusaurus serve",
+    "dserve": "wrangler pages dev docusaurus/build/ --port 3000",
     "dstart": "cd docusaurus && docusaurus clear && docusaurus start",
     "lighthouse": "lhci autorun",
     "lint": "sh scripts/lint.sh",
