@@ -14,18 +14,21 @@
   "devDependencies": {
     "@playwright/test": "1.44.1",
     "@remy/webmention": "1.5.0",
-    "@revi/prettier-config": "0.0.6",
+    "@revi/prettier-config": "0.0.7",
     "@types/node": "20.14.8",
     "buildkite-test-collector": "1.7.1",
     "csslint": "1.0.5",
+    "html-validate": "8.20.1",
     "jshint": "2.13.6",
     "prettier": "3.3.2",
+    "stylelint": "16.6.1",
+    "stylelint-config-standard": "36.0.1",
     "turbo": "2.0.4",
     "typescript": "5.5.2",
     "wrangler": "3.61.0"
   },
   "optionalDependencies": {
-    "renovate": "37.414.1"
+    "renovate": "37.415.0"
   },
   "license": "Apache-2.0",
   "homepage": "https://revi.xyz",
@@ -48,7 +51,9 @@
     "lighthouse": "lhci autorun",
     "lint": "sh scripts/lint.sh",
     "lint:eslint": "cd docusaurus && eslint .",
+    "lint:html-validate": "html-validate \"docusaurus/build/**/*.html\"",
     "lint:renovate": "renovate-config-validator",
+    "lint:stylelint": "stylelint \"docusaurus/src/**/*.css\"",
     "lint:test": "arc lint && prettier --check .",
     "new": "cd docusaurus && docusaurus-post-generator new blog",
     "p:c": "prettier --check",

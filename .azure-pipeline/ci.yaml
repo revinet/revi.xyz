@@ -37,9 +37,11 @@ steps:
         npm | "$(Agent.OS)"
       path: $(npm_config_cache)
     displayName: 'Cache npm'
+  # `npm ci` including optional because renovate.
   - script: |
       npm ci
     displayName: 'npm ci'
+  # Build docusaurus for html-validate.
   - script: |
       npm run dbuild
     displayName: 'Build docusaurus'
@@ -49,3 +51,9 @@ steps:
   - script: |
       npm run lint:renovate
     displayName: 'Validate Renovate config'
+  - script: |
+      npx html-validate "docusaurus/build/**/*.html"
+    displayName: 'HTML validation'
+  - script: |
+      npx stylelint "docusaurus/src/**/*.css"
+    displayName: 'CSS validation'

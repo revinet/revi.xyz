@@ -1,5 +1,5 @@
 import reviConfig from '@revi/eslint-config';
-import pluginReactConfig from 'eslint-plugin-react/configs/recommended.js';
+import react from '@eslint-react/eslint-plugin';
 import docusaurus from '@docusaurus/eslint-plugin';
 
 export default [
@@ -13,7 +13,10 @@ export default [
     ],
   },
   ...reviConfig,
-  pluginReactConfig,
+  {
+    files: ['**/*.{ts,tsx}'],
+    ...react.configs.recommended,
+  },
   {
     plugins: {'@docusaurus': docusaurus},
     //extends: ['plugin:@docusaurus/recommended'],

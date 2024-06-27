@@ -6,12 +6,20 @@
   "packageRules": [
     {
       "matchDatasources": ["npm"],
-      "matchPackageNames": ["clsx", "docusaurus", "prism", "react", "remark"],
-      "matchPackagePatterns": ["^@docusaurus/", "^@mdx-js"],
+      "matchPackageNames": ["clsx", "react"],
+      "matchPackagePatterns": [
+        "^@docusaurus/",
+        "^docusaurus-",
+        "^@mdx-js",
+        "^prism-",
+        "^react-",
+        "^remark-"
+      ],
       "automerge": true,
       "platformAutomerge": true,
       "minimumReleaseAge": "3 days",
       "internalChecksFilter": "strict",
+      "prPriority": 8,
       "groupName": "docusaurus"
     },
     {
@@ -21,6 +29,7 @@
       "platformAutomerge": true,
       "minimumReleaseAge": "3 days",
       "internalChecksFilter": "strict",
+      "prPriority": 8,
       "groupName": "webFonts"
     },
     {
@@ -30,18 +39,22 @@
         "csslint",
         "eslint",
         "globals",
+        "html-validate",
         "jshint",
         "prettier",
-        "renovate",
+        "stylelint",
         "turbo",
         "typescript",
         "wrangler"
       ],
       "matchPackagePatterns": [
         "^@eslint/",
+        "^@eslint-react/",
+        "^eslint-",
         "^@lhci/",
         "^@playwright/",
         "^@remy/",
+        "^stylelint-",
         "^@types/"
       ],
       "matchUpdateTypes": ["minor", "patch"],
@@ -55,14 +68,9 @@
     },
     {
       "matchDatasources": ["npm"],
-      "matchPackagePatterns": ["^@revi/"],
-      "matchUpdateTypes": ["major", "minor", "patch"],
-      "automerge": true,
-      "platformAutomerge": true,
-      "minimumReleaseAge": "1 hour",
-      "schedule": ["* */4 * * *"],
-      "timezone": "Asia/Seoul",
-      "groupName": "internal-deps"
+      "ignoreDeps": ["renovate"],
+      "groupName": "self-update renovate (updates too often)",
+      "groupSlug": "self-update-renovate"
     },
     {
       "matchDatasources": ["npm"],
@@ -76,6 +84,18 @@
       "groupName": "npm patch upgrades"
     },
     {
+      "matchDatasources": ["npm"],
+      "matchPackagePatterns": ["^@revi/"],
+      "matchUpdateTypes": ["major", "minor", "patch"],
+      "automerge": true,
+      "platformAutomerge": true,
+      "minimumReleaseAge": "1 hour",
+      "schedule": ["* */4 * * *"],
+      "timezone": "Asia/Seoul",
+      "prPriority": 9,
+      "groupName": "internal-deps"
+    },
+    {
       "matchDatasources": ["github-actions"],
       "automerge": true,
       "platformAutomerge": true,
@@ -83,5 +103,7 @@
       "timezone": "Asia/Seoul",
       "groupName": "github actions workflows upgrades"
     }
-  ]
+  ],
+  "prHourlyLimit": 5,
+  "semanticCommitType": "ci"
 }

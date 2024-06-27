@@ -1,0 +1,15 @@
+{
+  "$schema": "https://html-validate.org/schemas/config.json",
+  "elements": ["html5"],
+  "extends": ["html-validate:recommended"],
+  "root": true,
+  "rules": {
+    "doctype-style": "warn",
+    "attribute-boolean-style": "warn",
+    "valid-id": "warn",
+    "prefer-native-element": "warn",
+    "no-inline-style": "warn",
+    "element-permitted-content": "warn",
+    "wcag/h63": "warn"
+  }
+}
