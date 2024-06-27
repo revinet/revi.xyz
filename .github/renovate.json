@@ -11,6 +11,7 @@
       "automerge": true,
       "platformAutomerge": true,
       "minimumReleaseAge": "3 days",
+      "internalChecksFilter": "strict",
       "groupName": "docusaurus"
     },
     {
@@ -19,6 +20,7 @@
       "automerge": true,
       "platformAutomerge": true,
       "minimumReleaseAge": "3 days",
+      "internalChecksFilter": "strict",
       "groupName": "webFonts"
     },
     {
@@ -46,6 +48,7 @@
       "automerge": true,
       "platformAutomerge": true,
       "minimumReleaseAge": "3 days",
+      "internalChecksFilter": "strict",
       "schedule": ["* */4 * * *"],
       "timezone": "Asia/Seoul",
       "groupName": "linters"
@@ -67,6 +70,7 @@
       "automerge": true,
       "platformAutomerge": true,
       "minimumReleaseAge": "3 days",
+      "internalChecksFilter": "strict",
       "schedule": ["* */4 * * *"],
       "timezone": "Asia/Seoul",
       "groupName": "npm patch upgrades"
