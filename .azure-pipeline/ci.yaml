@@ -9,6 +9,15 @@ name: 'CI test'
 
 trigger:
   - master
+  # GitHub merge Queue
+  - gh-readonly-queue/**
+
+pr:
+  branches:
+    # don't test PRs from dependabot or renovate
+    exclude:
+      - dependabot/**
+      - renovate/**
 
 pool:
   vmImage: ubuntu-latest
