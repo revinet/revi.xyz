@@ -17,10 +17,18 @@ export default [
   },
   ...reviConfig,
   {
-    files: ['**/*.{ts,tsx}'],
+    files: ['src/**/*.{ts,tsx}'],
     ...react.configs.recommended,
+    languageOptions: {
+      parserOptions: {
+        ecmaFeatures: {
+          jsx: true,
+        },
+      },
+    },
   },
   {
+    files: ['src/**/*.js', 'src/**/*.jsx', 'src/**/*.ts', 'src/**/*.tsx'],
     plugins: {'@docusaurus': docusaurus},
     //extends: ['plugin:@docusaurus/recommended'],
     rules: {

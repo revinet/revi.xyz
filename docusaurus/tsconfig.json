@@ -1,8 +1,10 @@
 {
   "extends": "@docusaurus/tsconfig",
-  "jsx": "react",
   "compilerOptions": {
     "baseUrl": "./",
-    "module": "esnext"
+    "jsx": "react",
+    "module": "esnext",
+    "allowJs": true,
+    "checkJs": true
   }
 }

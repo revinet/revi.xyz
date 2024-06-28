@@ -1,7 +1,9 @@
 {
   "compilerOptions": {
     "allowJs": true,
-    "checkJs": true
+    "checkJs": true,
+    "module": "NodeNext",
+    "target": "ESNext"
   },
   "exclude": ["docusaurus/build/", "node_modules/"]
 }
