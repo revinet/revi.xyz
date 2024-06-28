@@ -10,21 +10,23 @@
     ":semanticCommits",
     ":semanticCommitTypeAll(ci)",
     ":separateMajorReleases",
-    ":timezone(Asia/Seoul)",
-    "npm:unpublishSafe"
+    ":timezone(Asia/Seoul)"
   ],
   "assignAutomerge": true,
-  "automergeSchedule": ["after 1am", "before 7:30pm"],
+  "automergeSchedule": ["after 1am and before 7:30pm"],
   "schedule": ["* */4 * * *"],
   "assignees": ["revi"],
   "internalChecksFilter": "strict",
   "npmrcMerge": true,
   "postUpdateOptions": ["npmDedupe"],
+  "azure-pipelines": {
+    "enabled": true
+  },
+  "git-submodules": {
+    "enabled": true,
+    "versioning": "git"
+  },
   "packageRules": [
-    {
-      "matchDatasources": ["azure-pipelines-tasks"],
-      "enabled": true
-    },
     {
       "matchDatasources": ["npm"],
       "matchPackageNames": ["clsx", "react"],
@@ -87,7 +89,8 @@
     {
       "matchDatasources": ["npm"],
       "matchPackageNames": ["renovate"],
-      "schedule": ["* * * * 1"],
+      "schedule": ["before 4am on monday"],
+      "minimumReleaseAge": "3 days",
       "groupName": "update renovate weekly (updates too often)",
       "groupSlug": "weekly-update-renovate"
     },
