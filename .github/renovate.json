@@ -1,8 +1,28 @@
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
-  "extends": ["config:best-practices", ":gitSignOff"],
+  "extends": [
+    "config:best-practices",
+    ":gitSignOff",
+    ":maintainLockFilesWeekly",
+    ":pinSkipCi",
+    ":prConcurrentLimit20",
+    ":prHourlyLimit4",
+    ":semanticCommits",
+    ":semanticCommitTypeAll(ci)",
+    ":separateMajorReleases",
+    ":timezone(Asia/Seoul)",
+    "npm:unpublishSafe"
+  ],
   "assignAutomerge": true,
+  "automergeSchedule": [
+    "after 1am",
+    "before 7:30pm"
+  ],
+  "schedule": ["* */4 * * *"],
   "assignees": ["revi"],
+  "internalChecksFilter": "strict",
+  "npmrcMerge": true,
+  "postUpdateOptions": ["npmDedupe"],
   "packageRules": [
     {
       "matchDatasources": ["npm"],
@@ -10,7 +30,7 @@
       "matchPackagePatterns": [
         "^@docusaurus/",
         "^docusaurus-",
-        "^@mdx-js",
+        "^@mdx-js/",
         "^prism-",
         "^react-",
         "^remark-"
@@ -18,7 +38,6 @@
       "automerge": true,
       "platformAutomerge": true,
       "minimumReleaseAge": "3 days",
-      "internalChecksFilter": "strict",
       "prPriority": 8,
       "groupName": "docusaurus"
     },
@@ -28,7 +47,6 @@
       "automerge": true,
       "platformAutomerge": true,
       "minimumReleaseAge": "3 days",
-      "internalChecksFilter": "strict",
       "prPriority": 8,
       "groupName": "webFonts"
     },
@@ -61,16 +79,16 @@
       "automerge": true,
       "platformAutomerge": true,
       "minimumReleaseAge": "3 days",
-      "internalChecksFilter": "strict",
       "schedule": ["* */4 * * *"],
       "timezone": "Asia/Seoul",
       "groupName": "linters"
     },
     {
       "matchDatasources": ["npm"],
-      "ignoreDeps": ["renovate"],
-      "groupName": "self-update renovate (updates too often)",
-      "groupSlug": "self-update-renovate"
+      "matchPackageNames": ["renovate"],
+      "schedule": ["* * * * 1"],
+      "groupName": "update renovate weekly (updates too often)",
+      "groupSlug": "weekly-update-renovate"
     },
     {
       "matchDatasources": ["npm"],
@@ -78,7 +96,6 @@
       "automerge": true,
       "platformAutomerge": true,
       "minimumReleaseAge": "3 days",
-      "internalChecksFilter": "strict",
       "schedule": ["* */4 * * *"],
       "timezone": "Asia/Seoul",
       "groupName": "npm patch upgrades"
@@ -103,7 +120,5 @@
       "timezone": "Asia/Seoul",
       "groupName": "github actions workflows upgrades"
     }
-  ],
-  "prHourlyLimit": 5,
-  "semanticCommitType": "ci"
+  ]
 }

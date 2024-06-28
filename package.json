@@ -58,7 +58,7 @@
     "new": "cd docusaurus && docusaurus-post-generator new blog",
     "p:c": "prettier --check",
     "p:w": "prettier --write",
-    "pw:i": "playwright install",
+    "pw:i": "playwright install --with-deps",
     "test": "playwright test",
     "webping:send": "webmention https://revi.xyz/blog/rss.xml --limit 1 --send",
     "webping:test": "webmention https://revi.xyz/blog/rss.xml --limit 1"
