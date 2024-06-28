@@ -39,7 +39,7 @@ steps:
       version: $(node_version)
     displayName: 'Install Node.js'
   # https://learn.microsoft.com/en-us/azure/devops/pipelines/release/caching?view=azure-devops#nodejsnpm
-  - task: Cache@2
+  - task: Cache@2.198.0
     inputs:
       key: 'npm | "$(Agent.OS)" | package-lock.json'
       restoreKeys: |
