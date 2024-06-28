@@ -1,6 +1,7 @@
 #!/usr/bin/env bash
-# Copyright (C) 2024 Hong Yongmin <https://revi.xyz>
-# SPDX-License-Identifier : Apache-2.0
+# SPDX-FileCopyrightText: 2024 Hong Yongmin <https://revi.xyz>
+#
+# SPDX-License-Identifier: Apache-2.0
 
 echo 'config: do not overwrite existing pages'
 

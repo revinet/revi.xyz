@@ -1,3 +1,6 @@
+// SPDX-FileCopyrightText: 2024 Hong Yongmin <https://revi.xyz/>
+//
+// SPDX-License-Identifier: Apache-2.0
 import {test, expect} from '@playwright/test';
 
 test('Check gender pronounce page', async ({page}) => {

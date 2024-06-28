@@ -1,3 +1,6 @@
+// SPDX-FileCopyrightText: 2024 Hong Yongmin <https://revi.xyz/>
+//
+// SPDX-License-Identifier: Apache-2.0
 import reviConfig from '@revi/eslint-config';
 import react from '@eslint-react/eslint-plugin';
 import docusaurus from '@docusaurus/eslint-plugin';

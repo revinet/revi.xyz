@@ -1,5 +1,6 @@
 #!/usr/bin/env bash
-# Copyright 2024 Hong Yongmin
+# SPDX-FileCopyrightText: 2024 Hong Yongmin <https://revi.xyz/>
+#
 # SPDX-License-Identifier: Apache-2.0
 # Clean-install the dependencies and build the site
 # Exit on error

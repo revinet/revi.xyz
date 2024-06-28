@@ -1,3 +1,6 @@
+// SPDX-FileCopyrightText: 2024 Hong Yongmin <https://revi.xyz/>
+//
+// SPDX-License-Identifier: Apache-2.0
 import React from 'react';
 import clsx from 'clsx';
 import type {Props} from '@theme/Footer/Layout';
