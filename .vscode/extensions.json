@@ -7,6 +7,7 @@
     "github.vscode-github-actions",
     "jasonnutter.vscode-codeowners",
     "ms-azure-devops.azure-pipelines",
-    "ms-playwright.playwright"
+    "ms-playwright.playwright",
+    "redhat.vscode-yaml"
   ]
 }

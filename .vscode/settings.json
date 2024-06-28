@@ -2,10 +2,12 @@
   "[azure-pipelines]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
+  "codeQL.githubDatabase.download": "never",
   "files.autoSave": "afterDelay",
   "files.associations": {
     "^.arc*": "json",
-    "^.azure-pipeline/**.(yaml|yml)": "azure-pipelines",
+    ".azure-pipelines/*.yaml": "azure-pipelines",
+    ".azure-pipelines/*.yml": "azure-pipelines",
     "^CODEOWNERS": "codeowners",
     "^.imgbotconfig": "json",
     "*.mdx": "markdown"

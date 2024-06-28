@@ -5,7 +5,7 @@
 # Add steps that analyze code, save build artifacts, deploy, and more:
 # https://docs.microsoft.com/azure/devops/pipelines/languages/javascript
 
-name: 'CI test'
+name: 'CI test-$(Build.DefinitionVersion)-$(Date:yyyyMMdd)-$(Rev:r)'
 
 trigger:
   - master
@@ -57,6 +57,9 @@ steps:
   - script: |
       npm run p:c .
     displayName: 'Prettier check'
+  - script: |
+      npm run lint:eslint
+    displayName: 'docusaurus ESLint'
   - script: |
       npm run lint:renovate
     displayName: 'Validate Renovate config'
