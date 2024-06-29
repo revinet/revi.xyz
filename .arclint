@@ -1,10 +1,14 @@
 {
   "exclude": [
+    "(^\\.yarn/)",
     "(^docusaurus/build/)",
     "(^node_modules/)",
     "(^package-lock.json$)",
     "(^playwright-report/)",
-    "(^test-results/)"
+    "(^.pnp.cjs$)",
+    "(^.pnp.loader.mjs$)",
+    "(^test-results/)",
+    "(^yarn.lock$)"
   ],
   "linters": {
     "chmod": {
