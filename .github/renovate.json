@@ -8,7 +8,7 @@
     ":prConcurrentLimit20",
     ":prHourlyLimit4",
     ":semanticCommits",
-    ":semanticCommitTypeAll(ci)",
+    ":semanticCommitTypeAll(CI)",
     ":separateMajorReleases",
     ":timezone(Asia/Seoul)"
   ],
@@ -26,6 +26,7 @@
     "enabled": true,
     "versioning": "git"
   },
+  "labels": ["dependencies"],
   "packageRules": [
     {
       "matchDatasources": ["npm"],
@@ -42,6 +43,7 @@
       "platformAutomerge": true,
       "minimumReleaseAge": "3 days",
       "prPriority": 8,
+      "labels": ["dependencies", "javascript"],
       "groupName": "docusaurus"
     },
     {
@@ -51,6 +53,7 @@
       "platformAutomerge": true,
       "minimumReleaseAge": "3 days",
       "prPriority": 8,
+      "labels": ["dependencies", "javascript"],
       "groupName": "webFonts"
     },
     {
@@ -84,6 +87,7 @@
       "minimumReleaseAge": "3 days",
       "schedule": ["* */4 * * *"],
       "timezone": "Asia/Seoul",
+      "labels": ["dependencies", "javascript"],
       "groupName": "linters"
     },
     {
@@ -91,6 +95,7 @@
       "matchPackageNames": ["renovate"],
       "schedule": ["before 4am on monday"],
       "minimumReleaseAge": "3 days",
+      "labels": ["dependencies", "javascript"],
       "groupName": "update renovate weekly (updates too often)",
       "groupSlug": "weekly-update-renovate"
     },
@@ -102,6 +107,7 @@
       "minimumReleaseAge": "3 days",
       "schedule": ["* */4 * * *"],
       "timezone": "Asia/Seoul",
+      "labels": ["dependencies", "javascript"],
       "groupName": "npm patch upgrades"
     },
     {
@@ -113,6 +119,7 @@
       "minimumReleaseAge": "1 hour",
       "schedule": ["* */4 * * *"],
       "timezone": "Asia/Seoul",
+      "labels": ["dependencies", "javascript"],
       "prPriority": 9,
       "groupName": "internal-deps"
     },
@@ -122,6 +129,7 @@
       "platformAutomerge": true,
       "schedule": ["* */4 * * *"],
       "timezone": "Asia/Seoul",
+      "labels": ["dependencies", "github_actions"],
       "groupName": "github actions workflows upgrades"
     }
   ]
