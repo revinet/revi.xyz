@@ -28,7 +28,10 @@ test('Has expected page texts', async ({page}) => {
     .filter({hasText: /^Not freely available$/})
     .getByRole('img')
     .click();
+});
 
+test('Has expected links', async ({page}) => {
+  await page.goto('/meta/');
   // Click on the link to the contribution docs.
   const page1Promise = page.waitForEvent('popup');
   await page

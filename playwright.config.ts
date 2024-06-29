@@ -32,6 +32,10 @@ export default defineConfig({
     /* Base URL to use in actions like `await page.goto('/')`. */
     baseURL: 'https://revi.xyz',
 
+    // Set locale and timezone.
+    locale: 'ko-KR',
+    timezoneId: 'Asia/Seoul',
+
     /* Collect trace when retrying the failed test.
     See https://playwright.dev/docs/trace-viewer */
     trace: 'on-first-retry',
@@ -39,45 +43,67 @@ export default defineConfig({
 
   // Full list of devices:
   // https://issuetracker.revi.xyz/u/playwrightdevicelist
-  /* Configure projects for major browsers */
+  /* Test against major browsers */
   projects: [
     {
       name: 'Chromium',
-      use: {...devices['Desktop Chrome']},
+      use: {
+        ...devices['Desktop Chrome'],
+        isMobile: false,
+      },
     },
-
     {
       name: 'Firefox',
-      use: {...devices['Desktop Firefox']},
+      use: {
+        ...devices['Desktop Firefox'],
+        isMobile: false,
+      },
     },
-
     {
       name: 'Webkit',
-      use: {...devices['Desktop Safari']},
+      use: {
+        ...devices['Desktop Safari'],
+        isMobile: false,
+      },
     },
-
     /* Test against mobile viewports. */
     {
       name: 'Android Chrome',
-      use: {...devices['Pixel 7']},
+      use: {
+        ...devices['Pixel 7'],
+        isMobile: true,
+      },
     },
     {
       name: 'iOS Safari',
-      use: {...devices['iPhone 11 Pro']},
+      use: {
+        ...devices['iPhone 11 Pro'],
+        isMobile: true,
+      },
     },
     {
       name: 'iPadOS Safari',
-      use: {...devices['iPad Pro 11']},
+      use: {
+        ...devices['iPad Pro 11'],
+        isMobile: true,
+      },
     },
-
     /* Test against branded browsers. */
     {
       name: 'Microsoft Edge',
-      use: {...devices['Desktop Edge'], channel: 'msedge'},
+      use: {
+        ...devices['Desktop Edge'],
+        channel: 'msedge',
+        isMobile: false,
+      },
     },
     {
       name: 'Google Chrome',
-      use: {...devices['Desktop Chrome'], channel: 'chrome'},
+      use: {
+        ...devices['Desktop Chrome'],
+        channel: 'chrome',
+        isMobile: false,
+      },
     },
   ],
 

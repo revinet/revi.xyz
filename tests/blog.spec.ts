@@ -20,6 +20,12 @@ test('Has blog/2022/01/28/오픈카톡/ page', async ({page}) => {
     '대화내용 저장이 필요하신 경우 미리 [오픈채팅방 내부 우상단 메뉴(≣) > 우하단 톱니바퀴 > 대화 내용 내보내기] 기능을 이용해주세요.',
   );
   // Click the link
+});
+
+test('Verify the link in blog/2022/01/28/오픈카톡/ page', async ({page}) => {
+  // Go to the blog post page.
+  await page.goto('/blog/2022/01/28/오픈카톡/');
+  // Click the link.
   const page1Promise = page.waitForEvent('popup');
   await page.getByRole('link', {name: '출처'}).click();
   const page1 = await page1Promise;

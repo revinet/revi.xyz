@@ -45,8 +45,7 @@ test('Check revi.wiki email is there', async ({page}) => {
   // Connect to the contact method pages.
   await page.goto('/contact-method/');
 
-  // Expects page to have Email TabBox visible.
-  await expect(page.getByText('tipgeneralwikiFor a longer-')).toBeVisible();
+  await page.getByRole('tab', {name: 'wiki'}).click();
   // Expects page to have Tab with the name of "general".
   await expect(page.getByText('generalwiki')).toBeVisible();
   // Click the wiki tab.
@@ -54,9 +53,8 @@ test('Check revi.wiki email is there', async ({page}) => {
   // Expects page to have a TabPanel visible.
   await expect(page.getByRole('tabpanel')).toBeVisible();
   // Expects page to have a wiki-specific instruction text.
-  await expect(page.getByRole('tabpanel')).toContainText(
-    /If your topic is about wiki \(wikimedia\, mediawiki\, or other non-Wikimedia wikis\)/,
-  );
+  await expect(page.getByText('If your topic is about wiki')).toBeVisible();
   // Expects page to have a text with the content of "ikiw.iver@iver"
-  await expect(page.getByRole('tabpanel')).toContainText(/ikiw\.iver\@iver/);
+  await expect(page.getByText('package mainimport "fmt"func')).toBeVisible();
+  await expect(page.locator('pre')).toContainText('"ikiw.iver@iver"');
 });

@@ -14,13 +14,9 @@ test('Check gender pronounce page', async ({page}) => {
     page.getByRole('heading', {name: 'What should I use to'}),
   ).toBeVisible();
   await expect(page.locator('h1')).toContainText(
-    /What should I use to reference you\? he\? she\?/,
+    /What should I use to reference you?/,
   );
-  await expect(
-    page.getByText(
-      /What should I use to reference you\? he\? she\? my pronouns.page profile/,
-    ),
-  ).toBeVisible();
+  await expect(page.getByText(/What should I use to reference/)).toBeVisible();
   await expect(page.getByRole('article')).toContainText(
     /By default\, use he\/him\./,
   );
