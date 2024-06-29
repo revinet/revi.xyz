@@ -10,5 +10,6 @@ See [meta](https://revi.xyz/meta/) for detailed info.
 <!-- prettier-ignore -->
 | Workflow | Badge |
 | ---- | ---- |
-| Deploy | ![GitHub Actions Workflow Status](https://img.shields.io/github/actions/workflow/status/revinet/revi.xyz/cloudflare-pages.yml?branch=prod&logo=github) |
-| Test | ![GitHub Actions Workflow Status](https://img.shields.io/github/actions/workflow/status/revinet/revi.xyz/cloudflare-pages.yml?branch=master&logo=github) |
+| Deploy site | ![GitHub Actions Workflow Status](https://img.shields.io/github/actions/workflow/status/revinet/revi.xyz/cloudflare-pages.yml?branch=prod&logo=github) |
+| Test site | ![GitHub Actions Workflow Status](https://img.shields.io/github/actions/workflow/status/revinet/revi.xyz/cloudflare-pages.yml?branch=master&logo=github) |
+| lint #1 | ![Azure Pipelines Build Status](https://revinim.visualstudio.com/reviNet-Public/_apis/build/status%2Frevi.xyz?branchName=master) |
