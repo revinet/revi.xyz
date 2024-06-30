@@ -14,9 +14,15 @@ name: 'CodeQL'
 
 on:
   push:
-    branches: ['master']
+    branches:
+      - master
+    paths:
+      - '.github/workflows/codeql.yml'
+      - '**/*.js'
+      - '**/*.jsx'
+      - '**/*.ts'
+      - '**/*.tsx'
   pull_request:
-    branches: ['master']
   merge_group:
   workflow_dispatch:
   schedule:
