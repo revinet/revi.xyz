@@ -43,6 +43,7 @@ jobs:
         uses: actions/setup-node@60edb5dd545a775178f52524783378180af0d1f8 # v4
         with:
           node-version: 20
+          cache: npm
       - name: Install dependencies
         run: npm ci --omit=optional
       - name: 'Build docusaurus'
@@ -72,6 +73,7 @@ jobs:
         uses: actions/setup-node@60edb5dd545a775178f52524783378180af0d1f8 # v4
         with:
           node-version: 20
+          cache: npm
       - name: 'Install dependencies'
         run: npm ci --omit=optional
       - name: 'Build docusaurus'
