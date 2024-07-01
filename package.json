@@ -21,7 +21,7 @@
     "@types/node": "20.14.9",
     "buildkite-test-collector": "1.7.1",
     "csslint": "1.0.5",
-    "eslint": "9.5.0",
+    "eslint": "9.6.0",
     "eslint-config-prettier": "9.1.0",
     "globals": "15.6.0",
     "html-validate": "8.20.1",
