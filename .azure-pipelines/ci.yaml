@@ -31,6 +31,7 @@ strategy:
 
 variables:
   npm_config_cache: $(Pipeline.Workspace)/.npm
+  TURBO_TELEMETRY_DISABLED: 1
 
 steps:
   # https://learn.microsoft.com/en-us/azure/devops/pipelines/tasks/reference/use-node-v1?view=azure-pipelines
