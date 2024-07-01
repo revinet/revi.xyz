@@ -9,7 +9,7 @@ yaml-files:
 
 extends: default
 
-ignore-from-file: .gitignore
+ignore-from-file: [.gitignore, .prettierignore]
 
 rules:
   comments:

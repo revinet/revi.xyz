@@ -1,0 +1,51 @@
+[
+  {
+    "relation": ["lookalikes/allowlist"],
+    "target": {
+      "namespace": "web",
+      "site": "https://revi.xyz"
+    }
+  },
+  {
+    "relation": ["lookalikes/allowlist"],
+    "target": {
+      "namespace": "web",
+      "site": "https://revi.dev"
+    }
+  },
+  {
+    "relation": ["lookalikes/allowlist"],
+    "target": {
+      "namespace": "web",
+      "site": "https://revi.email"
+    }
+  },
+  {
+    "relation": ["lookalikes/allowlist"],
+    "target": {
+      "namespace": "web",
+      "site": "https://revi.me"
+    }
+  },
+  {
+    "relation": ["lookalikes/allowlist"],
+    "target": {
+      "namespace": "web",
+      "site": "https://revi.me.uk"
+    }
+  },
+  {
+    "relation": ["lookalikes/allowlist"],
+    "target": {
+      "namespace": "web",
+      "site": "https://revi.pe.kr"
+    }
+  },
+  {
+    "relation": ["lookalikes/allowlist"],
+    "target": {
+      "namespace": "web",
+      "site": "https://revi.wiki"
+    }
+  }
+]
