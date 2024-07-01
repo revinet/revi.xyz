@@ -26,3 +26,14 @@ test('Check gender pronounce page', async ({page}) => {
   );
   await page.getByText(/my pronouns\.page profile interpretation\:/).click();
 });
+
+test('Verify old URL redirects', async ({page}) => {
+  // Go to old URL.
+  await page.goto('/gender-pronounciation/');
+  // Expect the contents to be visible.
+  await expect(page.getByText(/What should I use to reference/)).toBeVisible();
+  await expect(page.getByRole('article')).toContainText(
+    /By default\, use he\/him\./,
+  );
+  // await expect(page).toHaveURL('/pronoun-is/');
+});

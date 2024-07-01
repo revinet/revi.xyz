@@ -126,6 +126,22 @@ const config = {
     },
   ],
 
+  plugins: [
+    /** @type {import('@docusaurus/types').plugins} */
+    [
+      '@docusaurus/plugin-client-redirects',
+      /** @type {import('@docusaurus/plugin-client-redirects')} */
+      {
+        redirects: [
+          // {
+          //   from: '/gender-pronounciation/',
+          //   to: '/pronoun-is/',
+          // },
+        ],
+      },
+    ],
+  ],
+
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
