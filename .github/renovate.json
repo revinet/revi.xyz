@@ -12,6 +12,8 @@
     ":timezone(Asia/Seoul)"
   ],
   "assignAutomerge": true,
+  "automerge": true,
+  "platformAutomerge": true,
   "azure-pipelines": {
     "enabled": true
   },
@@ -92,7 +94,7 @@
     {
       "matchDatasources": ["npm"],
       "matchPackageNames": ["renovate"],
-      "schedule": ["before 4am on monday"],
+      "schedule": ["before 4am on monday", "before 4am on thursday"],
       "minimumReleaseAge": "3 days",
       "labels": ["dependencies", "javascript"],
       "groupName": "update renovate weekly (updates too often)",
