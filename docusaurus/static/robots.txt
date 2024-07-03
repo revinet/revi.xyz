@@ -41,6 +41,11 @@ Disallow: /
 User-agent: Google-Extended
 Disallow: /
 
+# Apple AI Crawlers are also not welcome.
+# Ref: https://support.apple.com/en-us/119829#datausage
+User-agent: Applebot-Extended
+Disallow: /
+
 # AI Data Scraper
 # https://darkvisitors.com/agents/bytespider
 User-agent: Bytespider
