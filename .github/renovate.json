@@ -94,7 +94,7 @@
     {
       "matchDatasources": ["npm"],
       "matchPackageNames": ["renovate"],
-      "schedule": ["before 4am on monday", "before 4am on thursday"],
+      "schedule": ["after 9pm every 3 day"],
       "minimumReleaseAge": "3 days",
       "labels": ["dependencies", "javascript"],
       "groupName": "update renovate weekly (updates too often)",
