@@ -20,7 +20,7 @@
     "@types/node": "20.14.10",
     "buildkite-test-collector": "1.7.1",
     "csslint": "1.0.5",
-    "eslint": "9.6.0",
+    "eslint": "9.7.0",
     "eslint-config-prettier": "9.1.0",
     "globals": "15.8.0",
     "html-validate": "8.20.1",
