@@ -48,13 +48,10 @@ steps:
       path: $(npm_config_cache)
     displayName: 'Cache npm'
   # `npm ci` including optional because renovate.
-  - script: |
-      npm ci
-    displayName: 'npm ci'
   # Build docusaurus for html-validate.
   - script: |
-      npm run dbuild
-    displayName: 'Build docusaurus'
+      sh scripts/cleanbuild.sh
+    displayName: 'npm ci && Build docusaurus'
   - script: |
       npm run p:c .
     displayName: 'Prettier check'
