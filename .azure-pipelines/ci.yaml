@@ -50,7 +50,9 @@ steps:
   # `npm ci` including optional because renovate.
   # Build docusaurus for html-validate.
   - script: |
-      sh scripts/cleanbuild.sh
+      npm ci
+      cd $(Pipeline.Workspace)/docusaurus
+      docusaurus build
     displayName: 'npm ci && Build docusaurus'
   - script: |
       npm run p:c .
