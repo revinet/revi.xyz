@@ -52,7 +52,7 @@ steps:
   - script: |
       npm ci
       cd $(Pipeline.Workspace)/docusaurus
-      docusaurus build
+      npx docusaurus build
     displayName: 'npm ci && Build docusaurus'
   - script: |
       npm run p:c .
