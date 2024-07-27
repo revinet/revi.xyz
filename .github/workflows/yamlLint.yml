@@ -5,7 +5,7 @@ on:
     paths:
       - '**.yml'
       - '**.yaml'
-      - '.yamllint'
+      - .yamllint
   pull_request:
   merge_group:
   workflow_dispatch:
@@ -14,7 +14,11 @@ jobs:
   yamlLint:
     runs-on: ubuntu-latest
     steps:
-      - name: 'Checkout'
+      - name: Checkout
         uses: actions/checkout@692973e3d937129bcbf40652eb9f2f61becf3332 # v4
+      - name: Install locale
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y language-pack-ko
       - name: yaml-lint
         uses: ibiqlik/action-yamllint@2576378a8e339169678f9939646ee3ee325e845c # v3
