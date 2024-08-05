@@ -18,7 +18,7 @@ docusaurus $ npm run serve
 
 ## Browserlist config
 
-This is as of 2024-06-20 (KST).
+This is as of 2024-08-05 (KST).
 
 ### prod
 

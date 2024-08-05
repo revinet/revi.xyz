@@ -2,7 +2,6 @@
 //
 // SPDX-License-Identifier: Apache-2.0
 import reviConfig from '@revi/eslint-config';
-import react from '@eslint-react/eslint-plugin';
 import docusaurus from '@docusaurus/eslint-plugin';
 
 export default [
@@ -16,17 +15,6 @@ export default [
     ],
   },
   ...reviConfig,
-  {
-    files: ['src/**/*.{ts,tsx}'],
-    ...react.configs.recommended,
-    languageOptions: {
-      parserOptions: {
-        ecmaFeatures: {
-          jsx: true,
-        },
-      },
-    },
-  },
   {
     files: ['src/**/*.js', 'src/**/*.jsx', 'src/**/*.ts', 'src/**/*.tsx'],
     plugins: {'@docusaurus': docusaurus},
