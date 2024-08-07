@@ -26,41 +26,59 @@
   "labels": ["dependencies"],
   "npmrcMerge": true,
   "osvVulnerabilityAlerts": true,
+  "platformCommit": "enabled",
   "postUpdateOptions": ["npmDedupe"],
+  "prBodyColumns": [
+    "Package",
+    "Type",
+    "Change",
+    "Pending",
+    "Age",
+    "Adoption",
+    "Passing",
+    "Confidence"
+  ],
   "schedule": ["* */4 * * *"],
   "packageRules": [
     {
       "matchDatasources": ["npm"],
       "matchPackageNames": [
-        "clsx",
-        "react",
         "/^@docusaurus//",
         "/^docusaurus-/",
         "/^@mdx-js//",
         "/^prism-/",
         "/^react-/",
-        "/^remark-/"
+        "/^remark-/",
+        "clsx",
+        "react"
       ],
       "automerge": true,
       "platformAutomerge": true,
       "minimumReleaseAge": "3 days",
       "prPriority": 8,
-      "labels": ["dependencies", "javascript"],
+      "addLabels": ["javascript"],
       "groupName": "docusaurus"
     },
     {
       "matchDatasources": ["npm"],
+      "matchPackageNames": ["/^@fontsource//", "/^@ibm//"],
       "automerge": true,
       "platformAutomerge": true,
       "minimumReleaseAge": "3 days",
       "prPriority": 8,
-      "labels": ["dependencies", "javascript"],
-      "groupName": "webFonts",
-      "matchPackageNames": ["/^@fontsource//", "/^@ibm//"]
+      "addLabels": ["javascript"],
+      "groupName": "webFonts"
     },
     {
       "matchDatasources": ["npm"],
       "matchPackageNames": [
+        "/^@eslint//",
+        "/^eslint-/",
+        "/^@lhci//",
+        "/^@playwright//",
+        "/^@remy//",
+        "/^stylelint-/",
+        "/^@types//",
         "buildkite-test-collector",
         "csslint",
         "eslint",
@@ -71,15 +89,7 @@
         "stylelint",
         "turbo",
         "typescript",
-        "wrangler",
-        "/^@eslint//",
-        "/^@eslint-react//",
-        "/^eslint-/",
-        "/^@lhci//",
-        "/^@playwright//",
-        "/^@remy//",
-        "/^stylelint-/",
-        "/^@types//"
+        "wrangler"
       ],
       "matchUpdateTypes": ["minor", "patch"],
       "automerge": true,
@@ -87,16 +97,17 @@
       "minimumReleaseAge": "3 days",
       "schedule": ["* */4 * * *"],
       "timezone": "Asia/Seoul",
-      "labels": ["dependencies", "javascript"],
+      "addLabels": ["javascript"],
       "groupName": "linters"
     },
     {
       "matchDatasources": ["npm"],
       "matchPackageNames": ["renovate"],
-      "schedule": ["after 9pm every 3 day"],
+      "schedule": ["before 6am every 3 day"],
       "minimumReleaseAge": "3 days",
-      "labels": ["dependencies", "javascript"],
-      "groupName": "update renovate weekly (updates too often)",
+      "addLabels": ["javascript"],
+      "groupName": "update renovate every 3 days",
+      "description": "Renovate releases too often.",
       "groupSlug": "weekly-update-renovate"
     },
     {
@@ -107,21 +118,23 @@
       "minimumReleaseAge": "3 days",
       "schedule": ["* */4 * * *"],
       "timezone": "Asia/Seoul",
-      "labels": ["dependencies", "javascript"],
+      "addLabels": ["javascript"],
       "groupName": "npm patch upgrades"
     },
     {
       "matchDatasources": ["npm"],
+      "matchPackageNames": ["/^@revi//"],
       "matchUpdateTypes": ["major", "minor", "patch"],
       "automerge": true,
       "platformAutomerge": true,
       "minimumReleaseAge": "1 hour",
       "schedule": ["* */4 * * *"],
       "timezone": "Asia/Seoul",
-      "labels": ["dependencies", "javascript"],
+      "addLabels": ["javascript"],
       "prPriority": 9,
-      "groupName": "internal-deps",
-      "matchPackageNames": ["/^@revi//"]
+      "description": "Internal dependencies are trusted not to unpublish.",
+      "groupName": "internal packages",
+      "groupSlug": "internal-deps"
     },
     {
       "matchDatasources": ["github-actions"],
@@ -129,10 +142,11 @@
       "platformAutomerge": true,
       "schedule": ["* */4 * * *"],
       "timezone": "Asia/Seoul",
-      "labels": ["dependencies", "github_actions"],
+      "addLabels": ["github_actions"],
       "groupName": "github actions workflows upgrades"
     },
     {
+      "matchSourceUrls": ["https://github.com{/,}**"],
       "prBodyDefinitions": {
         "OpenSSF": "[![OpenSSF Scorecard](https://api.securityscorecards.dev/projects/github.com/{{sourceRepo}}/badge)](https://securityscorecards.dev/viewer/?uri=github.com/{{sourceRepo}})",
         "Repo": "{{sourceRepo}}"
@@ -148,8 +162,7 @@
         "Confidence",
         "Repo",
         "OpenSSF"
-      ],
-      "matchSourceUrls": ["https://github.com{/,}**"]
+      ]
     }
   ]
 }
