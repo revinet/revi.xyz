@@ -19,5 +19,7 @@
 /todo https://issuetracker.revi.xyz/ 302
 /wiki https://revi.wiki/wiki/ 302
 /b/* https://issuetracker.revi.xyz/:splat 302
+/bug/* https://issuetracker.revi.xyz/T:splat 302
 /d/* https://issuetracker.revi.xyz/D:splat 302
+/rev/* https://issuetracker.revi.xyz/D:splat 302
 /t/* https://issuetracker.revi.xyz/T:splat 302
