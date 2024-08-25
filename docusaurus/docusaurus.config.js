@@ -70,6 +70,7 @@ const config = {
           blogDescription: 'Cannot cook one, though.',
           feedOptions: {
             type: 'all',
+            xslt: true,
           },
           remarkPlugins: [joinCJKLines],
           showLastUpdateTime: true,
