@@ -1,3 +1,8 @@
+// SPDX-FileCopyrightText: (C) 2024 Hong Yongmin <https://revi.xyz/>
+// SPDX-FileCopyrightText: (C) 2024 Meta Platforms, Inc.
+//
+// SPDX-License-Identifier: Apache-2.0
+
 /**
  * Creating a sidebar enables you to:
  - create an ordered group of docs

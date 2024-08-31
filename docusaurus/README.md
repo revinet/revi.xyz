@@ -1,3 +1,9 @@
+<!--
+SPDX-FileCopyrightText: (C) 2024 Hong Yongmin <https://revi.xyz/>
+
+SPDX-License-Identifier: Apache-2.0
+-->
+
 # Docusaurus
 
 Read the [docs about workspace](https://docs.npmjs.com/cli/v10/using-npm/workspaces).

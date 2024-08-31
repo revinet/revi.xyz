@@ -1,3 +1,7 @@
+// SPDX-FileCopyrightText: (C) 2024 Meta Platforms, Inc.
+//
+// SPDX-License-Identifier: Apache-2.0
+
 import React from 'react';
 import LinkItem from '@theme/Footer/LinkItem';
 import type {Props} from '@theme/Footer/Links/MultiColumn';

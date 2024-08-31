@@ -1,3 +1,9 @@
+<!--
+SPDX-FileCopyrightText: (C) 2024 Hong Yongmin <https://revi.xyz/>
+
+SPDX-License-Identifier: Apache-2.0
+-->
+
 ---
 description: Sort of meta-data about this site.
 ---

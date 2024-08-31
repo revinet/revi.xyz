@@ -1,3 +1,9 @@
+<!--
+SPDX-FileCopyrightText: (C) 2024 Hong Yongmin <https://revi.xyz/>
+
+SPDX-License-Identifier: Apache-2.0
+-->
+
 ---
 description: Yeah, I'm the supreme court of myself.
 hide_table_of_contents: true

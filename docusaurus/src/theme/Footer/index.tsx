@@ -1,3 +1,7 @@
+// SPDX-FileCopyrightText: (C) 2024 Meta Platforms, Inc.
+//
+// SPDX-License-Identifier: Apache-2.0
+
 import React from 'react';
 
 import {useThemeConfig} from '@docusaurus/theme-common';

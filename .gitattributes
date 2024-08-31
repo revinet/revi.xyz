@@ -1,3 +1,7 @@
+# SPDX-FileCopyrightText: (C) 2024 Hong Yongmin <https://revi.xyz>
+#
+# SPDX-License-Identifier: Apache-2.0
+
 *        text=auto
 *.sh     text=auto  eol=lf
 
@@ -29,3 +33,4 @@ docusaurus/static/.well-known/openpgpkey/hu/* binary
 .yamllint             linguist-language=yaml
 *.md                  linguist-detectable
 docusaurus/static/.well-known/openpgpkey/hu/ linguist-generated
+LICENSES/*            linguist-vendored

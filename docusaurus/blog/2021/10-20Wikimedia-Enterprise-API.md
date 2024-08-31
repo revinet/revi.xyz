@@ -1,3 +1,9 @@
+<!--
+SPDX-FileCopyrightText: (C) 2021 - 2024 Hong Yongmin <https://revi.xyz/>
+
+SPDX-License-Identifier: LicenseRef-CC-BY-ND-2.0-KR
+-->
+
 ---
 date: 2021-10-19 19:35:42
 language: en

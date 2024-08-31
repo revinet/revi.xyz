@@ -1,6 +1,8 @@
-// SPDX-FileCopyrightText: 2024 Hong Yongmin <https://revi.xyz/>
+// SPDX-FileCopyrightText: (C) 2024 Hong Yongmin <https://revi.xyz/>
+// SPDX-FileContributor: Microsoft Corporation
 //
 // SPDX-License-Identifier: Apache-2.0
+
 import {test, expect} from '@playwright/test';
 
 test('Has title', async ({page}) => {

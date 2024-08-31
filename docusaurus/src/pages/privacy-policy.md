@@ -1,3 +1,10 @@
+<!--
+SPDX-FileCopyrightText: (C) 2021 - 2024 Hong Yongmin <https://revi.xyz/>
+
+SPDX-License-Identifier: Apache-2.0
+SPDX-License-Identifier: LicenseRef-CC-BY-SA-2.0-KR
+-->
+
 ---
 description: 개인정보 처리방침
 showLastUpdateTime: true

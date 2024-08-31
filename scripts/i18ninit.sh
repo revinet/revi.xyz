@@ -1,5 +1,6 @@
 #!/usr/bin/env bash
-# SPDX-FileCopyrightText: 2024 Hong Yongmin <https://revi.xyz>
+
+# SPDX-FileCopyrightText: (C) 2024 Hong Yongmin <https://revi.xyz/>
 #
 # SPDX-License-Identifier: Apache-2.0
 
