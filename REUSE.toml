@@ -12,7 +12,7 @@ precedence = "aggregate"
 SPDX-FileCopyrightText = [
   "(C) 2014 Phacility, Inc.",
   "(C) 2021 Phorge Authors",
-  "(C) 2024 Hong Yongmin <https://revi.xyz>"
+  "(C) 2024 Hong Yongmin <https://revi.xyz>",
 ]
 SPDX-License-Identifier = "Apache-2.0"
 SPDX-FileComment = "See also https://we.phorge.it/source/phorge/browse/master/NOTICE"
@@ -24,31 +24,39 @@ path = [
   ".gitmodules",
   ".htmlvalidate.json",
   ".imgbotconfig",
+  ".jshintrc.json",
   ".node-version",
   ".vscode/*.json",
+  "docusaurus/**/wrangler.toml",
   "package-lock.json",
-  "package.json",
-  "**/tsconfig.json"
+  "**/package.json",
+  "**/tsconfig.json",
 ]
 precedence = "aggregate"
 SPDX-FileCopyrightText = "(C) 2024 Hong Yongmin <https://revi.xyz>"
 SPDX-License-Identifier = "Apache-2.0"
 
+# i18n files
+
 [[annotations]]
 path = [
-  "docusaurus/i18n/ko/*"
+  "docusaurus/i18n/**/*",
 ]
 precedence = "aggregate"
 SPDX-FileCopyrightText = "(C) 2024 Hong Yongmin <https://revi.xyz>"
 SPDX-License-Identifier = "Apache-2.0"
+
+# static files
 
 [[annotations]]
 path = [
   "docusaurus/static/_headers",
   "docusaurus/static/_redirects",
   "docusaurus/static/*.asc",
+  "docusaurus/static/img/emailexample.png",
+  "docusaurus/static/robots.txt",
+  "docusaurus/static/.well-known/**/*",
   "docusaurus/static/webfinger.json",
-  "docusaurus/static/.well-known/**/*"
 ]
 precedence = "aggregate"
 SPDX-FileCopyrightText = "(C) 2024 Hong Yongmin <https://revi.xyz>"
@@ -61,7 +69,11 @@ SPDX-FileCopyrightText = "Copyright (c) 2023, 0xType Project Authors (https://gi
 SPDX-License-Identifier = "OFL-1.1"
 
 [[annotations]]
-path = ["docusaurus/static/google*.html", "docusaurus/static/ads.txt"]
+path = [
+  "docusaurus/static/google*.html",
+  "docusaurus/static/ads.txt",
+  "docusaurus/static/app-ads.txt",
+]
 precedence = "aggregate"
 SPDX-FileCopyrightText = "(C) 2024 Google LLC"
 SPDX-License-Identifier = "Apache-2.0"
@@ -90,3 +102,23 @@ path = "docusaurus/static/naver*.html"
 precedence = "aggregate"
 SPDX-FileCopyrightText = "(C) 2024 Naver Corp."
 SPDX-License-Identifier = "Apache-2.0"
+
+# Blog
+
+[[annotations]]
+path = "docusaurus/blog/2022/*.png"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "(C) 2022 Hong Yongmin <https://revi.xyz/>"
+SPDX-License-Identifier = ["LAL-1.3", "LicenseRef-CC-BY-2.0-KR"]
+
+[[annotations]]
+path = "docusaurus/blog/2023/*.jpeg"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "(C) 2023 Hong Yongmin <https://revi.xyz/>"
+SPDX-License-Identifier = ["LAL-1.3", "LicenseRef-CC-BY-2.0-KR"]
+
+[[annotations]]
+path = "docusaurus/blog/2024/*.png"
+precedencen = "aggregate"
+SPDX-FileCopyrightText = "(C) 2024 Hong Yongmin <https://revi.xyz/>"
+SPDX-License-Identifier = ["LAL-1.3", "LicenseRef-CC-BY-2.0-KR"]
