@@ -200,6 +200,9 @@ ReviNet은 정보주체의 개인정보 열람청구가 신속하게 처리되�
     "Run" 을 클릭하세요. (스팸메일 방지를 위한 대책입니다.)
 
     ```go title="main.go"
+    // SPDX-SnippetBegin
+    // SPDX-SnippetCopyrightText: Copyright 2023 The Go Authors.
+    // SPDX-License-Identifier: BSD-3-Clause
     package main
 
     import "fmt"
@@ -215,6 +218,7 @@ ReviNet은 정보주체의 개인정보 열람청구가 신속하게 처리되�
     func main() {
       fmt.Println(ReverseRunes("ved.iver@lagel"))
     }
+    // SPDX-SnippetEnd
     ```
 
     하단에 정상적인 이메일 주소와 함께 `Program exited.` 라는 문구가 뜨면 됩니다.
