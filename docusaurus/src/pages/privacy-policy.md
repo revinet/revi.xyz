@@ -1,8 +1,8 @@
 <!--
-SPDX-FileCopyrightText: (C) 2021 - 2024 Hong Yongmin <https://revi.xyz/>
+SPDX-FileCopyrightText: (C) 2021 Hong Yongmin (https://revi.xyz/) <yewon@revi.email>
 
-SPDX-License-Identifier: Apache-2.0
 SPDX-License-Identifier: LicenseRef-CC-BY-SA-2.0-KR
+SPDX-License-Identifier: LicenseRef-CC-BY-ND-2.0-KR
 -->
 
 ---

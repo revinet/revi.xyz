@@ -1,15 +1,15 @@
-<!--
-SPDX-FileCopyrightText: (C) 2023 - 2024 Hong Yongmin <https://revi.xyz/>
-
-SPDX-License-Identifier: LicenseRef-CC-BY-ND-2.0-KR
--->
-
 ---
 date: 2023-11-17T15:50
 language: ko
 authors: revi
 tags: [한국어, Japan Post]
 ---
+
+<!--
+SPDX-FileCopyrightText: (C) 2023 Hong Yongmin (https://revi.xyz/) <yewon@revi.email>
+
+SPDX-License-Identifier: LicenseRef-CC-BY-ND-2.0-KR
+-->
 
 # 일본우정
 

@@ -1,9 +1,3 @@
-<!--
-SPDX-FileCopyrightText: (C) 2024 - 2024 Hong Yongmin <https://revi.xyz/>
-
-SPDX-License-Identifier: LicenseRef-CC-BY-ND-2.0-KR
--->
-
 ---
 date: 2024-02-16T10:58
 title: U+TV UHD3 DNS Over TLS
@@ -11,6 +5,12 @@ language: ko
 authors: revi
 tags: [한국어, android, android TV, dns, dns over TLS, LGU+, tech, tv]
 ---
+
+<!--
+SPDX-FileCopyrightText: (C) 2024 Hong Yongmin (https://revi.xyz/) <yewon@revi.email>
+
+SPDX-License-Identifier: LicenseRef-CC-BY-ND-2.0-KR
+-->
 
 원래 3번 안 하고 4번만 해서 적용 안 돼서 왜 적용 안 되는지 찾아보던 글.
 

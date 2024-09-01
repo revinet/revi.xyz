@@ -1,15 +1,15 @@
-<!--
-SPDX-FileCopyrightText: (C) 2021 - 2024 Hong Yongmin <https://revi.xyz/>
-
-SPDX-License-Identifier: LicenseRef-CC-BY-ND-2.0-KR
--->
-
 ---
 date: 2021-10-19 19:35:42
 language: en
 authors: revi
 tags: [English, Enterprise, Wikimedia]
 ---
+
+<!--
+SPDX-FileCopyrightText: (C) 2021 Hong Yongmin (https://revi.xyz/) <yewon@revi.email>
+
+SPDX-License-Identifier: LicenseRef-CC-BY-ND-2.0-KR
+-->
 
 # Feeling about Wikimedia Enterprise API
 

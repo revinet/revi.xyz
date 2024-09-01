@@ -1,15 +1,15 @@
-<!--
-SPDX-FileCopyrightText: (C) 2024 - 2024 Hong Yongmin <https://revi.xyz/>
-
-SPDX-License-Identifier: LicenseRef-CC-BY-ND-2.0-KR
--->
-
 ---
 date: 2024-05-04T10:01
 authors: revi
 tags: [English, arc, gerrit, Phabricator, tech]
 language: en
 ---
+
+<!--
+SPDX-FileCopyrightText: (C) 2024 Hong Yongmin (https://revi.xyz/) <yewon@revi.email>
+
+SPDX-License-Identifier: LicenseRef-CC-BY-ND-2.0-KR
+-->
 
 # Usage of arc
 

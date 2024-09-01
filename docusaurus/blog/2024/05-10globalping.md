@@ -1,15 +1,15 @@
-<!--
-SPDX-FileCopyrightText: (C) 2024 - 2024 Hong Yongmin <https://revi.xyz/>
-
-SPDX-License-Identifier: LicenseRef-CC-BY-ND-2.0-KR
--->
-
 ---
 date: 2024-05-10T09:55
 description: Talking about jsdelivr's globalping
 authors: revi
 tags: [English, jsdelivr, network, probe, tech]
 ---
+
+<!--
+SPDX-FileCopyrightText: (C) 2024 Hong Yongmin (https://revi.xyz/) <yewon@revi.email>
+
+SPDX-License-Identifier: LicenseRef-CC-BY-ND-2.0-KR
+-->
 
 # GlobalPing
 

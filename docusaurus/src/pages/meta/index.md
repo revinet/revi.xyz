@@ -1,7 +1,7 @@
 <!--
-SPDX-FileCopyrightText: (C) 2024 Hong Yongmin <https://revi.xyz/>
+SPDX-FileCopyrightText: (C) 2024 Hong Yongmin (https://revi.xyz/) <yewon@revi.email>
 
-SPDX-License-Identifier: Apache-2.0
+SPDX-License-Identifier: LicenseRef-CC-BY-ND-2.0-KR
 -->
 
 ---
@@ -100,6 +100,15 @@ Unless noted otherwise, images are licensed under either
 [Creative Commons Attribution-ShareAlike 2.0 KR](https://creativecommons.org/licenses/by-sa/2.0/kr/)
 or [Free Art License 1.3](https://artlibre.org/licence/lal/en/).
 You may select the license of your choice.
+
+:::info[Each file has SPDX comments to denote Copyright status]
+
+Each page has an invisible [SPDX](https://spdx.dev) copyright headers in source
+code file.
+
+You can verify the page license by browsing the [Git repository](https://github.com/revinet/revi.xyz/).
+
+:::
 
 ## Resources {#resources}
 

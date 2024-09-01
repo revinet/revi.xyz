@@ -1,15 +1,15 @@
-<!--
-SPDX-FileCopyrightText: (C) 2024 - 2024 Hong Yongmin <https://revi.xyz/>
-
-SPDX-License-Identifier: LicenseRef-CC-BY-ND-2.0-KR
--->
-
 ---
 date: 2024-04-18T08:47
 language: en
 authors: revi
 tags: [English, politics]
 ---
+
+<!--
+SPDX-FileCopyrightText: (C) 2024 Hong Yongmin (https://revi.xyz/) <yewon@revi.email>
+
+SPDX-License-Identifier: LicenseRef-CC-BY-ND-2.0-KR
+-->
 
 # On a Trump trial
 

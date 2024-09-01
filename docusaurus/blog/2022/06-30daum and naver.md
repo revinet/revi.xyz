@@ -1,15 +1,15 @@
-<!--
-SPDX-FileCopyrightText: (C) 2022 - 2024 Hong Yongmin <https://revi.xyz/>
-
-SPDX-License-Identifier: LicenseRef-CC-BY-ND-2.0-KR
--->
-
 ---
 date: 2022-06-29 17:38:04
 language: en
 authors: revi
 tags: [English, Kakao, Naver, tech]
 ---
+
+<!--
+SPDX-FileCopyrightText: (C) 2022 Hong Yongmin (https://revi.xyz/) <yewon@revi.email>
+
+SPDX-License-Identifier: LicenseRef-CC-BY-ND-2.0-KR
+-->
 
 # Daum and Naver
 
