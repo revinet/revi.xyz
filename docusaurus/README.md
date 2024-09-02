@@ -23,7 +23,7 @@ Read the [docs about workspace](https://docs.npmjs.com/cli/v10/using-npm/workspa
 ## Build
 
 ```sh
-revi.xyz $ npm run build # or
+revi.xyz $ npm run build                        # or
 revi.xyz $ npm run build --workspace=docusaurus # or
 docusaurus $ npm run build
 ```
@@ -31,7 +31,7 @@ docusaurus $ npm run build
 ## Run local webserver
 
 ```sh
-revi.xyz $ npm run dserve # or
+revi.xyz $ npm run dserve                       # or
 revi.xyz $ npm run serve --workspace=docusaurus # or
 docusaurus $ npm run serve
 ```
