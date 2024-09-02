@@ -19,5 +19,7 @@ server-side software (I mean, `gerrit`) and especially not surrender to
 GitHub/GitLab style of 'one idea is one branch' model,
 so I'm sort of stuck here with arc.
 
+<!-- truncate -->
+
 [agit-workflow in forgejo](https://forgejo.org/docs/latest/user/agit-support/) looks
 better than GitHub/GitLab, but I'm yet to test them substantially.

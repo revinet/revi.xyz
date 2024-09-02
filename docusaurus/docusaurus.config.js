@@ -80,7 +80,6 @@ const config = {
       ({
         docs: false,
         blog: {
-          showReadingTime: true,
           blogSidebarTitle: 'All posts',
           blogSidebarCount: 'ALL',
           blogTitle: 'Cooking Pancakes',
@@ -89,8 +88,10 @@ const config = {
             type: 'all',
             xslt: true,
           },
+          onUntruncatedBlogPosts: 'log',
           remarkPlugins: [joinCJKLines],
           showLastUpdateTime: true,
+          showReadingTime: true,
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           // editUrl: 'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',

@@ -21,6 +21,8 @@ but for some foreseeable future, I need to reduce amount of server running
 therefore I'm turning off the twyne server and using omg.lol for now. I probably
 should run a total backup of old twyne server before moving completely though....
 
+<!-- truncate -->
+
 :::note[EDIT (2024-06-08)]
 
 I migrated once again, now utilizing [docusaurus](https://docusaurus.io).
