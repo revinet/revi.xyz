@@ -1,12 +1,12 @@
+---
+description: Sort of meta-data about this site.
+---
+
 <!--
 SPDX-FileCopyrightText: (C) 2024 Hong Yongmin (https://revi.xyz/) <yewon@revi.email>
 
 SPDX-License-Identifier: LicenseRef-CC-BY-ND-2.0-KR
 -->
-
----
-description: Sort of meta-data about this site.
----
 
 # About this site
 

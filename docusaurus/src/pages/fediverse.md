@@ -1,13 +1,13 @@
+---
+description: revi's presense ar Fediverse (aka Mastodon)
+unlisted: true
+---
+
 <!--
 SPDX-FileCopyrightText: (C) 2022 Hong Yongmin (https://revi.xyz/) <yewon@revi.email>
 
 SPDX-License-Identifier: LicenseRef-CC-BY-ND-2.0-KR
 -->
-
----
-description: revi's presense ar Fediverse (aka Mastodon)
-unlisted: true
----
 
 <head>
 <link rel="me" href="https://old.sharlayan.city/@revi" />

@@ -1,13 +1,13 @@
+---
+description: Yeah, I'm the supreme court of myself.
+hide_table_of_contents: true
+---
+
 <!--
 SPDX-FileCopyrightText: (C) 2022 Hong Yongmin (https://revi.xyz/) <yewon@revi.email>
 
 SPDX-License-Identifier: LicenseRef-CC-BY-ND-2.0-KR
 -->
-
----
-description: Yeah, I'm the supreme court of myself.
-hide_table_of_contents: true
----
 
 <head>
 <link rel="me" href="https://en.pronouns.page/@revi" />

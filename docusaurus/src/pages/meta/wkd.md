@@ -1,12 +1,12 @@
+---
+unlisted: true
+---
+
 <!--
 SPDX-FileCopyrightText: (C) 2024 Hong Yongmin (https://revi.xyz/) <yewon@revi.email>
 
 SPDX-License-Identifier: LicenseRef-CC-BY-ND-2.0-KR
 -->
-
----
-unlisted: true
----
 
 # WKD (Web Key Directory)
 
