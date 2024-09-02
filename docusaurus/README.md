@@ -22,21 +22,25 @@ Read the [docs about workspace](https://docs.npmjs.com/cli/v10/using-npm/workspa
 
 ## Build
 
-```
+```sh
+revi.xyz $ npm run build # or
 revi.xyz $ npm run build --workspace=docusaurus # or
 docusaurus $ npm run build
 ```
 
 ## Run local webserver
 
-```
+```sh
+revi.xyz $ npm run dserve # or
 revi.xyz $ npm run serve --workspace=docusaurus # or
 docusaurus $ npm run serve
 ```
 
-## Browserlist config
+## Browserlist list
 
-This is as of 2024-08-05 (KST).
+- Configuration is available at `//docusaurus/package.json` at "browserslist"
+  section.
+- This list is last updated at 2024-09-02 (KST).
 
 ### prod
 
