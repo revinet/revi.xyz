@@ -51,9 +51,7 @@ SPDX-License-Identifier = "Apache-2.0"
 # i18n files
 
 [[annotations]]
-path = [
-  "docusaurus/i18n/**/*",
-]
+path = ["docusaurus/i18n/**/*"]
 precedence = "aggregate"
 SPDX-FileCopyrightText = "(C) 2024 Hong Yongmin (https://revi.xyz/) <yewon@revi.email>"
 SPDX-License-Identifier = "Apache-2.0"
@@ -126,7 +124,7 @@ SPDX-License-Identifier = ["LAL-1.3", "LicenseRef-CC-BY-2.0-KR"]
 [[annotations]]
 path = "docusaurus/blog/2023/*.jpeg"
 precedence = "aggregate"
-SPDX-FileCopyrightText =  "(C) 2023 Hong Yongmin (https://revi.xyz/) <yewon@revi.email>"
+SPDX-FileCopyrightText = "(C) 2023 Hong Yongmin (https://revi.xyz/) <yewon@revi.email>"
 SPDX-License-Identifier = ["LAL-1.3", "LicenseRef-CC-BY-2.0-KR"]
 
 [[annotations]]
