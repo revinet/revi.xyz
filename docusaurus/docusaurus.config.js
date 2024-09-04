@@ -264,6 +264,10 @@ const config = {
                 to: '/meta',
               },
               {
+                label: 'Sitemap',
+                to: '/sitemap',
+              },
+              {
                 label: 'GitHub',
                 href: 'https://github.com/revinet/revi.xyz',
               },
