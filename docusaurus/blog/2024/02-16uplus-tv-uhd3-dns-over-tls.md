@@ -1,6 +1,7 @@
 ---
 date: 2024-02-16T10:58
 language: ko
+title: U+TV UHD3 DNS Over TLS
 authors: revi
 tags: [한국어, android, android TV, dns, dns over TLS, LGU+, tech, tv]
 ---

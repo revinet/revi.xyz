@@ -1,6 +1,7 @@
 ---
 date: 2024-04-18T08:47
 language: en
+title: On a Trump trial
 authors: revi
 tags: [English, politics]
 ---

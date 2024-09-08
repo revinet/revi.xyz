@@ -1,6 +1,7 @@
 ---
 date: 2023-08-19 18:04
 language: en
+title: UCEProtect
 authors: revi
 tags: [English, tech, UCEProtect]
 ---

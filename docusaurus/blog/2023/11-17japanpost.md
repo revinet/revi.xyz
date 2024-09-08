@@ -1,6 +1,7 @@
 ---
 date: 2023-11-17T15:50
 language: ko
+title: 일본우정
 authors: revi
 tags: [한국어, Japan Post]
 ---

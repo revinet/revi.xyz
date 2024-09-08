@@ -1,6 +1,7 @@
 ---
 date: 2022-06-29 17:38:04
 language: en
+title: Daum and Naver
 authors: revi
 tags: [English, Kakao, Naver, tech]
 ---

@@ -1,6 +1,7 @@
 ---
 date: 2024-04-16T15:09
 language: en
+title: GitLab? Rather Not.
 authors: revi
 tags: [English, Enterprise, Forgejo, GitLab, Open Source, tech]
 ---

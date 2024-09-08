@@ -1,5 +1,6 @@
 ---
 date: 2024-05-10T09:55
+title: GlobalPing
 description: Talking about jsdelivr's globalping
 authors: revi
 tags: [English, jsdelivr, network, probe, tech]

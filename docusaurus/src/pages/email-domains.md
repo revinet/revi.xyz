@@ -31,7 +31,7 @@ As of 2024-09-09, I send emails from following providers:
 ## Abuse
 
 However, if you received unauthorized emails from domains which connections are
-redirected to this page, [contact me](./contact-method) and I'll investigate.
+redirected to this page, [contact me](../contact-method) and I'll investigate.
 
 :::warning[Full email headers required]
 
