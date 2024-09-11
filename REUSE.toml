@@ -64,7 +64,6 @@ path = [
   "docusaurus/static/_redirects",
   "docusaurus/static/*.asc",
   "docusaurus/static/img/emailexample.png",
-  "docusaurus/static/robots.txt",
   "docusaurus/static/.well-known/**/*",
   "docusaurus/static/webfinger.json",
 ]
