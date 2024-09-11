@@ -33,7 +33,7 @@
     "wrangler": "3.75.0"
   },
   "optionalDependencies": {
-    "renovate": "38.67.5"
+    "renovate": "38.74.1"
   },
   "license": "Apache-2.0",
   "homepage": "https://revi.xyz",
