@@ -23,7 +23,7 @@
     "eslint": "9.10.0",
     "eslint-config-prettier": "9.1.0",
     "globals": "15.9.0",
-    "html-validate": "8.21.0",
+    "html-validate": "8.22.0",
     "jshint": "2.13.6",
     "prettier": "3.3.3",
     "stylelint": "16.9.0",
