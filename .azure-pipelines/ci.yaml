@@ -67,8 +67,7 @@ steps:
   # Build docusaurus for html-validate.
   - script: |
       npm ci
-      cd $(Pipeline.Workspace)/docusaurus
-      npx docusaurus build
+      npm run dbuild
     displayName: 'npm ci && Build docusaurus'
   - script: |
       npm run p:c .
