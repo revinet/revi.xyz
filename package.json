@@ -6,9 +6,9 @@
   },
   "name": "@revi/revi.xyz",
   "dependencies": {
-    "@fontsource/montserrat": "5.0.20",
-    "@fontsource/nanum-gothic-coding": "5.0.19",
-    "@fontsource/noto-serif-kr": "5.0.13",
+    "@fontsource/montserrat": "5.1.0",
+    "@fontsource/nanum-gothic-coding": "5.1.0",
+    "@fontsource/noto-serif-kr": "5.1.0",
     "@ibm/plex": "6.4.1"
   },
   "devDependencies": {
