@@ -1,4 +1,5 @@
 ---
+title: About this site
 description: Sort of meta-data about this site.
 ---
 

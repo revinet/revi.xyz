@@ -1,4 +1,5 @@
 ---
+title: revi at fediverse
 description: revi's presense ar Fediverse (aka Mastodon)
 unlisted: true
 ---

@@ -1,4 +1,5 @@
 ---
+title: Sitemap
 description: Sitemap
 unlisted: true
 ---
@@ -69,7 +70,7 @@ This is an index of pages in this website.
 - [Steam](https://steamcommunity.com/id/enhawiki/)
 - [Wiki](https://revi.wiki/wiki/)
 
-::: info[More data in json format]
+:::info[More data in json format]
 
 There is more external profile info available at
 [webfinger.json](https://revi.xyz/webfinger.json).

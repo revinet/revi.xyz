@@ -1,4 +1,5 @@
 ---
+title: email domains
 description: revi's email-only domains.
 unlisted: true
 ---
