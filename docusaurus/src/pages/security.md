@@ -1,3 +1,49 @@
+---
+title: Security Policy
+description: Security Policy
+unlisted: true
+---
+
+<!--
+SPDX-FileCopyrightText: (C) 2024 Hong Yongmin (https://revi.xyz/) <yewon@revi.email>
+
+SPDX-License-Identifier: LicenseRef-CC-BY-ND-2.0-KR
+-->
+
+# Security Policy
+
+## Contact software authors first
+
+Generally, I do not run custom-built software. Therefore your first point of
+contact should be the original author/maintainer of the software which you found
+the vulnerability. For example, `revi.xyz` (This website) runs on
+[Cloudflare Pages](https://pages.cloudflare.com) server, statically-generated
+files from [docusaurus](https://docusaurus.io). You should be contacting
+[Cloudflare](https://www.cloudflare.com/.well-known/security.txt) or
+[Meta Platforms](https://www.facebook.com/.well-known/security.txt) to disclose
+the problem.
+
+Only after the patch is generally available, and I have not patched the software
+in due time (allow me about 2 weeks, I do things for a hobby, not for my job)
+then contact me for the vulnerability.
+
+## Reporting a Vulnerability
+
+After reading above, if you are still certain if you discovered a security bug
+that falls within **MY** responsibility, then contact me.
+
+Use the contact details at [security.txt](https://revi.xyz/.well-known/security.txt).
+
+:::warning[Report Validation]
+
+You must include this word `blanc.security.revi.xyz` in your report body,
+or I will consider the report invalid.
+
+:::
+
+Please note that I do not offer financial rewards.
+
+```txt title="security.txt.asc"
 -----BEGIN PGP SIGNED MESSAGE-----
 Hash: SHA256
 
@@ -72,3 +118,4 @@ dFfIn0l6Qy/IEl9qz0MXdUhRqdsX+6ZJQya88SvEQ2xYLuNTS71O1ANbifCmpfDL
 SQwhnus=
 =wS7s
 -----END PGP SIGNATURE-----
+```
