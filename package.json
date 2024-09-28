@@ -30,7 +30,7 @@
     "stylelint-config-standard": "36.0.1",
     "turbo": "2.1.2",
     "typescript": "5.6.2",
-    "wrangler": "3.78.9"
+    "wrangler": "3.78.12"
   },
   "optionalDependencies": {
     "renovate": "38.94.3"
