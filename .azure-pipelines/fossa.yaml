@@ -1,0 +1,66 @@
+# SPDX-FileCopyrightText: (C) 2024 Hong Yongmin (https://revi.xyz/) <yewon@revi.email>
+#
+# SPDX-License-Identifier: Apache-2.0
+#
+# Licensed under the Apache License, Version 2.0 (the "License");
+# you may not use this file except in compliance with the License.
+# You may obtain a copy of the License at
+#
+# http://www.apache.org/licenses/LICENSE-2.0
+#
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS,
+# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# See the License for the specific language governing permissions and
+# limitations under the License.
+
+---
+# yaml-language-server: $schema=https://raw.githubusercontent.com/microsoft/azure-pipelines-vscode/master/service-schema.json
+# Node.js
+# Build a general Node.js project with npm.
+# Add steps that analyze code, save build artifacts, deploy, and more:
+# https://docs.microsoft.com/azure/devops/pipelines/languages/javascript
+
+name: 'FOSSA test-$(Build.DefinitionVersion)-$(Date:yyyyMMdd)-$(Rev:r)'
+
+trigger:
+  - master
+
+strategy:
+  matrix:
+    node_20_x:
+      node_version: 20.x
+
+pool:
+  vmImage: ubuntu-latest
+
+variables:
+  npm_config_cache: $(Pipeline.Workspace)/.npm
+  TURBO_TELEMETRY_DISABLED: 1
+
+steps:
+  # https://learn.microsoft.com/en-us/azure/devops/pipelines/tasks/reference/use-node-v1?view=azure-pipelines
+  - task: UseNode@1.245.1
+    inputs:
+      version: $(node_version)
+    displayName: Install Node.js
+  # https://learn.microsoft.com/en-us/azure/devops/pipelines/release/caching?view=azure-devops#nodejsnpm
+  - task: Cache@2.198.0
+    inputs:
+      key: 'npm | "$(Agent.OS)" | package-lock.json'
+      restoreKeys: |
+        npm | "$(Agent.OS)"
+      path: $(npm_config_cache)
+    displayName: Cache npm
+  # `npm ci` including optional because renovate.
+  # Build docusaurus for html-validate.
+  - script: |
+      npm ci
+      npm run dbuild
+      displayName: npm ci && Build docusaurus
+  - script: |
+      curl -H 'Cache-Control: no-cache' https://raw.githubusercontent.com/fossas/fossa-cli/master/install-latest.sh | bash
+      fossa analyze
+    displayName: FOSSA analyze
+    env:
+      FOSSA_API_KEY: $(FOSSA_API_KEY)
