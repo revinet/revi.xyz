@@ -57,7 +57,7 @@ steps:
   - script: |
       npm ci
       npm run dbuild
-      displayName: npm ci && Build docusaurus
+    displayName: npm ci && Build docusaurus
   - script: |
       curl -H 'Cache-Control: no-cache' https://raw.githubusercontent.com/fossas/fossa-cli/master/install-latest.sh | bash
       fossa analyze
