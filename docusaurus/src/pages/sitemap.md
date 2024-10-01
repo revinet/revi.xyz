@@ -58,8 +58,10 @@ This is an index of pages in this website.
 
 - [Main Page](https://revi.xyz/)
 - [How to contact me](https://revi.xyz/contact-method)
+- [email domains](https://revi.xyz/email-domains)
 - [revi at fediverse](https://revi.xyz/fediverse)
 - [Privacy Policy](https://revi.xyz/privacy-policy)
+- [Security Policy](https://revi.xyz/security)
 - [What should I use to reference you? he? she?](https://revi.xyz/pronoun-is)
 - [What time is it in revi's timezone?](https://revi.xyz/time)
 
