@@ -32,3 +32,4 @@ or whatsoever about this on their blog or social media.
     they'll add [AGPL](https://www.elastic.co/blog/elasticsearch-is-open-source-again)
     as a license option, becoming "open source" again. This has not happened as
     of [2024-09-03 at 18:00 KST](https://github.com/elastic/elasticsearch/blob/06aa32b312d922ac364fb94cb2ff322ac831827b/LICENSE.txt).
+    (2024-10-15 (KST) Update) [It happened at 2024-09-14 at 07:29 KST](https://github.com/elastic/elasticsearch/commit/a59c182f9f7e9d1bf3d6eecbc0e44f24ff91d053).

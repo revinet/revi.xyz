@@ -6,7 +6,7 @@ description: Sort of meta-data about this site.
 <!--
 SPDX-FileCopyrightText: (C) 2024 Hong Yongmin (https://revi.xyz/) <yewon@revi.email>
 
-SPDX-License-Identifier: LicenseRef-CC-BY-ND-2.0-KR
+SPDX-License-Identifier: LicenseRef-CC-BY-2.0-KR
 -->
 
 # About this site
@@ -83,16 +83,24 @@ affiliated organizations and/or projects unless otherwise stated.
 
 ### License {#license}
 
-Unless noted otherwise, text contents on this site is licensed under
-[Creative Commons Attribution-NoDerivates 2.0 KR](https://creativecommons.org/licenses/by-nd/2.0/kr/)
-license.
+Different license applies for blog and non-blog texts.
+
+- For non-blog (any pages not part of `https://revi.xyz/blog/` path in URL),
+  [Creative Commons Attribution 2.0 KR](https://creativecommons.org/licenses/by/2.0/kr/)
+  license applies.
+- For blog (identified by `https://revi.xyz/blog/` path in URL),
+  [Creative Commons Attribution-NoDerivates 2.0 KR](https://creativecommons.org/licenses/by-nd/2.0/kr/)
+  license applies.
+
+Blog has restrictive "NoDerivates" license, because I consider blog texts to be
+opinions, and I don't want anyone else to edit what I said out of context.
 
 Unless noted otherwise, non-text programming codes are licensed under
 [Apache License 2.0](https://github.com/revinet/revi.xyz/blob/master/LICENSE).
 
 :::info[Images are freely licensed]
 
-Unlike the text contents, images are [freely licensed](https://freedomdefined.org/Definition).
+Unlike the text contents in blogs, images are [freely licensed](https://freedomdefined.org/Definition).
 You may choose your favorite license from one of those two licenses.
 
 :::

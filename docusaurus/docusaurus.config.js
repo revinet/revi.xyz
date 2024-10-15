@@ -284,6 +284,18 @@ const config = {
                 label: 'Privacy Policy',
                 to: '/privacy-policy',
               },
+            ],
+          },
+          {
+            title: 'Licenses',
+            items: [
+              {
+                label: 'Details',
+                to: '/meta/#license',
+              },
+              {
+                html: `<a href="https://creativecommons.org/licenses/by/2.0/kr/" target="_blank" rel="noreferrer" alt="CC BY 2.0 KR License"><img src="/img/by.svg" alt="CC BY 2.0 KR License" width="88" height="31" /></a>`,
+              },
               {
                 html: `<a href="https://creativecommons.org/licenses/by-nd/2.0/kr/" target="_blank" rel="noreferrer" alt="CC BY ND 2.0 KR License"><img src="/img/by-nd.svg" alt="CC BY ND 2.0 KR License" width="88" height="31" /></a>`,
               },

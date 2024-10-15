@@ -7,7 +7,7 @@ unlisted: true
 <!--
 SPDX-FileCopyrightText: (C) 2024 Hong Yongmin (https://revi.xyz/) <yewon@revi.email>
 
-SPDX-License-Identifier: LicenseRef-CC-BY-ND-2.0-KR
+SPDX-License-Identifier: LicenseRef-CC-BY-2.0-KR
 -->
 
 # Security Policy

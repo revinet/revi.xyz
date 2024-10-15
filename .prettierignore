@@ -17,6 +17,7 @@
 CODEOWNERS
 docusaurus/build
 docusaurus/static
+LICENSES/
 node_modules
 package-lock.json
 .pinterest-linters/

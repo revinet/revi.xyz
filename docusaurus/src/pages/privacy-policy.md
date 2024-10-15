@@ -8,8 +8,8 @@ unlisted: true
 <!--
 SPDX-FileCopyrightText: (C) 2021 Hong Yongmin (https://revi.xyz/) <yewon@revi.email>
 
+SPDX-License-Identifier: LicenseRef-CC-BY-2.0-KR
 SPDX-License-Identifier: LicenseRef-CC-BY-SA-2.0-KR
-SPDX-License-Identifier: LicenseRef-CC-BY-ND-2.0-KR
 -->
 
 # 개인정보 처리방침
