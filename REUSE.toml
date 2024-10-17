@@ -41,6 +41,7 @@ path = [
   ".vscode/*.json",
   "docusaurus/**/wrangler.toml",
   "package-lock.json",
+  "Pipfile.lock",
   "**/package.json",
   "**/tsconfig.json",
 ]
@@ -100,7 +101,7 @@ SPDX-FileCopyrightText = "(C) 2022 시안"
 SPDX-License-Identifier = "LicenseRef-None"
 
 [[annotations]]
-path = "docusaurus/static/img/by-nd.svg"
+path = ["docusaurus/static/img/by.svg", "docusaurus/static/img/by-nd.svg"]
 precedence = "aggregate"
 SPDX-FileCopyrightText = "(C) 2014 Creative Commons"
 SPDX-License-Identifier = "LicenseRef-None"

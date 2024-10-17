@@ -1,10 +1,43 @@
 {
   "$schema": "https://json.schemastore.org/package.json",
+  "name": "@revi/revi.xyz",
+  "homepage": "https://revi.xyz",
+  "bugs": {
+    "url": "https://revi.xyz/new"
+  },
+  "license": "Apache-2.0",
   "author": {
     "name": "revi",
     "email": "revi@omglol.email"
   },
-  "name": "@revi/revi.xyz",
+  "workspaces": [
+    "./docusaurus"
+  ],
+  "scripts": {
+    "alint": "arc lint",
+    "browserlist:dev": "cd docusaurus && browserslist --env=\"development\"",
+    "browserlist:prod": "cd docusaurus && browserslist --env=\"production\"",
+    "build": "sh scripts/build.sh",
+    "cleanbuild": "sh scripts/cleanbuild.sh",
+    "dbuild": "cd docusaurus && docusaurus clear && docusaurus build",
+    "dserve": "wrangler pages dev docusaurus/build/ --port 3000",
+    "dstart": "cd docusaurus && docusaurus clear && docusaurus start",
+    "lighthouse": "lhci autorun",
+    "lint": "sh scripts/lint.sh",
+    "lint:eslint": "cd docusaurus && eslint .",
+    "lint:html-validate": "html-validate \"docusaurus/build/**/*.html\"",
+    "lint:renovate": "renovate-config-validator",
+    "lint:stylelint": "stylelint \"docusaurus/src/**/*.css\"",
+    "lint:test": "arc lint && prettier --check .",
+    "new": "cd docusaurus && docusaurus-post-generator new blog",
+    "p:c": "prettier --check",
+    "p:w": "prettier --write",
+    "pw:i": "playwright install --with-deps",
+    "test": "playwright test",
+    "webping:send": "webmention https://revi.xyz/blog/rss.xml --limit 1 --send",
+    "webping:test": "webmention https://revi.xyz/blog/rss.xml --limit 1"
+  },
+  "prettier": "@revi/prettier-config",
   "dependencies": {
     "@fontsource/montserrat": "5.1.0",
     "@fontsource/nanum-gothic-coding": "5.1.0",
@@ -36,41 +69,8 @@
   "optionalDependencies": {
     "renovate": "38.119.0"
   },
-  "license": "Apache-2.0",
-  "homepage": "https://revi.xyz",
-  "bugs": {
-    "url": "https://revi.xyz/new"
-  },
-  "prettier": "@revi/prettier-config",
+  "packageManager": "npm@10.9.0",
   "engines": {
     "node": ">=18.0"
-  },
-  "packageManager": "npm@10.9.0",
-  "scripts": {
-    "alint": "arc lint",
-    "browserlist:prod": "cd docusaurus && browserslist --env=\"production\"",
-    "browserlist:dev": "cd docusaurus && browserslist --env=\"development\"",
-    "build": "sh scripts/build.sh",
-    "cleanbuild": "sh scripts/cleanbuild.sh",
-    "dbuild": "cd docusaurus && docusaurus clear && docusaurus build",
-    "dserve": "wrangler pages dev docusaurus/build/ --port 3000",
-    "dstart": "cd docusaurus && docusaurus clear && docusaurus start",
-    "lighthouse": "lhci autorun",
-    "lint": "sh scripts/lint.sh",
-    "lint:eslint": "cd docusaurus && eslint .",
-    "lint:html-validate": "html-validate \"docusaurus/build/**/*.html\"",
-    "lint:renovate": "renovate-config-validator",
-    "lint:stylelint": "stylelint \"docusaurus/src/**/*.css\"",
-    "lint:test": "arc lint && prettier --check .",
-    "new": "cd docusaurus && docusaurus-post-generator new blog",
-    "p:c": "prettier --check",
-    "p:w": "prettier --write",
-    "pw:i": "playwright install --with-deps",
-    "test": "playwright test",
-    "webping:send": "webmention https://revi.xyz/blog/rss.xml --limit 1 --send",
-    "webping:test": "webmention https://revi.xyz/blog/rss.xml --limit 1"
-  },
-  "workspaces": [
-    "./docusaurus"
-  ]
+  }
 }

@@ -41,6 +41,8 @@ docusaurus/static/.well-known/openpgpkey/hu/* binary
 .arclint              linguist-language=json
 .devcontainer/**.json linguist-language=jsonc
 .npmrc                linguist-language=ini
+Pipfile               linguist-language=toml
+Pipfile.lock          linguist-language=json
 .vscode/**.json       linguist-language=jsonc
 .yamllint             linguist-language=yaml
 *.md                  linguist-detectable
