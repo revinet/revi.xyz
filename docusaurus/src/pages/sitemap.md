@@ -16,6 +16,8 @@ This is an index of pages in this website.
 
 ## Blog
 
+<!-- Sort by month/day then alphabet for same day articles. -->
+
 ### 2016
 
 - [단상: 전자책](https://revi.xyz/blog/2016/11/18/%EC%A0%84%EC%9E%90%EC%B1%85/) (2016-11-10)
@@ -56,10 +58,13 @@ This is an index of pages in this website.
 
 ## Pages
 
+<!-- Sort by URL alphabetically. -->
+
 - [Main Page](https://revi.xyz/)
 - [How to contact me](https://revi.xyz/contact-method)
 - [email domains](https://revi.xyz/email-domains)
 - [revi at fediverse](https://revi.xyz/fediverse)
+- [OpenPGP](https://revi.xyz/pgp/)
 - [Privacy Policy](https://revi.xyz/privacy-policy)
 - [Security Policy](https://revi.xyz/security)
 - [What should I use to reference you? he? she?](https://revi.xyz/pronoun-is)
