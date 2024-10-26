@@ -145,8 +145,10 @@ the default image license.
 
 :::
 
-- [Creative Commons BY ND logo](https://revi.xyz/img/by-nd.svg):
-  Copyright © Creative Commons, [used in compliance with their trademark policy](https://creativecommons.org/policies/#trademark).
+- Creative Commons Logos: Copyright © Creative Commons (most likely not [copyrightable](https://commons.wikimedia.org/wiki/Commons:Threshold_of_originality)),
+  [used in compliance with their trademark policy](https://creativecommons.org/policies/#trademark).
+    - [BY](https://revi.xyz/img/by.svg) (from [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:CC_BY_icon.svg))
+    - [BY-ND](https://revi.xyz/img/by-nd.svg) (from [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:CC_BY_icon.svg).)
 - [OpenGraph picture](https://revi.xyz/img/bbip-bg.png): Copyright © 삐쀼 2022, used with permission.
 - [Profile picture](https://revi.xyz/img/logo.png):
   [Copyright © 시안 2022](https://archive.today/2022.01.27-085510/https://dreaming-flower.postype.com/post/11562299),
