@@ -31,17 +31,6 @@ on:
       - 'package-lock.json'
       - 'playwright.config.ts'
       - 'tests/**'
-  pull_request:
-    paths:
-      - '.github/workflows/**'
-      - '.github/dependabot.yml'
-      - '.github/renovate.json'
-      - 'docusaurus/**'
-      - 'package.json'
-      - 'package-lock.json'
-      - 'playwright.config.ts'
-      - 'tests/**'
-  merge_group:
   workflow_dispatch:
 
 # prettier-ignore

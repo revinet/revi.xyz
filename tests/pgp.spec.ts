@@ -26,11 +26,15 @@ test('Check pgp page', async ({page}) => {
   // Check if key 1 is visible.
   await expect(page.getByText('947F 156F 1625 0DE3 9788 C3C3')).toBeVisible();
   // Check if key 1 is correct.
-  await expect(page.getByRole('article')).toContainText('947F 156F 1625 0DE3 9788 C3C3 5B62 5DA5 BEFF 197A');
+  await expect(page.getByRole('article')).toContainText(
+    '947F 156F 1625 0DE3 9788 C3C3 5B62 5DA5 BEFF 197A',
+  );
   // Check if key 2 is visible.
   await expect(page.getByText('12DD 5306 418C 8E0A 8F55 761D')).toBeVisible();
   // Check if key 2 is correct.
-  await expect(page.getByRole('article')).toContainText('12DD 5306 418C 8E0A 8F55 761D 1EB4 F6CE EA10 0E94');
+  await expect(page.getByRole('article')).toContainText(
+    '12DD 5306 418C 8E0A 8F55 761D 1EB4 F6CE EA10 0E94',
+  );
 });
 
 test('Click key 1 (local)', async ({page}) => {
@@ -38,7 +42,9 @@ test('Click key 1 (local)', async ({page}) => {
   await page.goto('https://revi.xyz/pgp/');
   // Click key 1.
   const page1Promise = page.waitForEvent('popup');
-  await page.getByRole('link', { name: '947F156F16250DE39788C3C35B625DA5BEFF197A' }).click();
+  await page
+    .getByRole('link', {name: '947F156F16250DE39788C3C35B625DA5BEFF197A'})
+    .click();
   // Wait for key 1 to load.
   const page1 = await page1Promise;
   // Check if key 1 has correct contents.
@@ -50,7 +56,10 @@ test('Click key 1 (ubuntu)', async ({page}) => {
   await page.goto('https://revi.xyz/pgp/');
   // Click key 1.
   const page2Promise = page.waitForEvent('popup');
-  await page.getByRole('link', { name: 'Get from keyserver.ubuntu.com' }).first().click();
+  await page
+    .getByRole('link', {name: 'Get from keyserver.ubuntu.com'})
+    .first()
+    .click();
   // Wait for key 1 to load.
   const page2 = await page2Promise;
   // Check if key 1 has correct contents.
@@ -62,11 +71,15 @@ test('Click key 2 (local)', async ({page}) => {
   await page.goto('https://revi.xyz/pgp/');
   // Click key 2.
   const page3Promise = page.waitForEvent('popup');
-  await page.getByRole('link', { name: '12DD5306418C8E0A8F55761D1EB4F6CEEA100E94' }).click();
+  await page
+    .getByRole('link', {name: '12DD5306418C8E0A8F55761D1EB4F6CEEA100E94'})
+    .click();
   // Wait for key 2 to load.
   const page3 = await page3Promise;
   // Check if key 2 has correct contents.
-  await expect(page3.locator('pre')).toContainText('-----END PGP PUBLIC KEY BLOCK-----');
+  await expect(page3.locator('pre')).toContainText(
+    '-----END PGP PUBLIC KEY BLOCK-----',
+  );
 });
 
 test('Click key 2 (ubuntu)', async ({page}) => {
@@ -74,7 +87,10 @@ test('Click key 2 (ubuntu)', async ({page}) => {
   await page.goto('https://revi.xyz/pgp/');
   // Click key 2.
   const page4Promise = page.waitForEvent('popup');
-  await page.getByRole('link', { name: 'Get from keyserver.ubuntu.com' }).nth(1).click();
+  await page
+    .getByRole('link', {name: 'Get from keyserver.ubuntu.com'})
+    .nth(1)
+    .click();
   // Wait for key 2 to load.
   const page4 = await page4Promise;
   // Check if key 2 has correct contents.

@@ -26,9 +26,13 @@ test('Check security page', async ({page}) => {
   // Check if the security page is accessible.
   await expect(page.getByText('Unlisted page')).toBeVisible();
   // Click section name to verify the content.
-  await expect(page.getByRole('article')).toContainText('Only after the patch is generally available');
+  await expect(page.getByRole('article')).toContainText(
+    'Only after the patch is generally available',
+  );
   // Check the content of the page.
-  await expect(page.getByRole('article')).toContainText('After reading above, if you are still certain if you discovered a security bug that falls within MY responsibility, then contact me.');
+  await expect(page.getByRole('article')).toContainText(
+    'After reading above, if you are still certain if you discovered a security bug that falls within MY responsibility, then contact me.',
+  );
   // Check the content of the page in <pre> texts.
   await expect(page.locator('pre')).toContainText('blanc.security.revi.xyz');
 });
@@ -38,9 +42,11 @@ test('Click security.txt', async ({page}) => {
   await page.goto('https://revi.xyz/security/');
   // Click the security.txt link.
   const page1Promise = page.waitForEvent('popup');
-  await page.getByRole('link', { name: 'security.txt' }).click();
+  await page.getByRole('link', {name: 'security.txt'}).click();
   // Wait for security.txt to load.
   const page1 = await page1Promise;
   // Check if the security.txt page has correct contents.
-  await expect(page1.locator('pre')).toContainText('Policy: https://revi.xyz/security/');
+  await expect(page1.locator('pre')).toContainText(
+    'Policy: https://revi.xyz/security/',
+  );
 });
