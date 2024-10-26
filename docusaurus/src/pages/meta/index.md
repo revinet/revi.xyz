@@ -55,7 +55,7 @@ This is the current build status for this website.
 
 I'd like to thank these people for inspiration:
 
-- [Aaron Parecki](https://aaronparecki.com/now/) for [/time/](https://revi.xyz/time/).
+- [Aaron Parecki](https://aaronparecki.com/now/) for [/time/](../time.mdx).
 - [go.dev](https://go.dev/doc/tutorial/workspaces) folks for their [reverse.go](https://go.googlesource.com/example/+/refs/heads/master/hello/reverse/reverse.go),
   along with [go playground](https://go.dev/play) which is used for email
   address obfuscation.

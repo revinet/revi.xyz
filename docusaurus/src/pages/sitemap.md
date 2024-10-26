@@ -20,7 +20,7 @@ This is an index of pages in this website.
 
 ### 2016
 
-- [단상: 전자책](https://revi.xyz/blog/2016/11/18/%EC%A0%84%EC%9E%90%EC%B1%85/) (2016-11-10)
+- [단상: 전자책](/blog/2016/11-18전자책.md) (2016-11-10)
 
 ### 2020
 
@@ -54,21 +54,23 @@ This is an index of pages in this website.
 - [Usage of arc](https://revi.xyz/blog/2024/05/04/usage-of-arc/) (2024-05-04)
 - [GlobalPing](https://revi.xyz/blog/2024/05/10/globalping/) (2024-05-10)
 - [SourceHut](https://revi.xyz/blog/2024/06/07/sourcehut/) (2024-06-07)
-- [SourceGraph and Open source](https://revi.xyz/blog/2024/09/03/Sourcegraph/) (2024-09-03)
+- [SourceGraph and Open source](/blog/2024/09-03Sourcegraph.md) (2024-09-03)
 
 ## Pages
 
 <!-- Sort by URL alphabetically. -->
 
-- [Main Page](https://revi.xyz/)
-- [How to contact me](https://revi.xyz/contact-method)
-- [email domains](https://revi.xyz/email-domains)
-- [revi at fediverse](https://revi.xyz/fediverse)
-- [OpenPGP](https://revi.xyz/pgp/)
-- [Privacy Policy](https://revi.xyz/privacy-policy)
-- [Security Policy](https://revi.xyz/security)
-- [What should I use to reference you? he? she?](https://revi.xyz/pronoun-is)
-- [What time is it in revi's timezone?](https://revi.xyz/time)
+- [Main Page](./index.mdx)
+- [How to contact me](./contact-method.mdx)
+- [email domains](./email-domains.md)
+- [revi at fediverse](./fediverse.md)
+- [About this site](./meta/index.md)
+- [WKD (Web Key Directory)](./meta/wkd.md)
+- [OpenPGP](./pgp.md)
+- [Privacy Policy](./privacy-policy.md)
+- [Security Policy](./security.md)
+- [What should I use to reference you? he? she?](./pronoun-is.md)
+- [What time is it in revi's timezone?](./time.mdx)
 
 ## External sites
 
