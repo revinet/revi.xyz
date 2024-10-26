@@ -22,7 +22,7 @@ SPDX-License-Identifier: LicenseRef-CC-BY-2.0-KR
 
 # revi at fediverse
 
-This is [revi](./)'s mastodon account index.
+This is [revi](../)'s mastodon account index.
 
 :::warning[Note for English speaker]
 
