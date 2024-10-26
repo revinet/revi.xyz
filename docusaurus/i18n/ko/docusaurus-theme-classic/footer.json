@@ -46,5 +46,29 @@
   "copyright": {
     "message": "Copyright © 2016 ~ 2024 revi. Licensed under CC BY ND 2.0 KR. Built with Docusaurus.",
     "description": "The footer copyright"
+  },
+  "link.title.Licenses": {
+    "message": "Licenses",
+    "description": "The title of the footer links column with title=Licenses in the footer"
+  },
+  "link.item.label.Fediverse accounts": {
+    "message": "Fediverse accounts",
+    "description": "The label of footer link with label=Fediverse accounts linking to /fediverse"
+  },
+  "link.item.label.meta": {
+    "message": "meta",
+    "description": "The label of footer link with label=meta linking to /meta"
+  },
+  "link.item.label.Sitemap": {
+    "message": "Sitemap",
+    "description": "The label of footer link with label=Sitemap linking to /sitemap"
+  },
+  "link.item.label.Legal": {
+    "message": "Legal",
+    "description": "The label of footer link with label=Legal linking to /meta#legal"
+  },
+  "link.item.label.Details": {
+    "message": "Details",
+    "description": "The label of footer link with label=Details linking to /meta/#license"
   }
 }

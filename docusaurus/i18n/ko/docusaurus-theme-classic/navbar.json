@@ -26,5 +26,17 @@
   "item.label.GitHub": {
     "message": "GitHub",
     "description": "Navbar item with label GitHub"
+  },
+  "item.label.meta": {
+    "message": "meta",
+    "description": "Navbar item with label meta"
+  },
+  "item.label.other sites": {
+    "message": "other sites",
+    "description": "Navbar item with label other sites"
+  },
+  "item.label.fediverse accounts": {
+    "message": "fediverse accounts",
+    "description": "Navbar item with label fediverse accounts"
   }
 }
