@@ -34,8 +34,6 @@ on:
 # prettier-ignore
 env:
   IBM_TELEMETRY_DISABLED: true
-  CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
-  CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
   TURBO_TELEMETRY_DISABLED: 1
 
 jobs:
@@ -62,7 +60,13 @@ jobs:
         if: github.ref_name == 'master'
         # yamllint disable-line rule:line-length
         run: npx wrangler pages deploy ${{ github.workspace }}/docusaurus/build --project-name=revi-xyz --branch master --commit-dirty=true
+        env:
+          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
       - name: Deploy to Cloudflare Pages (prod)
         if: github.ref_name == 'prod'
         # yamllint disable-line rule:line-length
         run: npx wrangler pages deploy ${{ github.workspace }}/docusaurus/build --project-name=revi-xyz --commit-dirty=true
+        env:
+          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
