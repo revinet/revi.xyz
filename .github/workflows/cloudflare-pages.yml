@@ -15,7 +15,7 @@
 # limitations under the License.
 
 ---
-name: 'Cloudflare Pages'
+name: Cloudflare Pages
 
 on:
   push:
@@ -24,10 +24,10 @@ on:
       - prod
     paths:
       - '.github/workflows/**'
-      - '.github/dependabot.yml'
-      - '.github/renovate.json'
+      - .github/dependabot.yml
+      - .github/renovate.json
       - 'docusaurus/**'
-      - 'package.json'
+      - package.json
       - 'package-lock.json'
   workflow_dispatch:
 
@@ -43,24 +43,26 @@ jobs:
     name: Build Docusaurus
     runs-on: ubuntu-latest
     steps:
-      - name: 'Checkout'
+      - name: Checkout
         uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4
         with:
           fetch-depth: 0
-      - name: 'Setup Node.js'
+      - name: Setup Node.js
         uses: actions/setup-node@39370e3970a6d050c480ffad4ff0ed4d3fdee5af # v4
         with:
           node-version-file: '.node-version'
           cache: npm
-      - name: 'Install dependencies'
+      - name: Set timezone to Asia/Seoul
+        run: sudo timedatectl set-timezone Asia/Seoul
+      - name: Install dependencies
         run: npm ci --omit=optional
-      - name: 'Build website'
+      - name: Build website
         run: npm run dbuild
-      - name: 'Deploy to Cloudflare Pages (master)'
+      - name: Deploy to Cloudflare Pages (master)
         if: github.ref_name == 'master'
         # yamllint disable-line rule:line-length
         run: npx wrangler pages deploy ${{ github.workspace }}/docusaurus/build --project-name=revi-xyz --branch master --commit-dirty=true
-      - name: 'Deploy to Cloudflare Pages (prod)'
+      - name: Deploy to Cloudflare Pages (prod)
         if: github.ref_name == 'prod'
         # yamllint disable-line rule:line-length
         run: npx wrangler pages deploy ${{ github.workspace }}/docusaurus/build --project-name=revi-xyz --commit-dirty=true
