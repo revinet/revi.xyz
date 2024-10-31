@@ -53,15 +53,17 @@ func ReverseRunes(s string) string {
 }
 
 func main() {
-  fmt.Println(ReverseRunes("liame.lolgmo@iver"))
+  fmt.Println(ReverseRunes("liame.iver@nowey"))
 }
 // SPDX-SnippetEnd
 ```
 
 Grey box below the yellow edit box will emit the correct email address and say
-`Program exited`. ([Example here](https://revi.xyz/img/emailexample.png). The source code is from [go.dev](https://go.googlesource.com/example/+/refs/heads/master/hello/reverse/reverse.go)
+`Program exited`. ([Example here](https://revi.xyz/img/emailexample.png).
+The source code is from [go.dev](https://go.googlesource.com/example/+/refs/heads/master/hello/reverse/reverse.go)
 and licensed under a [BSD license](https://go.dev/LICENSE).)
-You can also [click this link](https://go.dev/play/p/BHzsdvrB2rH) to get this prefilled.
+You can also [click this link](https://go.dev/play/p/JsEEfry00Ex) to get this
+prefilled.
 Just click the "Run" button.
 
 :::
@@ -101,9 +103,11 @@ func main() {
 ```
 
 Grey box below the yellow edit box will emit the correct email address and say
-`Program exited`. ([Example here](https://revi.xyz/img/emailexample.png). This code is from [go.dev](https://go.googlesource.com/example/+/refs/heads/master/hello/reverse/reverse.go)
+`Program exited`. ([Example here](https://revi.xyz/img/emailexample.png).
+This code is from [go.dev](https://go.googlesource.com/example/+/refs/heads/master/hello/reverse/reverse.go)
 and licensed under [BSD license](https://go.dev/LICENSE).)
-You can also [click this link](https://go.dev/play/p/ABQFo9u7BbT) to get this prefilled.
+You can also [click this link](https://go.dev/play/p/ABQFo9u7BbT) to get this
+prefilled.
 Just click the "Run" button.
 
 :::
@@ -112,6 +116,49 @@ Just click the "Run" button.
 </Tabs>
 
 ::::
+
+### Email addresses
+
+Over time, I have used multiple email addresses. If you are not certain if that
+email address is controlled by me, use this list to verify it is indeed mine.
+
+<details>
+<summary>Hidden because lengthy</summary>
+
+```go
+// SPDX-SnippetBegin
+// SPDX-SnippetCopyrightText: Copyright 2023 The Go Authors.
+// SPDX-License-Identifier: BSD-3-Clause
+
+package main
+
+import "fmt"
+
+func ReverseRunes(s string) string {
+  r := []rune(s)
+  for i, j := 0, len(r)-1; i < len(r)/2; i, j = i+1, j-1 {
+    r[i], r[j] = r[j], r[i]
+  }
+  return string(r)
+}
+
+func main() {
+  fmt.Println(ReverseRunes("liame.lolgmo@iver"))
+  fmt.Println(ReverseRunes("moc.xobop@iver"))
+  fmt.Println(ReverseRunes("liame.iver@nowey"))
+  fmt.Println(ReverseRunes("ikiw.iver@iver"))
+  fmt.Println(ReverseRunes("moc.liamg@ikiwiver"))
+  fmt.Println(ReverseRunes("gro.fsf.rebmem@iver"))  // Can send/receive emails as of 2024-10-31, but it can be disabled at any time.
+  fmt.Println(ReverseRunes("gro.aidemikiw@iver"))   // Can't send/receive emails as of 2024-10-31.
+  fmt.Println(ReverseRunes("gro.xobliamnepo@iver")) // Can't send/receive emails as of 2024-10-31.
+}
+
+// SPDX-SnippetEnd
+```
+
+The method and credit are same as above. Use [this go.dev/play link](https://go.dev/play/p/iai6pS6mNOs)
+as a prefilled version.
+</details>
 
 ### Encryption {#encryption}
 
