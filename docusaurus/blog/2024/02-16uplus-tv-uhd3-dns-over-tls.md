@@ -1,5 +1,5 @@
 ---
-date: 2024-02-16T10:58
+date: 2024-02-16T19:58:00+09:00
 language: ko
 title: U+TV UHD3 DNS Over TLS
 authors: revi

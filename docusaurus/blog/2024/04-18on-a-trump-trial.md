@@ -1,5 +1,5 @@
 ---
-date: 2024-04-18T08:47
+date: 2024-04-18T17:47:00+09:00
 language: en
 title: On a Trump trial
 authors: revi

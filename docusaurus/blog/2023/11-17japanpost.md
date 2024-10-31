@@ -1,5 +1,5 @@
 ---
-date: 2023-11-17T15:50
+date: 2023-11-18T00:50:00+09:00
 language: ko
 title: 일본우정
 authors: revi

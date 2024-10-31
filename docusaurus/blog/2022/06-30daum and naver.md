@@ -1,5 +1,5 @@
 ---
-date: 2022-06-29 17:38:04
+date: 2022-06-30T05:38:04+09:00
 language: en
 title: Daum and Naver
 authors: revi

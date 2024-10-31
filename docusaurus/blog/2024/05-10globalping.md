@@ -1,5 +1,5 @@
 ---
-date: 2024-05-10T09:55
+date: 2024-05-10T18:55:00+09:00
 title: GlobalPing
 description: Talking about jsdelivr's globalping
 authors: revi

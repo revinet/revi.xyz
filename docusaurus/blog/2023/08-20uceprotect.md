@@ -1,5 +1,5 @@
 ---
-date: 2023-08-19 18:04
+date: 2023-08-20T03:04:00+09:00
 language: en
 title: UCEProtect
 authors: revi

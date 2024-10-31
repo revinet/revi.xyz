@@ -1,5 +1,5 @@
 ---
-date: 2021-10-19 19:35:42
+date: 2021-10-20T04:35:42+09:00
 language: en
 title: Feeling about Wikimedia Enterprise API
 authors: revi

@@ -1,5 +1,5 @@
 ---
-date: 2024-05-04T10:01
+date: 2024-05-04T19:01:00+09:00
 authors: revi
 title: Usage of arc
 tags: [English, arc, gerrit, Phabricator, tech]

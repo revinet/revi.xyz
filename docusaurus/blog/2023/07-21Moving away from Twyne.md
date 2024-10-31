@@ -1,5 +1,5 @@
 ---
-date: 2023-07-21 10:52
+date: 2023-07-21T19:52:00+09:00
 authors: revi
 title: Moving away from Twyne
 tags: [English, blog, tech, twyne]

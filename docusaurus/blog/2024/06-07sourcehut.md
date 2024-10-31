@@ -1,5 +1,5 @@
 ---
-date: 2024-06-14T13:20
+date: 2024-06-14T22:20:00+09:00
 authors: revi
 title: SourceHut
 tags: [English, SourceHut]
