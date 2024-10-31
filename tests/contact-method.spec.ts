@@ -53,8 +53,8 @@ test('Check omglol.email is there', async ({page}) => {
   await page.getByRole('tab', {name: 'general'}).click();
   // Expects page to have a TabPanel visible.
   await expect(page.getByRole('tabpanel')).toBeVisible();
-  // Expects page to have a text with the content of "liame.lolgmo@iver"
-  await expect(page.getByRole('tabpanel')).toContainText(/liame\.lolgmo\@iver/);
+  // Expects page to have a text with the content of "liame.iver@nowey"
+  await expect(page.getByRole('tabpanel')).toContainText(/liame\.iver\@nowey/);
 });
 
 test('Check revi.wiki email is there', async ({page}) => {

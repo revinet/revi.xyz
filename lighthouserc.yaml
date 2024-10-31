@@ -22,10 +22,13 @@ ci:
     url:
       - http://localhost/index.html
       - http://localhost/contact-method/index.html
+      - http://localhost/email-domains/index.html
       - http://localhost/fediverse/index.html
       - http://localhost/pronoun-is/index.html
       - http://localhost/meta/index.html
+      - http://localhost/pgp/index.html
       - http://localhost/privacy-policy/index.html
+      - http://localhost/security/index.html
       - http://localhost/time/index.html
       - http://localhost/blog/index.html
       - http://localhost/blog/archive/index.html
@@ -34,10 +37,13 @@ ci:
       - http://localhost/blog/2024/02/16/uplus-tv-uhd3-dns-over-tls/index.html
       - http://localhost/ko/index.html
       - http://localhost/ko/contact-method/index.html
+      - http://localhost/ko/email-domains/index.html
       - http://localhost/ko/fediverse/index.html
       - http://localhost/ko/pronoun-is/index.html
       - http://localhost/ko/meta/index.html
+      - http://localhost/ko/pgp/index.html
       - http://localhost/ko/privacy-policy/index.html
+      - http://localhost/ko/security/index.html
       - http://localhost/ko/time/index.html
       - http://localhost/ko/blog/index.html
       - http://localhost/ko/blog/archive/index.html
