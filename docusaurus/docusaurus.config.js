@@ -143,6 +143,20 @@ const config = {
         content: 'notranslate',
       },
     },
+    {
+      tagName: 'meta',
+      attributes: {
+        name: 'fediverse:creator',
+        content: '@revi@old.sharlayan.city',
+      },
+    },
+    {
+      tagName: 'meta',
+      attributes: {
+        name: 'fediverse:creator',
+        content: '@revi@planet.moe',
+      },
+    },
   ],
 
   plugins: [
