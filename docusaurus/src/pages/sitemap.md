@@ -64,6 +64,7 @@ This is an index of pages in this website.
 - [How to contact me](../contact-method/)
 - [email domains](../email-domains/)
 - [revi at fediverse](../fediverse/)
+- [List Archive Policy](../list-archive/)
 - [About this site](../meta/)
 - [WKD (Web Key Directory)](../meta/wkd/)
 - [OpenPGP](../pgp/)
