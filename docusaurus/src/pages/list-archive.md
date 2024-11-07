@@ -68,3 +68,10 @@ and do not merit editing the archives:
 - Posting from a wrong email address.
 - Posting login names and passwords.
 - Posting IP addresses, machine names and/or URLs not intended for public use.
+
+:::info[Credit]
+
+The texts in this page is copied and edited from the list archive policy of
+[The Apache Software Foundation](https://www.apache.org/foundation/public-archives.html).
+
+:::
