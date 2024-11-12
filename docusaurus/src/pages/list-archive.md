@@ -43,6 +43,7 @@ I generally only consider requests to edit or excise material contained in the
 archive when the sender of the archived communication makes the request. I
 consider each case on its individual merit, and weigh each proposed modification
 against the damage done by altering the historical record.
+
 <!-- We deny many more requests than we approve in order to protect the integrity of the archives. -->
 
 I usually edit or remove information only in the event of an inadvertent
