@@ -67,7 +67,7 @@
     "wrangler": "3.86.0"
   },
   "optionalDependencies": {
-    "renovate": "38.142.7"
+    "renovate": "39.14.1"
   },
   "packageManager": "npm@10.9.0",
   "engines": {
