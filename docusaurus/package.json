@@ -52,7 +52,7 @@
     "remark-join-cjk-lines": "1.0.13"
   },
   "devDependencies": {
-    "@docusaurus/eslint-plugin": "3.6.1",
+    "@docusaurus/eslint-plugin": "3.6.3",
     "@docusaurus/module-type-aliases": "3.6.1",
     "@docusaurus/tsconfig": "3.6.1",
     "@docusaurus/types": "3.6.1",
