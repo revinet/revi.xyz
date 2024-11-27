@@ -48,7 +48,7 @@
     "@eslint/compat": "1.2.3",
     "@eslint/js": "9.15.0",
     "@playwright/test": "1.49.0",
-    "@revi/eslint-config": "0.0.17",
+    "@revi/eslint-config": "0.0.18",
     "@revi/prettier-config": "0.2.2",
     "@types/node": "20.17.6",
     "buildkite-test-collector": "1.7.3",
