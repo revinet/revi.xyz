@@ -47,7 +47,7 @@
   "devDependencies": {
     "@eslint/compat": "1.2.4",
     "@eslint/js": "9.16.0",
-    "@playwright/test": "1.49.0",
+    "@playwright/test": "1.49.1",
     "@revi/eslint-config": "0.0.19",
     "@revi/prettier-config": "0.2.3",
     "@types/node": "20.17.9",
