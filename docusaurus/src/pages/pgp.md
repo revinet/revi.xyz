@@ -18,7 +18,7 @@ SPDX-License-Identifier: LicenseRef-CC-BY-2.0-KR
   - [Send email via encrypt.to](https://encrypt.to/0x947F156F16250DE39788C3C35B625DA5BEFF197A)
   - [pgp.cs.uu.nl archive](https://archive.is/B2qu3) (2018 Data)
 
-- [586080127B3C701E8B0AB95F011E455250EEBEDA](https://revi.xyz/0xEA100E94.asc)
+- [586080127B3C701E8B0AB95F011E455250EEBEDA](https://revi.xyz/0x50EEBEDA.asc)
   - Fingerprint: `5860 8012 7B3C 701E 8B0A  B95F 011E 4552 50EE BEDA`
   - Primary UID: `Yongmin Hong <yewon📮revi.email>`
   - [Get from keyserver.ubuntu.com](https://keyserver.ubuntu.com/pks/lookup?op=vindex&search=0x011E455250EEBEDA)
