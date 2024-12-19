@@ -55,6 +55,7 @@ This is an index of pages in this website.
 - [GlobalPing](../blog/2024/05/10/globalping/) (2024-05-10)
 - [SourceHut](../blog/2024/06/07/sourcehut/) (2024-06-07)
 - [SourceGraph and Open source](../blog/2024/09/03/Sourcegraph/) (2024-09-03)
+- [Democracy on the verge of collapse](../blog/2024/12/19/collapsing-democracy/) (2024-12-19)
 
 ## Pages
 
