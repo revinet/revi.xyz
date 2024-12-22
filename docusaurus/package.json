@@ -57,7 +57,7 @@
     "@docusaurus/tsconfig": "3.6.3",
     "@docusaurus/types": "3.6.3",
     "@lhci/cli": "0.14.0",
-    "@types/react": "18.3.17",
+    "@types/react": "18.3.18",
     "@types/react-dom": "18.3.5"
   },
   "packageManager": "npm@11.0.0",
