@@ -16,6 +16,7 @@
 
 CODEOWNERS
 docusaurus/build
+docusaurus/src/pages/pgp/transition2024.txt.asc
 docusaurus/static
 LICENSES/
 node_modules

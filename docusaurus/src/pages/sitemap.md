@@ -69,6 +69,7 @@ This is an index of pages in this website.
 - [About this site](../meta/)
 - [WKD (Web Key Directory)](../meta/wkd/)
 - [OpenPGP](../pgp/)
+- [OpenPGP Key Transition 2024](../pgp/transition2024/)
 - [Privacy Policy](../privacy-policy/)
 - [Security Policy](../security)
 - [What should I use to reference you? he? she?](../pronoun-is/)
