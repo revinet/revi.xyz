@@ -13,17 +13,20 @@ You might know my old OpenPGP certificate, which had an fingerprint of
 
 Old key has following User IDs:
 
+```
 pub rsa4096 2015-10-10 [C]
 947F156F16250DE39788C3C35B625DA5BEFF197A
 uid [ultimate] Yongmin Hong <revi@pobox.com>
 sub rsa4096 2018-08-28 [S]
 sub rsa4096 2018-08-28 [E]
+```
 
 My new OpenPGP certificate has a fingerprint of:
 586080127B3C701E8B0AB95F011E455250EEBEDA.
 
 And the new key has following User IDs:
 
+```
 pub ed25519 2024-11-23 [C] [expires: 2027-11-23]
 586080127B3C701E8B0AB95F011E455250EEBEDA
 uid [ultimate] Yongmin Hong <yewon@revi.email>
@@ -35,6 +38,7 @@ uid [ultimate] Yongmin Hong <ho@revi.xyz>
 sub ed25519 2024-11-23 [S] [expires: 2027-11-23]
 sub cv25519 2024-11-23 [E] [expires: 2027-11-23]
 sub ed25519 2024-11-23 [A] [expires: 2027-11-23]
+```
 
 This transition statement is signed by both the old and new
 certificates, and should be available at:
@@ -103,4 +107,4 @@ certificate associated with my e-mail addresses on WKD (when I deploy it
 correctly). Until then, those lookups should continue to provide the
 old certificate.
 
-Signed statment is available at https://revi.xyz/pgp/transition2024.txt.asc
+Signed statment is available at https://revi.xyz/transition2024.txt.asc
