@@ -1,9 +1,21 @@
 ---
-title: OpenPGP keys
+title: OpenPGP Keys
 description: OpenPGP (GnuPG) keys
 ---
 
 # OpenPGP Keys
+
+:::note
+
+- I do not utilize `keys.openpgp.org`. If someone else has uploaded it, you
+  might download non-userid-part of the key under their policy, but I do not
+  update them. That keyserver is not utilized because it removes third-party
+  signatures which I consider important part of my PGP usage.
+    - The version I consider canonical will be distributed from this
+  domain.
+- See also [revi.wiki](https://revi.wiki/wiki/GnuPG)
+
+:::
 
 <!--
 SPDX-FileCopyrightText: (C) 2024 Hong Yongmin (https://revi.xyz/) <yewon@revi.email>
@@ -11,6 +23,7 @@ SPDX-FileCopyrightText: (C) 2024 Hong Yongmin (https://revi.xyz/) <yewon@revi.em
 SPDX-License-Identifier: LicenseRef-CC-BY-2.0-KR
 -->
 
+<!-- prettier-ignore -->
 - [947F156F16250DE39788C3C35B625DA5BEFF197A](https://revi.xyz/0xBEFF197A.asc)
   - Fingerprint: `947F 156F 1625 0DE3 9788  C3C3 5B62 5DA5 BEFF 197A`
   - Primary UID: `Yongmin Hong <revi📮pobox.com>`
