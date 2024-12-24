@@ -21,8 +21,9 @@ project-related people) and their emails are properly authenticated with SPF
 and DKIM, and enforced via DMARC
 (most of the domains have `p=quarantine` or `p=reject` policy).
 
-As of 2024-10-31, I send emails from following providers:
+As of 2024-12-25, I send emails from following providers:
 
+- [Cloudflare](https://developers.cloudflare.com/email-routing/postmaster/)
 - [Fastmail](https://fastmail.com/)
 - [Google Workspace](https://workspace.google.com/)
 - [Postmark](https://www.postmarkapp.com/)
