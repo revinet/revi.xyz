@@ -56,7 +56,7 @@
     "eslint": "9.17.0",
     "eslint-config-prettier": "9.1.0",
     "globals": "15.14.0",
-    "html-validate": "8.29.0",
+    "html-validate": "9.1.0",
     "jshint": "2.13.6",
     "markdownlint-cli2": "0.16.0",
     "prettier": "3.4.2",
