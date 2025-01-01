@@ -6,6 +6,12 @@ unlisted: true
 
 # New OpenPGP certificate for revi, December 2024
 
+<!--
+SPDX-FileCopyrightText: (C) 2024 Hong Yongmin (https://revi.xyz/) <yewon@revi.email>
+
+SPDX-License-Identifier: LicenseRef-CC-BY-2.0-KR
+-->
+
 In December of 2024, I'm moving to a new OpenPGP certificate.
 
 You might know my old OpenPGP certificate, which had an fingerprint of
@@ -16,7 +22,7 @@ Old key has following User IDs:
 ```
 pub rsa4096 2015-10-10 [C]
 947F156F16250DE39788C3C35B625DA5BEFF197A
-uid [ultimate] Yongmin Hong <revi@pobox.com>
+uid [ultimate] Yongmin Hong <revi📮pobox.com>
 sub rsa4096 2018-08-28 [S]
 sub rsa4096 2018-08-28 [E]
 ```
@@ -29,16 +35,18 @@ And the new key has following User IDs:
 ```
 pub ed25519 2024-11-23 [C] [expires: 2027-11-23]
 586080127B3C701E8B0AB95F011E455250EEBEDA
-uid [ultimate] Yongmin Hong <yewon@revi.email>
-uid [ultimate] Yongmin Hong <lists@revi.email>
-uid [ultimate] Yongmin Hong <revi@omglol.email>
-uid [ultimate] Yongmin Hong <revi@pobox.com>
-uid [ultimate] revi (레비) <revi@revi.wiki>
-uid [ultimate] Yongmin Hong <ho@revi.xyz>
+uid [ultimate] Yongmin Hong <yewon📮revi.email>
+uid [ultimate] Yongmin Hong <lists📮revi.email>
+uid [ultimate] Yongmin Hong <revi📮omglol.email>
+uid [ultimate] Yongmin Hong <revi📮pobox.com>
+uid [ultimate] revi (레비) <revi📮revi.wiki>
+uid [ultimate] Yongmin Hong <ho📮revi.xyz>
 sub ed25519 2024-11-23 [S] [expires: 2027-11-23]
 sub cv25519 2024-11-23 [E] [expires: 2027-11-23]
 sub ed25519 2024-11-23 [A] [expires: 2027-11-23]
 ```
+
+Replace `📮` with the correct word.
 
 This transition statement is signed by both the old and new
 certificates, and should be available at:
