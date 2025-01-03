@@ -47,8 +47,8 @@
     "clsx": "2.1.1",
     "docusaurus-post-generator": "1.0.9",
     "prism-react-renderer": "2.4.1",
-    "react": "18.3.1",
-    "react-dom": "18.3.1",
+    "react": "19.0.0",
+    "react-dom": "19.0.0",
     "remark-join-cjk-lines": "1.0.13"
   },
   "devDependencies": {
