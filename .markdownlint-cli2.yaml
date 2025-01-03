@@ -16,7 +16,7 @@
 
 ---
 # .markdownlint-cli2.yaml
-# Syntax: https://github.com/DavidAnson/markdownlint-cli2#configuration
+# Syntax: https://revi.kr/PqjEKni
 
 # Front matters
 frontMatter: '/((^---\s*$[\s\S]+?^---\s*)|(^\+\+\+\s*$[\s\S]+?^(\+\+\+|\.\.\.)\s*)|(^\{\s*$[\s\S]+?^\}\s*))(\r\n|\r|\n|$)/m'
@@ -26,7 +26,7 @@ ignores:
   - CODEOWNERS
   - LICENSE
 
-# Rules: https://github.com/DavidAnson/vscode-markdownlint#rules
+# Rules: https://revi.kr/7iKSFKF
 # https://github.com/DavidAnson/markdownlint/blob/main/doc/md<RULE NUMBER>.md
 config:
   default: true

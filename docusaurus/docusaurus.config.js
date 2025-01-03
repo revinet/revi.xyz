@@ -22,7 +22,7 @@
 // `@type` JSDoc annotations allow editor autocompletion and type checking
 // (when paired with `@ts-check`).
 // There are various equivalent ways to declare your Docusaurus config.
-// See: https://docusaurus.io/docs/api/docusaurus-config
+// See: https://revi.kr/9VY6edc
 
 import {themes as prismThemes} from 'prism-react-renderer';
 import joinCJKLines from 'remark-join-cjk-lines';

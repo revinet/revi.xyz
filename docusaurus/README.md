@@ -18,7 +18,7 @@ limitations under the License.
 
 # Docusaurus
 
-Read the [docs about workspace](https://docs.npmjs.com/cli/v10/using-npm/workspaces).
+Read the [docs about workspace](https://revi.kr/Q4HciAF).
 
 ## Build
 

@@ -37,7 +37,7 @@ docusaurus/static/.well-known/openpgpkey/hu/* binary
 *.sh     diff=bash
 
 # GitHub Linguist Support
-# https://github.com/github-linguist/linguist/blob/master/docs/overrides.md
+# https://revi.kr/LRbQSI0
 .arclint              linguist-language=json
 .devcontainer/**.json linguist-language=jsonc
 .npmrc                linguist-language=ini

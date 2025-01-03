@@ -26,7 +26,7 @@ import {defineConfig, devices} from '@playwright/test';
 // dotenv.config({ path: path.resolve(__dirname, '.env') });
 
 /**
- * See https://playwright.dev/docs/test-configuration.
+ * See https://revi.kr/1Pywz4H.
  */
 export default defineConfig({
   testDir: './tests',
@@ -42,7 +42,7 @@ export default defineConfig({
   /* Expect timeout in 10 seconds */
   expect: {timeout: 10000},
   /* Shared settings for all the projects below.
-  See https://playwright.dev/docs/api/class-testoptions. */
+  See https://revi.kr/mN4idyc. */
   use: {
     /* Base URL to use in actions like `await page.goto('/')`. */
     baseURL: 'https://revi.xyz',
@@ -52,12 +52,12 @@ export default defineConfig({
     timezoneId: 'Asia/Seoul',
 
     /* Collect trace when retrying the failed test.
-    See https://playwright.dev/docs/trace-viewer */
+    See https://revi.kr/KO9i4Ki */
     trace: 'on-first-retry',
   },
 
   // Full list of devices:
-  // https://issuetracker.revi.xyz/u/playwrightdevicelist
+  // https://revi.kr/playwrightdevicelist
   /* Test against major browsers */
   projects: [
     {
@@ -135,7 +135,7 @@ export default defineConfig({
   outputDir: 'test-results/',
 
   /* Produce report in `line`, `json`, `buildkite`, `github` format */
-  /* Reporter to use. See https://playwright.dev/docs/test-reporters */
+  /* Reporter to use. See https://revi.kr/1i03r9Y */
   reporter: [
     ['json', {outputFile: 'test-results/results.json'}],
     [process.env.CI ? 'github' : 'list'],
