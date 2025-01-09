@@ -48,7 +48,7 @@
     "docusaurus-post-generator": "1.0.9",
     "prism-react-renderer": "2.4.1",
     "react": "18.3.1",
-    "react-dom": "18.3.1",
+    "react-dom": "19.0.0",
     "remark-join-cjk-lines": "1.0.13"
   },
   "devDependencies": {
@@ -58,7 +58,7 @@
     "@docusaurus/types": "3.7.0",
     "@lhci/cli": "0.14.0",
     "@types/react": "18.3.18",
-    "@types/react-dom": "18.3.5"
+    "@types/react-dom": "19.0.2"
   },
   "packageManager": "npm@11.0.0",
   "engines": {
