@@ -1,3 +1,23 @@
+# License
+
+Each file contains the `SPDX-License-Identifier` tag in a comment form
+or same declaration at `//REUSE.toml` which is the canonical declaration
+of the license for the file.
+
+You can use `reuse spdx` command to generate the full license bundle,
+including which files are available under which license and the license text.
+
+## The principle
+
+As a rule of thumb, see `//docusaurus/src/pages/meta/index.md`'s License
+section for docusaurus page license.
+
+For non-docusaurus rendered pages, generally speaking, Apache-2.0 license
+prevails for this repository, which are pasted below to make your life easier.
+
+### Apache-2.0 License
+
+```
                                  Apache License
                            Version 2.0, January 2004
                         http://www.apache.org/licenses/
@@ -199,3 +219,4 @@
    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
    See the License for the specific language governing permissions and
    limitations under the License.
+```
