@@ -1,4 +1,4 @@
 {
   "phabricator.uri": "https://issuetracker.revi.xyz",
-  "load": [".pinterest-linters"]
+  "load": ["third-party/pinterest-linters"]
 }

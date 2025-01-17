@@ -157,6 +157,13 @@ const config = {
         content: '@revi@planet.moe',
       },
     },
+    {
+      tagName: 'meta',
+      attributes: {
+        name: 'robots',
+        content: 'noai',
+      },
+    },
   ],
 
   plugins: [
