@@ -50,7 +50,7 @@
     "@playwright/test": "1.49.1",
     "@revi/eslint-config": "0.0.21",
     "@revi/prettier-config": "0.2.4",
-    "@types/node": "20.17.14",
+    "@types/node": "22.10.10",
     "buildkite-test-collector": "1.7.3",
     "csslint": "1.0.5",
     "eslint": "9.17.0",
