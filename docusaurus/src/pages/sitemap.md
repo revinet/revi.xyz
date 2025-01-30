@@ -57,6 +57,10 @@ This is an index of pages in this website.
 - [SourceGraph and Open source](../blog/2024/09/03/Sourcegraph/) (2024-09-03)
 - [Democracy on the verge of collapse](../blog/2024/12/19/collapsing-democracy/) (2024-12-19)
 
+### 2025
+
+- [Puppet and open source](../blog/2025/01/30/puppet/) (2025-01-30)
+
 ## Pages
 
 <!-- Sort by URL alphabetically. -->
