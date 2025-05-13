@@ -23,11 +23,11 @@ SPDX-License-Identifier: LicenseRef-CC-BY-ND-2.0-KR
 (개발자 모드, ADB 승인까지는 완료했다고 가정)
 
 1. `adb connect 192.168.*.*`
-2. (TV에서 승인)
-3. `adb shell settings put global private_dns_mode hostname`[^1]
-4. `adb shell settings put global private_dns_specifier $HOSTNAME`
-5. …
-6. PROFIT!
+1. (TV에서 승인)
+1. `adb shell settings put global private_dns_mode hostname`[^1]
+1. `adb shell settings put global private_dns_specifier $HOSTNAME`
+1. …
+1. PROFIT!
 
 [^1]:
     `hostname` 원문 그대로 쳐야 함. `hostname`을 실제 `hostname`

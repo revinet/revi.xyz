@@ -19,13 +19,13 @@ There's additional docs about process @ [GitHub](https://github.com/revinet/revi
 ## Build {#build}
 
 1. I push new commit to [GitHub](https://github.com/revinet/revi.xyz).
-2. GitHub Actions will decide if there's any changes to `docusaurus/` directory
+1. GitHub Actions will decide if there's any changes to `docusaurus/` directory
    or `package.json` in the `master` branch.
-3. GitHub Actions will trigger the build, if any of them are found.
-4. When docusaurus build succeeds, it will be uploaded to Cloudflare Pages via
+1. GitHub Actions will trigger the build, if any of them are found.
+1. When docusaurus build succeeds, it will be uploaded to Cloudflare Pages via
    `wrangler` for [direct upload](https://developers.cloudflare.com/pages/get-started/direct-upload/#deploy-your-assets)
    at test domain.
-5. When I am satisfied with the contents, I push to `prod` branch,
+1. When I am satisfied with the contents, I push to `prod` branch,
    which will do the same as `4` but for `revi.xyz` production domain.
 
 The reason I use GitHub Actions for build command (not the Cloudflare's build server)
