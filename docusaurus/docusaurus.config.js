@@ -40,6 +40,11 @@ const config = {
   baseUrl: '/',
   trailingSlash: true,
 
+  // Experimental: see T286.
+  future: {
+    experimental_faster: true,
+  },
+
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
   // organizationName: 'revinet',  Usually your GitHub org/user name.
