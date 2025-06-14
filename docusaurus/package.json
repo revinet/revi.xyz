@@ -56,8 +56,8 @@
     "@docusaurus/module-type-aliases": "3.8.0",
     "@docusaurus/tsconfig": "3.8.0",
     "@docusaurus/types": "3.8.0",
-    "@lhci/cli": "0.14.0",
-    "@types/react": "19.0.7",
+    "@lhci/cli": "0.15.0",
+    "@types/react": "19.1.8",
     "@types/react-dom": "19.1.5"
   },
   "packageManager": "npm@11.4.1",
