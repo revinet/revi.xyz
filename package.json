@@ -39,9 +39,9 @@
   },
   "prettier": "@revi/prettier-config",
   "dependencies": {
-    "@fontsource/montserrat": "5.2.5",
-    "@fontsource/nanum-gothic-coding": "5.2.5",
-    "@fontsource/noto-serif-kr": "5.2.5",
+    "@fontsource/montserrat": "5.2.6",
+    "@fontsource/nanum-gothic-coding": "5.2.6",
+    "@fontsource/noto-serif-kr": "5.2.6",
     "@ibm/plex": "6.4.1"
   },
   "devDependencies": {
@@ -50,7 +50,7 @@
     "@playwright/test": "1.52.0",
     "@revi/eslint-config": "0.0.23",
     "@revi/prettier-config": "0.2.5",
-    "@types/node": "22.15.29",
+    "@types/node": "22.15.31",
     "buildkite-test-collector": "1.8.2",
     "csslint": "1.0.5",
     "eslint": "9.28.0",
@@ -69,7 +69,7 @@
   "optionalDependencies": {
     "renovate": "39.264.1"
   },
-  "packageManager": "npm@11.4.1",
+  "packageManager": "npm@11.4.2",
   "engines": {
     "node": ">=18.0"
   }
