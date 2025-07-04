@@ -116,6 +116,11 @@ Unless noted otherwise, images are licensed under either
 or [Free Art License 1.3](https://artlibre.org/licence/lal/en/).
 You may select the license of your choice.
 
+This license grant extends to [flickr](https://www.flickr.com/people/revinim/)
+images with link to this page, even if the flickr license says
+'All Rights Reserved'. This is because the flickr license options only let me
+select CCLv4 which I have no plans to adopt.
+
 :::info[Each file has SPDX comments to denote Copyright status]
 
 Each page has an invisible [SPDX](https://spdx.dev) copyright headers in source
