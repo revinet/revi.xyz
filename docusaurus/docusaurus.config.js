@@ -41,9 +41,9 @@ const config = {
   trailingSlash: true,
 
   // Experimental: see T286.
-  future: {
+  /** future: {
     experimental_faster: true,
-  },
+  }, */
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
