@@ -61,14 +61,14 @@
     "jshint": "2.13.6",
     "markdownlint-cli2": "0.18.1",
     "prettier": "3.6.2",
-    "stylelint": "16.21.1",
-    "stylelint-config-standard": "38.0.0",
+    "stylelint": "16.23.0",
+    "stylelint-config-standard": "39.0.0",
     "turbo": "2.5.5",
     "typescript": "5.8.3",
-    "wrangler": "3.114.12"
+    "wrangler": "4.28.0"
   },
   "optionalDependencies": {
-    "renovate": "39.264.1"
+    "renovate": "41.52.2"
   },
   "packageManager": "npm@11.5.1",
   "engines": {
