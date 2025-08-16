@@ -42,7 +42,7 @@
     "@fontsource/montserrat": "5.2.6",
     "@fontsource/nanum-gothic-coding": "5.2.6",
     "@fontsource/noto-serif-kr": "5.2.6",
-    "@google/gemini-cli": "0.1.20",
+    "@google/gemini-cli": "0.1.21",
     "@ibm/plex": "6.4.1"
   },
   "devDependencies": {
@@ -51,7 +51,7 @@
     "@playwright/test": "1.54.2",
     "@revi/eslint-config": "0.0.24",
     "@revi/prettier-config": "0.2.6",
-    "@types/node": "22.17.1",
+    "@types/node": "22.17.2",
     "buildkite-test-collector": "1.9.1",
     "csslint": "1.0.5",
     "eslint": "9.32.0",
@@ -63,7 +63,7 @@
     "prettier": "3.6.2",
     "stylelint": "16.23.1",
     "stylelint-config-standard": "39.0.0",
-    "turbo": "2.5.5",
+    "turbo": "2.5.6",
     "typescript": "5.9.2",
     "wrangler": "4.28.1"
   },
