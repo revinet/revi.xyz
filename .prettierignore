@@ -21,6 +21,6 @@ LICENSES/
 node_modules
 package-lock.json
 Pipfile.lock
-.pinterest-linters/
 playwright-report/
 test-results/
+third-party/

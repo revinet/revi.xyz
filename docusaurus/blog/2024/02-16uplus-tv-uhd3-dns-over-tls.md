@@ -20,11 +20,11 @@ SPDX-License-Identifier: LicenseRef-CC-BY-ND-2.0-KR
 
 ## 원격 접속 {#원격-접속}
 
-(개발자 모드, ADB 승인까지는 완료했다고 가정)
+(개발자 모드 활성화, [ADB 다운로드](https://developer.android.com/tools/releases/platform-tools)까지는 완료했다고 가정)
 
 1. `adb connect 192.168.*.*`
 1. (TV에서 승인)
-1. `adb shell settings put global private_dns_mode hostname`[^1]
+1. `adb shell settings put global private_dns_mode hostname` [^1]
 1. `adb shell settings put global private_dns_specifier $HOSTNAME`
 1. …
 1. PROFIT!
