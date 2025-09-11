@@ -39,9 +39,9 @@
   },
   "prettier": "@revi/prettier-config",
   "dependencies": {
-    "@fontsource/montserrat": "5.2.6",
+    "@fontsource/montserrat": "5.2.7",
     "@fontsource/nanum-gothic-coding": "5.2.6",
-    "@fontsource/noto-serif-kr": "5.2.6",
+    "@fontsource/noto-serif-kr": "5.2.7",
     "@google/gemini-cli": "0.2.1",
     "@ibm/plex": "6.4.1"
   },
@@ -63,7 +63,7 @@
     "prettier": "3.6.2",
     "stylelint": "16.23.1",
     "stylelint-config-standard": "39.0.0",
-    "turbo": "2.5.5",
+    "turbo": "2.5.6",
     "typescript": "5.9.2",
     "wrangler": "4.28.1"
   },
