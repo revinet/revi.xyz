@@ -70,7 +70,7 @@
   "optionalDependencies": {
     "renovate": "41.82.10"
   },
-  "packageManager": "npm@11.5.2",
+  "packageManager": "npm@11.6.1",
   "engines": {
     "node": ">=18.0"
   }
