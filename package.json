@@ -57,7 +57,7 @@
     "eslint": "9.36.0",
     "eslint-config-prettier": "10.1.8",
     "globals": "16.4.0",
-    "html-validate": "9.7.1",
+    "html-validate": "10.1.0",
     "jshint": "2.13.6",
     "markdownlint-cli2": "0.18.1",
     "prettier": "3.6.2",
@@ -72,6 +72,6 @@
   },
   "packageManager": "npm@11.6.1",
   "engines": {
-    "node": ">=18.0"
+    "node": ">=20.0"
   }
 }
