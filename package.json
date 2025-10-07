@@ -39,20 +39,20 @@
   },
   "prettier": "@revi/prettier-config",
   "dependencies": {
-    "@fontsource/montserrat": "5.2.6",
-    "@fontsource/nanum-gothic-coding": "5.2.6",
-    "@fontsource/noto-serif-kr": "5.2.6",
-    "@google/gemini-cli": "0.2.1",
+    "@fontsource/montserrat": "5.2.8",
+    "@fontsource/nanum-gothic-coding": "5.2.8",
+    "@fontsource/noto-serif-kr": "5.2.8",
     "@ibm/plex": "6.4.1"
   },
   "devDependencies": {
     "@eslint/compat": "1.4.0",
     "@eslint/js": "9.36.0",
+    "@google/gemini-cli": "0.7.0",
     "@playwright/test": "1.55.1",
     "@revi/eslint-config": "0.0.25",
     "@revi/prettier-config": "0.2.7",
-    "@types/node": "22.18.7",
-    "buildkite-test-collector": "1.9.1",
+    "@types/node": "22.18.8",
+    "buildkite-test-collector": "1.9.2",
     "csslint": "1.0.5",
     "eslint": "9.36.0",
     "eslint-config-prettier": "10.1.8",
@@ -63,12 +63,12 @@
     "prettier": "3.6.2",
     "stylelint": "16.24.0",
     "stylelint-config-standard": "39.0.0",
-    "turbo": "2.5.5",
-    "typescript": "5.9.2",
+    "turbo": "2.5.8",
+    "typescript": "5.9.3",
     "wrangler": "4.40.2"
   },
   "optionalDependencies": {
-    "renovate": "41.82.10"
+    "renovate": "41.135.3"
   },
   "packageManager": "npm@11.6.1",
   "engines": {
