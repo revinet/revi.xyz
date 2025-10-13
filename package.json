@@ -46,31 +46,31 @@
   },
   "devDependencies": {
     "@eslint/compat": "1.4.0",
-    "@eslint/js": "9.36.0",
-    "@google/gemini-cli": "0.7.0",
-    "@playwright/test": "1.55.1",
+    "@eslint/js": "9.37.0",
+    "@google/gemini-cli": "0.8.2",
+    "@playwright/test": "1.56.0",
     "@revi/eslint-config": "0.0.25",
     "@revi/prettier-config": "0.2.7",
-    "@types/node": "22.18.8",
+    "@types/node": "22.18.9",
     "buildkite-test-collector": "1.9.2",
     "csslint": "1.0.5",
-    "eslint": "9.36.0",
+    "eslint": "9.37.0",
     "eslint-config-prettier": "10.1.8",
     "globals": "16.4.0",
-    "html-validate": "10.1.0",
+    "html-validate": "10.1.1",
     "jshint": "2.13.6",
     "markdownlint-cli2": "0.18.1",
     "prettier": "3.6.2",
-    "stylelint": "16.24.0",
-    "stylelint-config-standard": "39.0.0",
+    "stylelint": "16.25.0",
+    "stylelint-config-standard": "39.0.1",
     "turbo": "2.5.8",
     "typescript": "5.9.3",
-    "wrangler": "4.40.2"
+    "wrangler": "4.42.2"
   },
   "optionalDependencies": {
     "renovate": "41.135.3"
   },
-  "packageManager": "npm@11.6.1",
+  "packageManager": "npm@11.6.2",
   "engines": {
     "node": ">=20.0"
   }
