@@ -15,22 +15,15 @@
 # limitations under the License.
 
 ---
-name: 'CI test'
+name: CI test
 
 on:
-  push:
+  workflow_run:
+    types: [completed]
+    workflows: [Cloudflare Pages]
     branches:
       - master
       - arcpatch-D**
-    paths:
-      - '.github/workflows/**'
-      - '.github/dependabot.yml'
-      - '.github/renovate.json'
-      - 'docusaurus/**'
-      - 'package.json'
-      - 'package-lock.json'
-      - 'playwright.config.ts'
-      - 'tests/**'
   workflow_dispatch:
 
 # prettier-ignore
@@ -40,19 +33,19 @@ env:
 
 jobs:
   playwright:
-    name: 'Playwright Tests'
+    name: Playwright Tests
     runs-on: ubuntu-latest
     steps:
-      - name: 'Checkout'
+      - name: Checkout
         uses: actions/checkout@08c6903cd8c0fde910a37f88322edcfb5dd907a8 # v5
-      - name: 'Setup Node.js'
+      - name: Setup Node.js
         uses: actions/setup-node@2028fbc5c25fe9cf00d9f06a71cc4710d4507903 # v6
         with:
           node-version-file: '.node-version'
           cache: npm
       - name: Install dependencies
         run: npm ci --omit=optional
-      - name: 'Build docusaurus'
+      - name: Build docusaurus
         run: npm run dbuild
       - name: Install Playwright Browsers
         run: npx playwright install --with-deps
@@ -60,7 +53,7 @@ jobs:
         run: bash scripts/playwright.sh
         env:
           BUILDKITE_ANALYTICS_TOKEN: ${{ secrets.BUILDKITE_ANALYTICS_TOKEN }}
-      - name: 'Upload Playwright Report'
+      - name: Upload Playwright Report
         uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02 # v4
         if: always()
         with:
@@ -68,25 +61,25 @@ jobs:
           path: playwright-report/
           retention-days: 30
   lighthouse-ci:
-    name: 'Lighthouse CI'
+    name: Lighthouse CI
     runs-on: ubuntu-latest
     steps:
-      - name: 'Checkout'
+      - name: Checkout
         uses: actions/checkout@08c6903cd8c0fde910a37f88322edcfb5dd907a8 # v5
         with:
           fetch-depth: 0
-      - name: 'Setup Node.js'
+      - name: Setup Node.js
         uses: actions/setup-node@2028fbc5c25fe9cf00d9f06a71cc4710d4507903 # v6
         with:
           node-version-file: '.node-version'
           cache: npm
-      - name: 'Install dependencies'
+      - name: Install dependencies
         run: npm ci --omit=optional
-      - name: 'Build docusaurus'
+      - name: Build docusaurus
         run: npm run dbuild
-      - name: 'lhci version check'
+      - name: lhci version check
         run: npx lhci --version --workspace=docusaurus
-      - name: 'Run lighthouse CI'
+      - name: Run lighthouse CI
         run: bash scripts/lighthouse.sh
         env:
           LHCI_GITHUB_APP_TOKEN: ${{ secrets.LHCI_GITHUB_APP_TOKEN }}
