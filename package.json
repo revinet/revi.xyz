@@ -47,9 +47,9 @@
   "devDependencies": {
     "@eslint/compat": "1.4.0",
     "@eslint/js": "9.37.0",
-    "@google/gemini-cli": "0.8.2",
+    "@google/gemini-cli": "0.9.0",
     "@playwright/test": "1.56.0",
-    "@revi/eslint-config": "0.0.25",
+    "@revi/eslint-config": "0.0.26",
     "@revi/prettier-config": "0.2.7",
     "@types/node": "22.18.9",
     "buildkite-test-collector": "1.9.2",
@@ -68,7 +68,7 @@
     "wrangler": "4.42.2"
   },
   "optionalDependencies": {
-    "renovate": "41.135.3"
+    "renovate": "41.152.0"
   },
   "packageManager": "npm@11.6.2",
   "engines": {
