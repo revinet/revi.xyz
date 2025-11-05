@@ -1,5 +1,6 @@
 ---
 title: WKD (Web Key Directory)
+description: Web Key Directory cheatsheet
 unlisted: true
 ---
 

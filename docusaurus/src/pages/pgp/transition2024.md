@@ -1,6 +1,6 @@
 ---
 title: New OpenPGP certificate for revi, December 2024
-description: OpenPGP transition statement
+description: OpenPGP transition statement, 2024
 unlisted: true
 ---
 

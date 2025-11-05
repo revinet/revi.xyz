@@ -6,6 +6,7 @@
 # SPDX-License-Identifier: LicenseRef-CC-BY-2.0-KR
 # SPDX-FileComment: From https://www.apache.org/foundation/public-archives.html
 title: List archive policy
+description: Mailing list policy on archives.
 unlisted: true
 ---
 
