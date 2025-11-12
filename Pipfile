@@ -25,7 +25,7 @@ name = "pypi"
 flake8 = "==7.3.0"
 pycodestyle = "==2.14.0"
 pylint = "==4.0.2"
-pytest = "==8.4.2"
+pytest = "==9.0.1"
 reuse = "==6.2.0"
 yamllint = "==1.37.1"
 
