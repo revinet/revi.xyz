@@ -49,7 +49,7 @@
     "@eslint/js": "9.39.0",
     "@google/gemini-cli": "0.12.0",
     "@playwright/test": "1.56.1",
-    "@revi/eslint-config": "0.0.26",
+    "@revi/eslint-config": "0.0.27",
     "@revi/prettier-config": "0.2.7",
     "@types/node": "22.19.0",
     "buildkite-test-collector": "1.9.2",
