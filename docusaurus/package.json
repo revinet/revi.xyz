@@ -61,7 +61,7 @@
     "@types/react": "19.2.2",
     "@types/react-dom": "19.2.2"
   },
-  "packageManager": "npm@11.6.2",
+  "packageManager": "npm@11.9.0",
   "engines": {
     "node": ">=20.0"
   }
