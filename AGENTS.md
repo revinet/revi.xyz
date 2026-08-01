@@ -115,8 +115,10 @@ runtime, such as `OpenAI gpt-5.6-sol (medium)`. Do not shorten a known
 identifier to a broad family name such as `GPT-5`; treat a generic family name
 as insufficient and potentially stale. Check the active session's runtime
 metadata or turn context first, then the model selector or status line, Codex
-default settings, and the local model catalog before reporting `not-exposed`.
-Prefer active-session metadata over defaults, which an override may supersede.
+session logs or rollouts, the local model cache (`~/.codex/models_cache.json`),
+and the default user configuration (`~/.codex/config.toml`) before reporting
+`not-exposed`. Prefer active-session metadata over defaults, which an override
+may supersede.
 
 Run checks appropriate to the change and report any validation that was
 skipped.

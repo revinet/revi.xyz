@@ -40,10 +40,10 @@
     ]
   },
   "dependencies": {
-    "@docusaurus/core": "3.10.1",
-    "@docusaurus/faster": "3.10.1",
-    "@docusaurus/plugin-client-redirects": "3.10.1",
-    "@docusaurus/preset-classic": "3.10.1",
+    "@docusaurus/core": "3.10.2",
+    "@docusaurus/faster": "3.10.2",
+    "@docusaurus/plugin-client-redirects": "3.10.2",
+    "@docusaurus/preset-classic": "3.10.2",
     "@mdx-js/react": "3.1.1",
     "clsx": "2.1.1",
     "docusaurus-post-generator": "1.0.9",
@@ -53,15 +53,15 @@
     "remark-join-cjk-lines": "1.0.15"
   },
   "devDependencies": {
-    "@docusaurus/eslint-plugin": "3.10.1",
-    "@docusaurus/module-type-aliases": "3.10.1",
-    "@docusaurus/tsconfig": "3.10.1",
-    "@docusaurus/types": "3.10.1",
+    "@docusaurus/eslint-plugin": "3.10.2",
+    "@docusaurus/module-type-aliases": "3.10.2",
+    "@docusaurus/tsconfig": "3.10.2",
+    "@docusaurus/types": "3.10.2",
     "@lhci/cli": "0.15.1",
     "@types/react": "19.2.14",
     "@types/react-dom": "19.2.3"
   },
-  "packageManager": "npm@11.6.2",
+  "packageManager": "npm@11.19.0",
   "engines": {
     "node": ">=20.0"
   }
