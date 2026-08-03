@@ -46,7 +46,7 @@
   },
   "devDependencies": {
     "@eslint/compat": "1.4.1",
-    "@eslint/js": "9.39.4",
+    "@eslint/js": "9.39.5",
     "@google/gemini-cli": "0.39.1",
     "@playwright/test": "1.59.1",
     "@revi/eslint-config": "0.0.27",
@@ -54,7 +54,7 @@
     "@types/node": "22.19.17",
     "buildkite-test-collector": "1.9.5",
     "csslint": "1.0.5",
-    "eslint": "9.39.4",
+    "eslint": "9.39.5",
     "eslint-config-prettier": "10.1.8",
     "globals": "16.5.0",
     "html-validate": "10.15.0",
