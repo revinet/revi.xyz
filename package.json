@@ -39,9 +39,9 @@
   },
   "prettier": "@revi/prettier-config",
   "dependencies": {
-    "@fontsource/montserrat": "5.2.8",
-    "@fontsource/nanum-gothic-coding": "5.2.8",
-    "@fontsource/noto-serif-kr": "5.2.9",
+    "@fontsource/montserrat": "5.3.0",
+    "@fontsource/nanum-gothic-coding": "5.3.0",
+    "@fontsource/noto-serif-kr": "5.3.0",
     "@ibm/plex": "6.4.1"
   },
   "devDependencies": {
