@@ -45,30 +45,29 @@
     "@ibm/plex": "6.4.1"
   },
   "devDependencies": {
-    "@eslint/compat": "1.4.1",
-    "@eslint/js": "9.39.4",
-    "@google/gemini-cli": "0.39.1",
-    "@playwright/test": "1.59.1",
+    "@eslint/compat": "2.1.0",
+    "@eslint/js": "9.39.5",
+    "@playwright/test": "1.62.1",
     "@revi/eslint-config": "0.0.28",
     "@revi/prettier-config": "0.2.8",
     "@types/node": "24.13.3",
     "buildkite-test-collector": "1.9.5",
     "csslint": "1.0.5",
-    "eslint": "9.39.4",
+    "eslint": "9.39.5",
     "eslint-config-prettier": "10.1.8",
-    "globals": "16.5.0",
+    "globals": "17.9.0",
     "html-validate": "10.15.0",
     "jshint": "2.13.6",
-    "markdownlint-cli2": "0.22.1",
-    "prettier": "3.8.3",
+    "markdownlint-cli2": "0.23.2",
+    "prettier": "3.9.6",
     "stylelint": "16.26.1",
     "stylelint-config-standard": "39.0.1",
-    "turbo": "2.9.8",
+    "turbo": "2.10.11",
     "typescript": "5.9.3",
-    "wrangler": "4.115.0"
+    "wrangler": "4.125.0"
   },
   "optionalDependencies": {
-    "renovate": "41.169.1"
+    "renovate": "44.36.0"
   },
   "packageManager": "npm@11.19.0",
   "engines": {
@@ -85,7 +84,7 @@
     "esbuild@0.28.1": true,
     "node-pty@1.1.0": true,
     "protobufjs@7.5.4": true,
-    "re2@1.22.1": true,
-    "workerd@1.20260722.1": true
+    "re2@1.26.1": true,
+    "workerd@1.20260820.1": true
   }
 }
