@@ -51,12 +51,12 @@
     "@revi/eslint-config": "0.0.29",
     "@revi/prettier-config": "0.2.8",
     "@types/node": "24.13.3",
-    "buildkite-test-collector": "1.9.5",
+    "buildkite-test-collector": "1.11.0",
     "csslint": "1.0.5",
     "eslint": "10.9.1",
     "eslint-config-prettier": "10.1.8",
-    "globals": "17.9.0",
-    "html-validate": "10.15.0",
+    "globals": "17.12.0",
+    "html-validate": "10.17.0",
     "jshint": "2.13.6",
     "markdownlint-cli2": "0.23.2",
     "prettier": "3.9.6",
@@ -64,7 +64,7 @@
     "stylelint-config-standard": "39.0.1",
     "turbo": "2.10.11",
     "typescript": "5.9.3",
-    "wrangler": "4.125.0"
+    "wrangler": "4.128.0"
   },
   "optionalDependencies": {
     "renovate": "44.36.0"
