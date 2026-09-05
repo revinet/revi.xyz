@@ -236,6 +236,17 @@ const config = {
           },
           {
             type: 'dropdown',
+            label: 'tools',
+            position: 'left',
+            items: [
+              {
+                href: '/jq',
+                label: 'JSON formatter',
+              }
+            ]
+          },
+          {
+            type: 'dropdown',
             label: 'other sites',
             position: 'left',
             items: [

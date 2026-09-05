@@ -1,0 +1,199 @@
+/*
+ * SPDX-FileCopyrightText: (C) 2026 Hong Yongmin (https://revi.xyz/) <yewon@revi.email>
+ * SPDX-License-Identifier: Apache-2.0
+ */
+
+.page {
+  max-width: 1200px;
+}
+
+.workspace {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+  border: 1px solid var(--ifm-color-emphasis-300);
+  border-radius: var(--ifm-global-radius);
+  overflow: hidden;
+}
+
+.panel {
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+}
+
+.panel + .panel {
+  border-left: 1px solid var(--ifm-color-emphasis-300);
+}
+
+.toolbar {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.5rem;
+  padding: 0.75rem;
+  background: var(--ifm-color-emphasis-100);
+  border-bottom: 1px solid var(--ifm-color-emphasis-300);
+}
+
+.toolbar h2 {
+  margin: 0;
+  font-size: 1.1rem;
+}
+
+.actions,
+.choices {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.toolbar button {
+  min-height: 2.5rem;
+  padding: 0.25rem 0.5rem;
+  border: 1px solid var(--ifm-color-emphasis-300);
+  border-radius: var(--ifm-global-radius);
+  background: var(--ifm-background-color);
+  color: var(--ifm-font-color-base);
+  font: inherit;
+  cursor: pointer;
+}
+
+.toolbar button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.controls {
+  margin: 0.75rem;
+  padding: 0;
+  border: 0;
+}
+
+.controls legend {
+  font-size: 0.9rem;
+  font-weight: bold;
+}
+
+.choices label {
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+  min-height: 2.5rem;
+  cursor: pointer;
+}
+
+.choices input[type='number'] {
+  width: 4rem;
+  padding: 0.25rem;
+  background: var(--ifm-background-color);
+  color: var(--ifm-font-color-base);
+  border: 1px solid var(--ifm-color-emphasis-500);
+}
+
+.input {
+  width: 100%;
+  min-height: 410px;
+  flex: 1;
+  resize: vertical;
+  padding: 1rem;
+  border: 0;
+  background: var(--ifm-background-color);
+  color: var(--ifm-font-color-base);
+  font-family: var(--ifm-font-family-monospace);
+  font-size: 0.9rem;
+  line-height: 1.6;
+}
+
+.input:focus-visible {
+  outline: 2px solid var(--ifm-color-primary);
+  outline-offset: -2px;
+}
+
+.result {
+  min-width: 0;
+  flex: 1;
+  background: var(--ifm-pre-background);
+}
+
+.output {
+  max-height: 650px;
+  margin: 0;
+  padding: 1rem;
+  border-radius: 0;
+  white-space: pre;
+  tab-size: 4;
+}
+
+.output code {
+  padding: 0;
+  background: transparent;
+  border: 0;
+}
+
+.empty {
+  display: flex;
+  min-height: 350px;
+  padding: 1rem;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+.empty > span {
+  font-size: 2rem;
+}
+
+.error {
+  margin: 0;
+  overflow-wrap: anywhere;
+}
+
+.key {
+  color: var(--ifm-color-primary);
+}
+
+.string {
+  color: #9c5e17;
+}
+
+.number {
+  color: #147489;
+}
+
+.boolean {
+  color: #8051a0;
+}
+
+.null {
+  font-style: italic;
+}
+
+:global([data-theme='dark']) .string {
+  color: #f6c999;
+}
+
+:global([data-theme='dark']) .number {
+  color: #91d3dc;
+}
+
+:global([data-theme='dark']) .boolean {
+  color: #d7a9ed;
+}
+
+@media (width <= 800px) {
+  .workspace {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .panel + .panel {
+    border-left: 0;
+    border-top: 1px solid var(--ifm-color-emphasis-300);
+  }
+
+  .input {
+    min-height: 290px;
+  }
+}
