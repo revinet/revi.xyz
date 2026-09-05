@@ -12,13 +12,10 @@ SPDX-License-Identifier: LicenseRef-CC-BY-2.0-KR
 -->
 
 import Clock from '@site/src/components/timer'; // Import the Clock component
-import Link from '@docusaurus/Link';
 
 :::info
 
-This clock works via the client-side JavaScript.
-If you disabled it, it might not work correctly.
-(I haven't tested no-JavaScript env, so I don't know for sure.)
+Enable JavaScript to see the live clocks and your timezone difference.
 
 :::
 
@@ -27,9 +24,3 @@ If you disabled it, it might not work correctly.
 <Clock />
 
 <!-- markdownlint-enable -->
-
-<!-- When you update timezone here... -->
-<!-- update ../src/components/timer/index.js as well. -->
-
-You can check the time difference between your device location and mine
-at <Link to="https://www.timeanddate.com/time/zones/kst">timeanddate.com</Link>.

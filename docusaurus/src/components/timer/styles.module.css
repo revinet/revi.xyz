@@ -1,0 +1,50 @@
+/*
+ * SPDX-FileCopyrightText: (C) 2026 Hong Yongmin (https://revi.xyz/) <yewon@revi.email>
+ * SPDX-License-Identifier: Apache-2.0
+ */
+
+.card {
+  border: 1px solid var(--ifm-color-emphasis-300);
+  border-radius: var(--ifm-card-border-radius);
+  padding: clamp(1rem, 3vw, 2rem);
+  margin-bottom: 2rem;
+  background: var(--ifm-background-surface-color);
+  overflow-wrap: anywhere;
+}
+
+.topline {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+  font-weight: 600;
+}
+
+.badge {
+  border-radius: 2rem;
+  padding: 0.25rem 0.75rem;
+  background: var(--ifm-color-emphasis-200);
+}
+
+.row {
+  border-top: 1px solid var(--ifm-color-emphasis-300);
+  padding-top: 1.5rem;
+  font-variant-numeric: tabular-nums;
+}
+
+.label {
+  margin-bottom: 0.75rem;
+  font-weight: 600;
+}
+
+.difference {
+  border-left: 3px solid var(--ifm-color-primary);
+  padding: 1rem;
+  background: var(--ifm-color-emphasis-100);
+}
+
+.difference p {
+  margin-bottom: 0;
+}

@@ -33,6 +33,14 @@ const config = {
   tagline: 'Self-appointed Chief Laziness Officer',
   favicon: 'img/logo.png',
 
+  customFields: {
+    time: {
+      homeTimezone: 'Asia/Seoul',
+      // Use an IANA timezone, e.g. 'Asia/Tokyo'. Empty or Asia/Seoul is home.
+      travelTimezone: '',
+    },
+  },
+
   // Set the production url of your site here
   url: 'https://revi.xyz',
   // Set the /<baseUrl>/ pathname under which your site is served
@@ -131,7 +139,7 @@ const config = {
     format: 'detect',
     hooks: {
       onBrokenMarkdownLinks: 'warn',
-    }
+    },
   },
 
   headTags: [

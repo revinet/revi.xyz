@@ -23,42 +23,74 @@
  * @license Apache-2.0
  */
 
-// When you update timezone here...
-// update ../src/components/timer/index.js as well.
-
 import React, {useState, useEffect} from 'react';
-import Link from '@docusaurus/Link';
+import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
+import {getTimeSettings, timezoneDifference} from './time';
+import styles from './styles.module.css';
 
-/** Define the current date&time for revi. */
-function Clock() {
-  const [date, setDate] = useState(new Date());
+/** Display home, travel, and visitor timezone information. */
+export default function Clock() {
+  const {siteConfig} = useDocusaurusContext();
+  const {homeTimezone, travelTimezone, isTravel} = getTimeSettings(
+    siteConfig.customFields.time,
+  );
+  const [date, setDate] = useState(null);
+  const [visitorTimezone, setVisitorTimezone] = useState('');
 
   useEffect(() => {
-    const timerID = setInterval(() => tick(), 1000); // Update every second
-
-    return () => clearInterval(timerID); // Cleanup function for timer
-  }, []); // Empty dependency array to run only once
-
-  /** Tick the clock to update the clock timer every second. */
-  function tick() {
     setDate(new Date());
-  }
+    setVisitorTimezone(Intl.DateTimeFormat().resolvedOptions().timeZone);
+    const timerID = setInterval(() => setDate(new Date()), 1000);
+    return () => clearInterval(timerID);
+  }, []);
 
-  const nowTime = Intl.DateTimeFormat([], {
-    dateStyle: 'full',
-    timeStyle: 'long',
-    hour12: false,
-    timeZone: 'Asia/Seoul',
-  }).format(date);
+  const formatTime = (timeZone) =>
+    date
+      ? new Intl.DateTimeFormat(undefined, {
+          dateStyle: 'full',
+          timeStyle: 'long',
+          hour12: false,
+          timeZone,
+        }).format(date)
+      : '—';
 
-  /* jshint ignore:start */
   return (
-    <p suppressHydrationWarning={true}>
-      It is {nowTime} in <code>Asia/Seoul</code> where <Link to="/">revi</Link>{' '}
-      lives.
-    </p>
+    <section className={styles.card} aria-label="Current time for revi">
+      <div className={styles.topline}>
+        <span>Current time</span>
+        <span className={styles.badge}>
+          {isTravel ? 'Travel mode' : 'Home timezone'}
+        </span>
+      </div>
+      <section className={styles.row} aria-label="Home clock">
+        <div className={styles.label}>
+          Home · <code>{homeTimezone}</code>
+        </div>
+        <p>
+          It is <strong>{formatTime(homeTimezone)}</strong> in{' '}
+          <code>{homeTimezone}</code> where revi lives.
+        </p>
+      </section>
+      {isTravel && (
+        <section className={styles.row} aria-label="Travel clock">
+          <div className={styles.label}>
+            On the go · <code>{travelTimezone}</code>
+          </div>
+          <p>
+            revi is on the go. It is{' '}
+            <strong>{formatTime(travelTimezone)}</strong> in{' '}
+            <code>{travelTimezone}</code>.
+          </p>
+        </section>
+      )}
+      {date && visitorTimezone && visitorTimezone !== homeTimezone && (
+        <section
+          className={styles.difference}
+          aria-label="Your timezone difference">
+          <div className={styles.label}>Your timezone · {visitorTimezone}</div>
+          <p>{timezoneDifference(date, visitorTimezone, homeTimezone)}</p>
+        </section>
+      )}
+    </section>
   );
-  /* jshint ignore:end */
 }
-
-export default Clock;
