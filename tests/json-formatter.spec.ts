@@ -25,6 +25,12 @@ test.describe('JSON formatter', () => {
       exact: true,
     });
 
+    // The input label names the textbox but is visually hidden.
+    const label = await workspace
+      .getByText('JSON input', {exact: true})
+      .boundingBox();
+    expect(label!.width * label!.height).toBeLessThanOrEqual(1);
+
     await expect(empty).toBeVisible();
     await expect(copy).toBeDisabled();
     await input.fill('{"hello":"world","nested":{"valid":true}}');
@@ -71,6 +77,16 @@ test.describe('JSON formatter', () => {
     await expect(workspace.getByRole('alert')).toHaveCount(0);
     await expect(input).toHaveAttribute('aria-invalid', 'false');
     await expect(copy).toBeEnabled();
+
+    // The copy status sits above the result so it stays visible on mobile.
+    await copy.click();
+    const copyStatus = workspace
+      .getByRole('region', {name: 'Formatted result'})
+      .getByRole('status');
+    await expect(copyStatus).toHaveText(/^Cop(ied|y was blocked)/);
+    const statusBox = await copyStatus.boundingBox();
+    const outputBox = await output.boundingBox();
+    expect(statusBox!.y + statusBox!.height).toBeLessThanOrEqual(outputBox!.y);
 
     await workspace.getByRole('button', {name: 'Clear', exact: true}).click();
     await expect(input).toHaveValue('');

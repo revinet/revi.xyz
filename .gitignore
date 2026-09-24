@@ -161,6 +161,9 @@ dist
 
 # End of https://www.toptal.com/developers/gitignore/api/docusaurus,lighthouseci
 
+# Claude Code
+.claude/data/healthcare/
+
 # PlayWright
 /test-results/
 /playwright-report/

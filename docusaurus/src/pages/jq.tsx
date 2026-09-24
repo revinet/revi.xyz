@@ -11,6 +11,38 @@ import styles from './jq.module.css';
 const SAMPLE =
   '{"name":"JSON Formatter","features":["Fast formatting","Mobile-friendly copy","Syntax highlighting"],"settings":{"indentation":2,"valid":true}}';
 
+type StatusTarget = 'input' | 'output';
+type StatusTone = 'success' | 'warning';
+
+function StatusMessage({
+  status,
+  target,
+}: {
+  status: {target: StatusTarget; tone: StatusTone; message: string; id: number};
+  target: StatusTarget;
+}) {
+  const shown = status.target === target && status.message;
+  return (
+    <p role="status" className={styles.status}>
+      {shown && (
+        // A new key replays the entrance animation on every click.
+        <span
+          key={status.id}
+          className={`${styles.pill} ${styles[status.tone]}`}>
+          <svg className={styles.icon} viewBox="0 0 24 24" aria-hidden="true">
+            {status.tone === 'success' ? (
+              <path d="M21,7L9,19L3.5,13.5L4.91,12.09L9,16.17L19.59,5.59L21,7Z" />
+            ) : (
+              <path d="M10.5,4H13.5V14H10.5ZM10.5,16.5H13.5V19.5H10.5Z" />
+            )}
+          </svg>
+          {status.message}
+        </span>
+      )}
+    </p>
+  );
+}
+
 function highlightJson(json: string) {
   const tokens = json.split(
     /("(?:\\.|[^\\"])*"\s*:|"(?:\\.|[^\\"])*"|true|false|null|-?\d+(?:\.\d+)?(?:[eE][+-]?\d+)?)/g,
@@ -36,7 +68,12 @@ export default function JsonFormatter() {
   const [input, setInput] = useState('');
   const [indent, setIndent] = useState('2');
   const [customIndent, setCustomIndent] = useState('3');
-  const [status, setStatus] = useState('');
+  const [status, setStatus] = useState<{
+    target: StatusTarget;
+    tone: StatusTone;
+    message: string;
+    id: number;
+  }>({target: 'output', tone: 'success', message: '', id: 0});
   const spacing =
     indent === 'tab'
       ? '\t'
@@ -62,18 +99,29 @@ export default function JsonFormatter() {
   }, [input, spacing]);
   const highlighted = useMemo(() => highlightJson(output), [output]);
 
+  function showStatus(target: StatusTarget, tone: StatusTone, message: string) {
+    setStatus((current) => ({target, tone, message, id: current.id + 1}));
+  }
+
+  function clearStatus() {
+    setStatus((current) => ({...current, message: ''}));
+  }
+
   function updateInput(value: string) {
     setInput(value);
-    setStatus('');
+    clearStatus();
   }
 
   async function pasteInput() {
     try {
       const text = await navigator.clipboard.readText();
       if (text) updateInput(text);
-      setStatus(text ? 'Pasted.' : 'Your clipboard is empty.');
+      if (text) showStatus('input', 'success', 'Pasted.');
+      else showStatus('input', 'warning', 'Your clipboard is empty.');
     } catch {
-      setStatus(
+      showStatus(
+        'input',
+        'warning',
         'Clipboard access was blocked. Use your device’s Paste command.',
       );
     }
@@ -82,7 +130,7 @@ export default function JsonFormatter() {
   async function copyOutput() {
     try {
       await navigator.clipboard.writeText(output);
-      setStatus('Copied.');
+      showStatus('output', 'success', 'Copied.');
     } catch {
       const fallback = document.createElement('textarea');
       const previousFocus = document.activeElement;
@@ -92,14 +140,14 @@ export default function JsonFormatter() {
       fallback.style.opacity = '0';
       document.body.appendChild(fallback);
       fallback.select();
+      const blocked =
+        'Copy was blocked. Select the result and copy it manually.';
       try {
-        setStatus(
-          document.execCommand('copy')
-            ? 'Copied.'
-            : 'Copy was blocked. Select the result and copy it manually.',
-        );
+        if (document.execCommand('copy'))
+          showStatus('output', 'success', 'Copied.');
+        else showStatus('output', 'warning', blocked);
       } catch {
-        setStatus('Copy was blocked. Select the result and copy it manually.');
+        showStatus('output', 'warning', blocked);
       } finally {
         fallback.remove();
         if (previousFocus instanceof HTMLElement) previousFocus.focus();
@@ -139,6 +187,7 @@ export default function JsonFormatter() {
                 </button>
               </div>
             </div>
+            <StatusMessage status={status} target="input" />
             <fieldset className={styles.controls}>
               <legend>Indentation</legend>
               <div className={styles.choices}>
@@ -151,7 +200,7 @@ export default function JsonFormatter() {
                       checked={indent === choice}
                       onChange={() => {
                         setIndent(choice);
-                        setStatus('');
+                        clearStatus();
                       }}
                     />
                     {choice === 'tab'
@@ -171,12 +220,12 @@ export default function JsonFormatter() {
                   aria-label="Custom indentation level, 0 to 10 spaces"
                   onFocus={() => {
                     setIndent('custom');
-                    setStatus('');
+                    clearStatus();
                   }}
                   onChange={(event) => {
                     setCustomIndent(event.target.value);
                     setIndent('custom');
-                    setStatus('');
+                    clearStatus();
                   }}
                   onBlur={() =>
                     setCustomIndent(
@@ -225,6 +274,7 @@ export default function JsonFormatter() {
                 Copy
               </button>
             </div>
+            <StatusMessage status={status} target="output" />
             <div className={styles.result}>
               {output ? (
                 <pre
@@ -242,9 +292,6 @@ export default function JsonFormatter() {
             </div>
           </section>
         </section>
-        <p role="status" className="margin-top--sm">
-          {status}
-        </p>
       </main>
     </Layout>
   );

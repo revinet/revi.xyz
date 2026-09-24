@@ -33,7 +33,6 @@
   gap: 0.5rem;
   padding: 0.75rem;
   background: var(--ifm-color-emphasis-100);
-  border-bottom: 1px solid var(--ifm-color-emphasis-300);
 }
 
 .toolbar h2 {
@@ -63,6 +62,78 @@
 .toolbar button:disabled {
   opacity: 0.5;
   cursor: not-allowed;
+}
+
+.status {
+  margin: 0;
+  padding: 0 0.75rem;
+  background: var(--ifm-color-emphasis-100);
+  border-bottom: 1px solid var(--ifm-color-emphasis-300);
+}
+
+/* The live region stays in the tree; it only takes space with a message. */
+.status:not(:empty) {
+  padding-bottom: 0.75rem;
+}
+
+.pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.25rem 0.75rem 0.25rem 0.3rem;
+  border: 1px solid var(--pill-accent);
+  border-radius: 1rem;
+  background: var(--pill-background);
+  color: var(--pill-foreground);
+  box-shadow: var(--ifm-global-shadow-lw);
+  font-size: 0.875rem;
+  font-weight: var(--ifm-font-weight-semibold);
+  line-height: 1.4;
+}
+
+.success {
+  --pill-accent: var(--ifm-color-success-dark);
+  --pill-background: var(--ifm-color-success-contrast-background);
+  --pill-foreground: var(--ifm-color-success-contrast-foreground);
+}
+
+.warning {
+  --pill-accent: var(--ifm-color-warning-dark);
+  --pill-background: var(--ifm-color-warning-contrast-background);
+  --pill-foreground: var(--ifm-color-warning-contrast-foreground);
+}
+
+.icon {
+  flex: none;
+  width: 1.25rem;
+  height: 1.25rem;
+  padding: 0.2rem;
+  border-radius: 50%;
+  background: var(--pill-accent);
+  fill: var(--ifm-color-white);
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .pill {
+    animation: pill-in 240ms cubic-bezier(0.2, 0.9, 0.3, 1.2);
+  }
+
+  .icon {
+    animation: icon-in 320ms 80ms ease-out backwards;
+  }
+}
+
+@keyframes pill-in {
+  from {
+    opacity: 0;
+    transform: translateY(-0.4rem) scale(0.96);
+  }
+}
+
+@keyframes icon-in {
+  from {
+    transform: scale(0) rotate(-45deg);
+  }
 }
 
 .controls {
