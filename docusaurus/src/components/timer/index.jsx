@@ -25,14 +25,33 @@
 
 import React, {useState, useEffect} from 'react';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
-import {getTimeSettings, timezoneDifference} from './time';
+import {getHolidayNames} from '@hyunbinseo/holidays-kr';
+import {getEnglishHolidayName} from './holidays';
+import {calendarDate, getTimeSettings, timezoneDifference} from './time';
 import styles from './styles.module.css';
 
-/** Display home, travel, and visitor timezone information. */
+/**
+ * @typedef {object} HolidayState
+ * @property {string} date YYYY-MM-DD in Asia/Seoul for this result.
+ * @property {Awaited<ReturnType<typeof getHolidayNames>>} names
+ *   Holiday names, or null when there is no holiday or data is unavailable.
+ */
+
+/**
+ * Display home, travel, and visitor timezone information.
+ * @returns {import('react').ReactElement}
+ */
 export default function Clock() {
   const {siteConfig} = useDocusaurusContext();
   const [date, setDate] = useState(/** @type {Date | null} */ (null));
   const [visitorTimezone, setVisitorTimezone] = useState('');
+  const [holiday, setHoliday] = useState(
+    /** @type {HolidayState} */ ({
+      date: '',
+      names: null,
+    }),
+  );
+  const koreanDate = date ? calendarDate(date, 'Asia/Seoul') : '';
   const timeSettings =
     /** @type {import('./time').TimeSettings | undefined} */ (
       siteConfig.customFields?.time
@@ -49,7 +68,33 @@ export default function Clock() {
     return () => clearInterval(timerID);
   }, []);
 
-  /** @param {string} timeZone */
+  useEffect(() => {
+    if (!koreanDate) {
+      return;
+    }
+    let active = true;
+    getHolidayNames(koreanDate).then(
+      (names) => {
+        if (active) {
+          setHoliday({date: koreanDate, names});
+        }
+      },
+      () => {
+        // Missing presets or failed loads should not interrupt the clock.
+        if (active) {
+          setHoliday({date: koreanDate, names: null});
+        }
+      },
+    );
+    return () => {
+      active = false;
+    };
+  }, [koreanDate]);
+
+  /**
+   * @param {string} timeZone
+   * @returns {string}
+   */
   const formatTime = (timeZone) =>
     date
       ? new Intl.DateTimeFormat(undefined, {
@@ -76,6 +121,29 @@ export default function Clock() {
           It is <strong>{formatTime(homeTimezone)}</strong> in{' '}
           <code>{homeTimezone}</code> where revi lives.
         </p>
+        {holiday.date === koreanDate && holiday.names && (
+          <p role="status">
+            Public holiday in South Korea:{' '}
+            {holiday.names.map((name, index) => {
+              const englishName = getEnglishHolidayName(name);
+              return (
+                <React.Fragment key={name}>
+                  {index > 0 && ', '}
+                  <strong>
+                    <span lang="ko">{name}</span>
+                    {englishName && (
+                      <>
+                        {' '}
+                        (<span lang="en">{englishName}</span>)
+                      </>
+                    )}
+                  </strong>
+                </React.Fragment>
+              );
+            })}
+            .
+          </p>
+        )}
       </section>
       {isTravel && (
         <section className={styles.row} aria-label="Travel clock">

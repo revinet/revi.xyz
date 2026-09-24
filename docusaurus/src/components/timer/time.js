@@ -14,6 +14,25 @@
  */
 
 /**
+ * Format a calendar date as YYYY-MM-DD in the specified timezone.
+ * @param {Date} date
+ * @param {string} timeZone
+ * @returns {string}
+ */
+export function calendarDate(date, timeZone) {
+  const parts = new Intl.DateTimeFormat('en-US', {
+    timeZone,
+    year: 'numeric',
+    month: '2-digit',
+    day: '2-digit',
+  }).formatToParts(date);
+  const {year, month, day} = Object.fromEntries(
+    parts.map(({type, value}) => [type, value]),
+  );
+  return `${year}-${month}-${day}`;
+}
+
+/**
  * Check inclusive calendar dates in the home timezone.
  * @param {Date | null} date Current instant, or null before mounting.
  * @param {string} homeTimezone
@@ -43,16 +62,7 @@ function isWithinTravelDates(date, homeTimezone, start, end) {
   if (!validDates) {
     return false;
   }
-  const parts = new Intl.DateTimeFormat('en-US', {
-    timeZone: homeTimezone,
-    year: 'numeric',
-    month: '2-digit',
-    day: '2-digit',
-  }).formatToParts(date);
-  const {year, month, day} = Object.fromEntries(
-    parts.map(({type, value}) => [type, value]),
-  );
-  const homeDate = `${year}-${month}-${day}`;
+  const homeDate = calendarDate(date, homeTimezone);
   return (!start || homeDate >= start) && (!end || homeDate <= end);
 }
 

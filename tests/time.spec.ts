@@ -3,11 +3,24 @@
  * SPDX-License-Identifier: Apache-2.0
  */
 
-import {test, expect} from '@playwright/test';
+import {test, expect, type Page} from '@playwright/test';
+import {getEnglishHolidayName} from '../docusaurus/src/components/timer/holidays';
 import {
   getTimeSettings,
   timezoneDifference,
 } from '../docusaurus/src/components/timer/time';
+
+async function formatHomeDates(page: Page, dates: string[]) {
+  return page.evaluate((values) => {
+    const formatter = new Intl.DateTimeFormat(undefined, {
+      dateStyle: 'full',
+      timeStyle: 'long',
+      hour12: false,
+      timeZone: 'Asia/Seoul',
+    });
+    return values.map((value) => formatter.format(new Date(value)));
+  }, dates);
+}
 
 test('Travel is determined by timezone name', () => {
   expect(getTimeSettings().isTravel).toBe(false);
@@ -190,11 +203,141 @@ test.describe('Time page', () => {
     const home = page.getByRole('region', {name: 'Home clock'});
     await expect(home).toContainText('Asia/Seoul');
     await expect(home).toContainText(expectedTimes[0]);
+    await expect(home.getByRole('status')).toContainText(
+      "1월 1일 (New Year's Day)",
+    );
     await page.clock.runFor(1000);
     await expect(home).toContainText(expectedTimes[1]);
     await expect(
       page.getByRole('region', {name: 'Your timezone difference'}),
     ).toContainText('same local time');
+    expect(errors).toEqual([]);
+  });
+});
+
+test.describe('Korean holidays', () => {
+  test.use({
+    baseURL: 'http://127.0.0.1:9090',
+    timezoneId: 'America/Los_Angeles',
+    locale: 'en-US',
+  });
+
+  test('Every holiday in the installed presets has an English name', async () => {
+    const presets = await import('@hyunbinseo/holidays-kr/all');
+    const names = new Set(
+      Object.values(presets).flatMap((year) => Object.values(year).flat()),
+    );
+    expect(
+      [...names].filter((name) => getEnglishHolidayName(name) === null),
+    ).toEqual([]);
+  });
+
+  test('Unknown holidays do not get an invented English name', () => {
+    expect(getEnglishHolidayName('새 공휴일')).toBeNull();
+    expect(getEnglishHolidayName('대체공휴일(새 공휴일)')).toBeNull();
+  });
+
+  for (const {date, names} of [
+    {
+      date: '2025-05-04T15:00:00Z',
+      names: [
+        {ko: '어린이날', en: "Children's Day"},
+        {ko: '부처님 오신 날', en: "Buddha's Birthday"},
+      ],
+    },
+    {
+      date: '2025-05-05T15:00:00Z',
+      names: [
+        {
+          ko: '대체공휴일(부처님 오신 날)',
+          en: "Substitute holiday for Buddha's Birthday",
+        },
+      ],
+    },
+    {
+      date: '2026-09-23T15:00:00Z',
+      names: [{ko: '추석 전날', en: 'Day before Chuseok'}],
+    },
+    {
+      date: '2026-12-24T15:00:00Z',
+      names: [{ko: '기독탄신일', en: 'Christmas'}],
+    },
+  ]) {
+    test(`Shows Korean and English holiday names for ${date}`, async ({
+      page,
+    }) => {
+      await page.clock.setFixedTime(new Date(date));
+      await page.goto('/time/');
+      const status = page
+        .getByRole('region', {name: 'Home clock'})
+        .getByRole('status');
+      const expectedNames = names.map(({ko, en}) => `${ko} (${en})`).join(', ');
+      await expect(status).toHaveText(
+        `Public holiday in South Korea: ${expectedNames}.`,
+      );
+      for (const {ko, en} of names) {
+        await expect(status.getByText(ko, {exact: true})).toHaveAttribute(
+          'lang',
+          'ko',
+        );
+        await expect(status.getByText(en, {exact: true})).toHaveAttribute(
+          'lang',
+          'en',
+        );
+      }
+    });
+  }
+
+  for (const timezoneId of ['America/Los_Angeles', 'Pacific/Auckland']) {
+    test.describe(timezoneId, () => {
+      test.use({timezoneId});
+
+      test('Updates holidays at Korean midnight across New Year', async ({
+        page,
+      }) => {
+        await page.clock.install({time: new Date('2025-12-31T14:58:00Z')});
+        await page.clock.pauseAt(new Date('2025-12-31T14:59:59Z'));
+        await page.goto('/time/');
+        const [beforeMidnight, afterHoliday] = await formatHomeDates(page, [
+          '2025-12-31T14:59:59Z',
+          '2026-01-01T15:00:00Z',
+        ]);
+        const home = page.getByRole('region', {name: 'Home clock'});
+        const holiday = home.getByRole('status');
+        await expect(home).toContainText(beforeMidnight);
+        await expect(holiday).toHaveCount(0);
+
+        await page.clock.runFor(1000);
+        await expect(holiday).toContainText('1월 1일');
+
+        await page.clock.fastForward(24 * 60 * 60 * 1000);
+        await expect(home).toContainText(afterHoliday);
+        await expect(holiday).toHaveCount(0);
+      });
+    });
+  }
+
+  test('Keeps the clock running when the holiday year is unavailable', async ({
+    page,
+  }) => {
+    const errors: string[] = [];
+    page.on('pageerror', (error) => errors.push(error.message));
+    await page.clock.install({time: new Date('2026-01-01T00:00:00Z')});
+    await page.clock.pauseAt(new Date('2026-01-01T00:01:00Z'));
+    await page.goto('/time/');
+    const [firstTick, secondTick] = await formatHomeDates(page, [
+      '2099-01-01T00:00:01Z',
+      '2099-01-01T00:00:02Z',
+    ]);
+    const home = page.getByRole('region', {name: 'Home clock'});
+    await expect(home.getByRole('status')).toContainText('1월 1일');
+
+    await page.clock.setSystemTime(new Date('2099-01-01T00:00:00Z'));
+    await page.clock.runFor(1000);
+    await expect(home).toContainText(firstTick);
+    await expect(home.getByRole('status')).toHaveCount(0);
+    await page.clock.runFor(1000);
+    await expect(home).toContainText(secondTick);
     expect(errors).toEqual([]);
   });
 });
