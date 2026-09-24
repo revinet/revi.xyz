@@ -3,19 +3,90 @@
  * SPDX-License-Identifier: Apache-2.0
  */
 
-/** Resolve clocks by timezone identity, not UTC offset. */
-export function getTimeSettings({
-  homeTimezone = 'Asia/Seoul',
-  travelTimezone = '',
-} = {}) {
+// @ts-check
+
+/**
+ * @typedef {object} TimeSettings
+ * @property {string} [homeTimezone] Home IANA timezone; defaults to Asia/Seoul.
+ * @property {string} [travelTimezone] Destination IANA timezone.
+ * @property {string} [travelStartDate] Inclusive YYYY-MM-DD in homeTimezone.
+ * @property {string} [travelEndDate] Inclusive YYYY-MM-DD in homeTimezone.
+ */
+
+/**
+ * Check inclusive calendar dates in the home timezone.
+ * @param {Date | null} date Current instant, or null before mounting.
+ * @param {string} homeTimezone
+ * @param {string} start
+ * @param {string} end
+ * @returns {boolean}
+ */
+function isWithinTravelDates(date, homeTimezone, start, end) {
+  if (!start && !end) {
+    return true;
+  }
+  // Wait for the live clock so SSR and the first client render agree.
+  if (!date) {
+    return false;
+  }
+  const validDates = [start, end].every((value) => {
+    if (!value) {
+      return true;
+    }
+    const parsed = new Date(value);
+    return (
+      /^\d{4}-\d{2}-\d{2}$/.test(value) &&
+      !Number.isNaN(parsed.getTime()) &&
+      parsed.toISOString().slice(0, 10) === value
+    );
+  });
+  if (!validDates) {
+    return false;
+  }
+  const parts = new Intl.DateTimeFormat('en-US', {
+    timeZone: homeTimezone,
+    year: 'numeric',
+    month: '2-digit',
+    day: '2-digit',
+  }).formatToParts(date);
+  const {year, month, day} = Object.fromEntries(
+    parts.map(({type, value}) => [type, value]),
+  );
+  const homeDate = `${year}-${month}-${day}`;
+  return (!start || homeDate >= start) && (!end || homeDate <= end);
+}
+
+/**
+ * Resolve clocks by timezone identity and an optional travel date range.
+ * @param {TimeSettings} [settings]
+ * @param {Date | null} [date] Current instant, or null before mounting.
+ * @returns {{homeTimezone: string, travelTimezone: string, isTravel: boolean}}
+ */
+export function getTimeSettings(
+  {
+    homeTimezone = 'Asia/Seoul',
+    travelTimezone = '',
+    travelStartDate = '',
+    travelEndDate = '',
+  } = {},
+  date = new Date(),
+) {
   return {
     homeTimezone,
     travelTimezone,
-    isTravel: travelTimezone !== '' && travelTimezone !== 'Asia/Seoul',
+    isTravel:
+      travelTimezone !== '' &&
+      travelTimezone !== 'Asia/Seoul' &&
+      isWithinTravelDates(date, homeTimezone, travelStartDate, travelEndDate),
   };
 }
 
-/** UTC offset at the given instant, including daylight saving time. */
+/**
+ * UTC offset at the given instant, including daylight saving time.
+ * @param {Date} date
+ * @param {string} timeZone
+ * @returns {number}
+ */
 function offsetMinutes(date, timeZone) {
   const parts = new Intl.DateTimeFormat('en-US', {
     timeZone,
@@ -44,7 +115,13 @@ function offsetMinutes(date, timeZone) {
   );
 }
 
-/** Describe the visitor's time difference from home. */
+/**
+ * Describe the visitor's time difference from home.
+ * @param {Date} date
+ * @param {string} visitorTimezone
+ * @param {string} homeTimezone
+ * @returns {string}
+ */
 export function timezoneDifference(date, visitorTimezone, homeTimezone) {
   const difference =
     offsetMinutes(date, visitorTimezone) - offsetMinutes(date, homeTimezone);

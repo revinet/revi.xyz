@@ -31,11 +31,16 @@ import styles from './styles.module.css';
 /** Display home, travel, and visitor timezone information. */
 export default function Clock() {
   const {siteConfig} = useDocusaurusContext();
-  const {homeTimezone, travelTimezone, isTravel} = getTimeSettings(
-    siteConfig.customFields.time,
-  );
-  const [date, setDate] = useState(null);
+  const [date, setDate] = useState(/** @type {Date | null} */ (null));
   const [visitorTimezone, setVisitorTimezone] = useState('');
+  const timeSettings =
+    /** @type {import('./time').TimeSettings | undefined} */ (
+      siteConfig.customFields?.time
+    );
+  const {homeTimezone, travelTimezone, isTravel} = getTimeSettings(
+    timeSettings,
+    date,
+  );
 
   useEffect(() => {
     setDate(new Date());
@@ -44,6 +49,7 @@ export default function Clock() {
     return () => clearInterval(timerID);
   }, []);
 
+  /** @param {string} timeZone */
   const formatTime = (timeZone) =>
     date
       ? new Intl.DateTimeFormat(undefined, {
