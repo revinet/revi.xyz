@@ -31,7 +31,7 @@ ignores:
 config:
   default: true
   # https://github.com/DavidAnson/markdownlint/blob/main/style/prettier.json
-  extends: prettier
+  extends: markdownlint/style/prettier
   MD003:
     style: atx
   MD013: 80
