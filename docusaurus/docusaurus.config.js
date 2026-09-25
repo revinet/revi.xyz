@@ -316,6 +316,10 @@ const config = {
                 to: '/meta',
               },
               {
+                label: 'JSON formatter',
+                to: '/jq',
+              },
+              {
                 label: 'Sitemap',
                 to: '/sitemap',
               },

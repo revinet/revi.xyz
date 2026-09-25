@@ -7,8 +7,8 @@
 /keybase https://keybase.io/encrypt#revi 302
 /ko/gender-pronounciation/ /ko/pronoun-is/ 302
 /namuwiki https://namu.wiki/contribution/f244e383-687b-4747-bbf4-8c113adc925e/document 302
-/new https://issuetracker.revi.xyz/maniphest/task/edit/form/1/ 302
-/phab https://issuetracker.revi.xyz/ 302
+/new https://b.revi.dev/maniphest/task/edit/form/1/ 302
+/phab https://b.revi.dev/ 302
 /privacy /privacy-policy 302
 /security.txt /.well-known/security.txt 302
 /sn https://app.standardnotes.com/ 302
@@ -17,10 +17,10 @@
 /steam https://steamcommunity.com/id/enhawiki/ 302
 /tailscale https://login.tailscale.com/ 302
 /theseed https://theseed.io/contribution/b39e0e30-c231-41ce-807a-5160257dfdef/document 302
-/todo https://issuetracker.revi.xyz/ 302
+/todo https://b.revi.dev/ 302
 /wiki https://revi.wiki/wiki/ 302
-/b/* https://issuetracker.revi.xyz/:splat 302
-/bug/* https://issuetracker.revi.xyz/T:splat 302
-/d/* https://issuetracker.revi.xyz/D:splat 302
-/rev/* https://issuetracker.revi.xyz/D:splat 302
-/t/* https://issuetracker.revi.xyz/T:splat 302
+/b/* https://b.revi.dev/:splat 302
+/bug/* https://b.revi.dev/T:splat 302
+/d/* https://b.revi.dev/D:splat 302
+/rev/* https://b.revi.dev/D:splat 302
+/t/* https://b.revi.dev/T:splat 302
