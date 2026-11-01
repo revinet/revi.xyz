@@ -78,13 +78,14 @@
     "@ibm/plex@6.4.1": true,
     "@swc/core@1.16.1": true,
     "better-sqlite3@12.4.1": true,
-    "core-js@3.40.0": true,
     "core-js-pure@3.37.1": true,
     "dtrace-provider@0.8.8": true,
-    "esbuild@0.28.1": true,
     "node-pty@1.1.0": true,
-    "protobufjs@7.5.4": true,
-    "re2@1.26.1": true,
-    "workerd@1.20260820.1": true
+    "workerd@1.20261006.1": true,
+    "re2@1.27.0": true,
+    "esbuild@0.28.2": true,
+    "protobufjs@7.6.6": true,
+    "protobufjs@8.8.0": true,
+    "core-js@3.50.0": true
   }
 }
