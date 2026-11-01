@@ -37,12 +37,12 @@ const config = {
     time: {
       homeTimezone: 'Asia/Seoul',
       // Use an IANA timezone, e.g. 'Asia/Tokyo'. Empty or Asia/Seoul is home.
-      travelTimezone: '',
+      travelTimezone: 'Europe/Lisbon',
       // Optional YYYY-MM-DD dates in homeTimezone (Asia/Seoul), inclusive.
       // Start at home midnight; end after the entire end date has passed.
       // Leave either empty for no limit. Invalid dates disable travel mode.
-      travelStartDate: '',
-      travelEndDate: '',
+      travelStartDate: '2026-12-10',
+      travelEndDate: '2026-12-15',
     },
   },
 
