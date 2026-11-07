@@ -299,11 +299,11 @@
         },
         "mypy-extensions": {
             "hashes": [
-                "sha256:1be4cccdb0f2482337c4743e60421de3a356cd97508abadd57d47403e94f5505",
-                "sha256:52e68efc3284861e772bbcd66823fde5ae21fd2fdb51c62a211403730b916558"
+                "sha256:993e7a20aa5671eb41a7132cf555af30062da99729601601b9a8382b11cae768",
+                "sha256:c6e275a07f1c2fc096b62940452d0eaa3f3af7de45d704787866240a7c6d5a51"
             ],
-            "markers": "python_version >= '3.8'",
-            "version": "==1.1.0"
+            "markers": "python_version >= '3.10'",
+            "version": "==1.2.0"
         },
         "packaging": {
             "hashes": [
@@ -323,19 +323,19 @@
         },
         "platformdirs": {
             "hashes": [
-                "sha256:1aa0b0d3f224c1f07c295121e312a5a24a180d6ae5a8425ea1784b3e3863e9c0",
-                "sha256:3dbcf4cd708f21cf876c4eaa90e58412bc4f033d87143f41b1493ff77c25b7e1"
+                "sha256:32e9921db7385aa8169bee4fe9501923e5715ba9fb7ea3b9c69b0d8e0639f7a1",
+                "sha256:8e778c6fa421516f4d3369449f8df3b0e1b72c0e0005fe88e3ec772d0a14e750"
             ],
             "markers": "python_version >= '3.11'",
-            "version": "==4.13.0"
+            "version": "==4.14.5"
         },
         "pluggy": {
             "hashes": [
-                "sha256:7dcc130b76258d33b90f61b658791dede3486c3e6bfb003ee5c9bfb396dd22f3",
-                "sha256:e920276dd6813095e9377c0bc5566d94c932c33b27a3e3945d8389c374dd4746"
+                "sha256:7dd7b0d8832ba3cb632c306926ded123429211b83641b35dc5c41ad2d34f9bec",
+                "sha256:d1eaa46ebb595891b860ab086b4d09c8588af65ebd4361b8e8f4bb8920b90ba8"
             ],
-            "markers": "python_version >= '3.9'",
-            "version": "==1.6.0"
+            "markers": "python_version >= '3.10'",
+            "version": "==1.7.0"
         },
         "pycodestyle": {
             "hashes": [
@@ -486,11 +486,11 @@
         },
         "tomlkit": {
             "hashes": [
-                "sha256:177a05aece5a8ca5266fd3c448abb47b8d352f09d477d3ca8332db4d89b24304",
-                "sha256:e25bbf38843005246210a12982776f27f99cb9be67160e14434d0c0d21ee1e97"
+                "sha256:05562412163a3037b94497385fb7f9204c637bc605af7a48199e41cf2272f437",
+                "sha256:83e32755ba1d20d9340bd069ee97e9f6232ba2346b63ffcba425de01f7e327a6"
             ],
             "markers": "python_version >= '3.9'",
-            "version": "==0.15.1"
+            "version": "==0.15.2"
         },
         "yamllint": {
             "hashes": [
